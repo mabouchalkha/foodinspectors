@@ -1,2 +1,10 @@
 h1 Hello
 p This view is visible to every in users.
+.well
+    h2 Todo
+    ul
+        li Load current_user on refresh
+        li manage cancan failure - done
+        li add oauth system
+        li add errbit logging system
+        li better handling of error status code in angular (show error for 401, 503 and 403)

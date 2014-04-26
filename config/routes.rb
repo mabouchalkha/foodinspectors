@@ -5,6 +5,7 @@ PlaygroundOnrails::Application.routes.draw do
         post 'login' => 'session#create', :as => 'login'
         delete 'logout' => 'session#destroy', :as => 'logout'
         get 'current_user' => 'session#show_current_user', :as => 'show_current_user'
+        post 'register', to: 'registration#create', :as => 'register'
     end
     
     get '/private', to: 'private#index'

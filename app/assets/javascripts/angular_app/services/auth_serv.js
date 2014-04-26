@@ -5,7 +5,7 @@ starterApp.factory('Session', function($location, $http, $q) {
     }
     
     var service = {
-        login: function(user, password, rememberme) {
+        login: function(user) {
             return $http.post('/login', {user: {email: user.email, password: user.password, rememberme: user.rememberme} })
                 .then(function(resp) {
                     service.currentUser = resp.data.data;
@@ -13,24 +13,24 @@ starterApp.factory('Session', function($location, $http, $q) {
                         $location.path('/');
                     }
                 }, function (resp) {
-
+                    // error handling
                 });
         },
-
+        register: function (user) {
+            return $http.post('/register', { user: { email: user.email, password: user.password, admin: user.admin }})  
+                .then(function (resp) {
+                    service.currentUser = resp.data.data;
+                    if (service.isAuthenticated()) {
+                        $location.path('/');
+                    }
+                }, function (resp) {
+                   // error handling 
+                });
+        },
         logout: function(redirectTo) {
             $http.delete('/logout').then(function(resp) {
                 service.currentUser = null;
                 redirect(redirectTo);
-            });
-        },
-
-        register: function(email, password, confirm_password) {
-            return $http.post('/users.json', {user: {email: email, password: password, password_confirmation: confirm_password} })
-            .then(function(resp) {
-                service.currentUser = resp.data;
-                if (service.isAuthenticated()) {
-                    $location.path('/record');
-                }
             });
         },
         requestCurrentUser: function() {
@@ -43,9 +43,7 @@ starterApp.factory('Session', function($location, $http, $q) {
                 });
             }
         },
-
         currentUser: null,
-
         isAuthenticated: function(){
             return !!service.currentUser;
         }

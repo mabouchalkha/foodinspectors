@@ -8,6 +8,7 @@ starterApp.config(['$routeProvider', '$httpProvider', function($routeProvider, $
     $routeProvider
         .when('/', { templateUrl: 'angular_app/pages/home.html'})
         .when('/login', { templateUrl: 'angular_app/pages/login/login.html', controller: 'LoginCtrl'})
+        .when('/register', { templateUrl: 'angular_app/pages/register/register.html', controller: 'RegisterCtrl'})
         .when('/private', { templateUrl: 'angular_app/pages/private/private.html', controller: 'PrivateCtrl'})
         .when('/admin', { templateUrl: 'angular_app/pages/admin/admin.html', controller: 'AdminCtrl'})
         .otherwise({ redirectTo: '/' });
@@ -39,7 +40,7 @@ starterApp.config(['$routeProvider', '$httpProvider', function($routeProvider, $
 
 starterApp.run(function ($rootScope, $location, Session) {
 
-  var anonRoutes = ['/login', '/'];
+  var anonRoutes = ['/login', '/register', '/'];
   var userRoutes = ['/private'];
   var adminRoutes = ['/admin'];
 
