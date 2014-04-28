@@ -8,6 +8,8 @@ PlaygroundOnrails::Application.routes.draw do
         post 'register', to: 'registration#create', :as => 'register'
     end
     
+    post '/error', to: 'error#create'
+    
     get '/private', to: 'private#index'
     
     get '/admin', to: 'admin#index'

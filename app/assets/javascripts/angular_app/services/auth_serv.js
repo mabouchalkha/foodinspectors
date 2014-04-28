@@ -46,6 +46,9 @@ starterApp.factory('Session', function($location, $http, $q) {
         currentUser: null,
         isAuthenticated: function(){
             return !!service.currentUser;
+        },
+        logError: function (ex, cause) {
+            // to do send custom error to errbit
         }
     };
     return service;

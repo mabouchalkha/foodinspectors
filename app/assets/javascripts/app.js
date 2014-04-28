@@ -38,6 +38,19 @@ starterApp.config(['$routeProvider', '$httpProvider', function($routeProvider, $
   $httpProvider.responseInterceptors.push(logsOutUserOn401);
 }]);
 
+starterApp.config(['$provide', function($provide) {
+    $provide.decorator("$exceptionHandler", function($delegate, $injector) {
+        return function(exception, cause) {
+            $delegate(exception, cause);
+            
+            var session = $injector.get('Session')
+            session.logError(exception, cause);
+            
+            Airbrake.captureException(exception);
+        };
+    });
+}]);
+
 starterApp.run(function ($rootScope, $location, Session) {
 
   var anonRoutes = ['/login', '/register', '/'];
@@ -57,4 +70,3 @@ starterApp.run(function ($rootScope, $location, Session) {
     }
   });
 });
-

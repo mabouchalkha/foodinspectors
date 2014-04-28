@@ -6,5 +6,5 @@ p This view is visible to every in users.
         li Load current_user on refresh
         li manage cancan failure - done
         li add oauth system
-        li add errbit logging system
+        li add errbit logging system - done
         li better handling of error status code in angular (show error for 401, 503 and 403)
