@@ -1,4 +1,4 @@
-starterApp.directive('activeNav', ['$location', function($location) {
+angular.module("starterApp").directive('activeNav', ['$location', function($location) {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {

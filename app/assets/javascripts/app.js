@@ -1,10 +1,10 @@
-var starterApp = angular.module("starterApp", ['ngRoute', 'templates']);
+angular.module("starterApp", ['ngRoute', 'templates']);
 
 /*starterApp.config(['$locationProvider', function ($locationProvider) {
     $locationProvider.html5Mode(true);
 }]);*/
 
-starterApp.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {
+angular.module("starterApp").config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {
     $routeProvider
         .when('/', { templateUrl: 'angular_app/pages/home.html'})
         .when('/login', { templateUrl: 'angular_app/pages/login/login.html', controller: 'LoginCtrl'})
@@ -38,7 +38,7 @@ starterApp.config(['$routeProvider', '$httpProvider', function($routeProvider, $
   $httpProvider.responseInterceptors.push(logsOutUserOn401);
 }]);
 
-starterApp.config(['$provide', function($provide) {
+angular.module("starterApp").config(['$provide', function($provide) {
     $provide.decorator("$exceptionHandler", function($delegate, $injector) {
         return function(exception, cause) {
             $delegate(exception, cause);
@@ -51,9 +51,9 @@ starterApp.config(['$provide', function($provide) {
     });
 }]);
 
-starterApp.run(function ($rootScope, $location, Session) {
+angular.module("starterApp").run(function ($rootScope, $location, Session) {
 
-  var anonRoutes = ['/login', '/register', '/'];
+  /*var anonRoutes = ['/login', '/register', '/'];
   var userRoutes = ['/private'];
   var adminRoutes = ['/admin'];
 
@@ -68,5 +68,71 @@ starterApp.run(function ($rootScope, $location, Session) {
             $location.path('/');
         }
     }
-  });
+  });*/
+});
+
+angular.element(document).ready(function() {
+    var req = $.ajax({ url: '/current_user' });
+    req.done(function (resp) {
+        var app = angular.bootstrap(document, ["starterApp"]);
+        var session = app.get('Session');
+        var root = app.get('$rootScope');
+        var $location = app.get('$location');
+        
+        if (resp.data) {
+          session.currentUser = resp.data;
+        }
+        else {
+          session.currentUser = null;
+        }
+        
+        var anonRoutes = ['/login', '/register', '/'];
+        var userRoutes = ['/private'];
+        var adminRoutes = ['/admin'];
+        
+        root.$on('$routeChangeStart', function (event, next, current) {
+            if (anonRoutes.indexOf($location.url()) == -1 && !session.isAuthenticated()) {
+                $location.path('/login');
+            }
+            else if(session.isAuthenticated()) {
+                var mask = session.currentUser.roles_mask;
+            
+                if (mask > 1 && adminRoutes.indexOf($location.url()) != -1) {
+                    $location.path('/');
+                }
+            }
+        });
+          
+        root.$apply();
+    });
+    
+    req.fail(function (resp) {
+       var app = angular.bootstrap(document, ["starterApp"]);
+        var session = app.get('Session');
+        var root = app.get('$rootScope');
+        var $location = app.get('$location');
+        
+
+        session.currentUser = null;
+        
+        
+        var anonRoutes = ['/login', '/register', '/'];
+        var userRoutes = ['/private'];
+        var adminRoutes = ['/admin'];
+        
+        root.$on('$routeChangeStart', function (event, next, current) {
+            if (anonRoutes.indexOf($location.url()) == -1 && !session.isAuthenticated()) {
+                $location.path('/login');
+            }
+            else if(session.isAuthenticated()) {
+                var mask = session.currentUser.roles_mask;
+            
+                if (mask > 1 && adminRoutes.indexOf($location.url()) != -1) {
+                    $location.path('/');
+                }
+            }
+        });
+          
+        root.$apply();
+    });
 });

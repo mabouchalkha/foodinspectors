@@ -1,4 +1,4 @@
-starterApp.controller('LoginCtrl', ['$scope', '$location', 'Session', function($scope, $location, Session) {
+angular.module("starterApp").controller('LoginCtrl', ['$scope', '$location', 'Session', function($scope, $location, Session) {
     var _init = function () {
         $scope.user = { rememberme: true};
     };

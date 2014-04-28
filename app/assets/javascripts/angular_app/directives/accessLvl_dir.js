@@ -1,4 +1,4 @@
-starterApp.directive('accessLevel', ['Session', function(Session) {
+angular.module("starterApp").directive('accessLevel', ['Session', function(Session) {
     return {
         restrict: 'A',
         link: function($scope, element, attrs) {

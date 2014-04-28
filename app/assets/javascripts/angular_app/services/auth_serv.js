@@ -1,4 +1,4 @@
-starterApp.factory('Session', function($location, $http, $q) {
+angular.module("starterApp").factory('Session', function($location, $http, $q) {
     function redirect(url) {
         url = url || '/';
         $location.path(url);

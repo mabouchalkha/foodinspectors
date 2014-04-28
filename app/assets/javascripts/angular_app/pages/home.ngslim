@@ -3,8 +3,9 @@ p This view is visible to every in users.
 .well
     h2 Todo
     ul
-        li Load current_user on refresh
+        li Load current_user on refresh - done (need improvement of success/fail in app.js)
         li manage cancan failure - done
         li add oauth system
         li add errbit logging system - done
         li better handling of error status code in angular (show error for 401, 503 and 403)
+        li controller resolver instead of ajax call in controller init
