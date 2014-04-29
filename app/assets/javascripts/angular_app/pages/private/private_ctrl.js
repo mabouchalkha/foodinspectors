@@ -1,8 +1,6 @@
-angular.module("starterApp").controller('PrivateCtrl', ['$scope', '$http', function($scope, $http) {
+angular.module("starterApp").controller('PrivateCtrl', ['$scope', 'viewModel', function($scope, viewModel) {
     var _init = function () {
-        $http.get('/private').then(function(resp) {
-            $scope.roles = resp.data.data;
-        });
+         $scope.roles = viewModel.data.data;
     };
     
     _init();

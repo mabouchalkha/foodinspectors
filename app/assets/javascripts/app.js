@@ -1,4 +1,4 @@
-angular.module("starterApp", ['ngRoute', 'templates']);
+angular.module("starterApp", ['ngRoute', 'templates', 'restangular']);
 
 /*starterApp.config(['$locationProvider', function ($locationProvider) {
     $locationProvider.html5Mode(true);
@@ -9,8 +9,8 @@ angular.module("starterApp").config(['$routeProvider', '$httpProvider', function
         .when('/', { templateUrl: 'angular_app/pages/home.html'})
         .when('/login', { templateUrl: 'angular_app/pages/login/login.html', controller: 'LoginCtrl'})
         .when('/register', { templateUrl: 'angular_app/pages/register/register.html', controller: 'RegisterCtrl'})
-        .when('/private', { templateUrl: 'angular_app/pages/private/private.html', controller: 'PrivateCtrl'})
-        .when('/admin', { templateUrl: 'angular_app/pages/admin/admin.html', controller: 'AdminCtrl'})
+        .when('/private', { templateUrl: 'angular_app/pages/private/private.html', controller: 'PrivateCtrl', resolve: privateResolver.resolve })
+        .when('/admin', { templateUrl: 'angular_app/pages/admin/admin.html', controller: 'AdminCtrl', resolve: adminResolver.resolve})
         .otherwise({ redirectTo: '/' });
         
     var logsOutUserOn401 = ['$q', '$location', function ($q, $location) {

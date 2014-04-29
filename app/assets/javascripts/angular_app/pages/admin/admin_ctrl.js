@@ -1,8 +1,6 @@
-angular.module("starterApp").controller('AdminCtrl', ['$scope', '$http', function($scope, $http) {
+angular.module("starterApp").controller('AdminCtrl', ['$scope', 'viewModel', function($scope, viewModel) {
     var _init = function () {
-        $http.get('/admin').then(function(resp) {
-            $scope.users = resp.data.data;
-        });
+        $scope.users = viewModel.data.data;
     };
     
     _init();

@@ -13,5 +13,7 @@
 //= require jquery/dist/jquery
 //= require angular/angular
 //= require angular-route/angular-route
+//= require lodash/dist/lodash
+//= require restangular/dist/restangular
 //= require app
 //= require_tree ./angular_app
