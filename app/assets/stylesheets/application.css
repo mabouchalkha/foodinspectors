@@ -10,5 +10,7 @@
  *
  *= require bootstrap/dist/css/bootstrap.css
  *= require font-awesome/css/font-awesome.css
- *= require_tree .
+ *= require ./neon
+ *= require ./neon-core
+ *= require ./custom
  */

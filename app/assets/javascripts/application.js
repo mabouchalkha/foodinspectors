@@ -15,5 +15,6 @@
 //= require angular-route/angular-route
 //= require lodash/dist/lodash
 //= require restangular/dist/restangular
+//= require_tree ./libs
 //= require app
 //= require_tree ./angular_app
