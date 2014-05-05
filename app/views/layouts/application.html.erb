@@ -8,12 +8,12 @@
       <%= csrf_meta_tags %>
     </head>
     <body ng-cloak class="page-body loaded">
-        <div class="page-container">
+        <div class="page-container" ng-controller="NavCtrl">
         	<div class="sidebar-menu"> <!-- SIDE MENU -->
         		<header class="logo-env">
         			<!-- logo -->
         			<div class="logo">
-        				<a href="index.html">
+        				<a href="#/">
         					<img src="/images/logo@2x.png" width="120" alt="" />
         				</a>
         			</div>
@@ -66,11 +66,6 @@
                 			<li>
                 				<a href="#/register">
                 					<span>Register</span>
-                				</a>
-                			</li>
-                			<li>
-                				<a href="#/logout">
-                					<span>Logout</span>
                 				</a>
                 			</li>
         				</ul>
@@ -415,12 +410,25 @@
                 			</li>
                 			<li class="sep"></li>
                 			<li>
-                				<a href="extra-login.html">
-                					Log Out <i class="entypo-logout right"></i>
-                				</a>
+                				<button ng-click="logout()" class="btn btn-link">Log Out</button>
                 			</li>
                 		</ul>
                 	</div>
+                </div>
+                <hr>
+                <ol class="breadcrumb bc-3">
+					<li>
+				        <a href="#/"><i class="fa fa-home"></i>Home</a>
+			        </li>
+					<li>
+						<a href="#/">Example 1</a>
+					</li>
+				    <li class="#/">
+						<strong>Example 2</strong>
+					</li>
+				</ol>
+				<div class="view">
+                    <div ng-view></div>
                 </div>
                 <footer class="main">
                 	&copy; 2014 <strong>Neon</strong> Admin Theme by <a href="http://laborator.co" target="_blank">Laborator</a>
