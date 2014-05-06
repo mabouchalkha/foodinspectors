@@ -1,4 +1,5 @@
-h1 Hello
+.page-header
+    h1 Accueil 
 p This view is visible to every in users.
 .well
     h2 Todo
@@ -10,3 +11,17 @@ p This view is visible to every in users.
         li better handling of error status code in angular (show error for 401, 503 and 403)
         li(style="background-color: yellow") controller resolver instead of ajax call in controller init - done
         li tweak restangular to receive type resp { succes: true, info: '', data: users } => currently throwing error as resp should be an array when alling .getList()
+        
+<div class="page-header_directive">
+    <div class="page-header">
+		<h1><span ng-bind-html="title"></span>
+			<span ng-show="subtitle != null">
+			    <small>
+			        <i class="icon-double-angle-right"></i>
+				    <span ng-bind-html="subtitle"></span>
+			    </small>
+			</span>
+			<span ng-repeat="label in labels" class="label label-{{label.type}}" ng-bind="label.text" style="margin-right: 10px"></span>
+		</h1>
+	</div>
+</div>

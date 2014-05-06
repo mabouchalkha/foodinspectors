@@ -10,7 +10,8 @@
  *
  *= require bootstrap/dist/css/bootstrap.css
  *= require font-awesome/css/font-awesome.css
- *= require ./neon
- *= require ./neon-core
- *= require ./custom
+ *= require ./ace-fonts
+ *= require ./ace-skins
+ *= require ./ace
+ *= require ./style
  */

@@ -1,0 +1,19 @@
+#navbar.navbar.navbar-default.navbar-fixed-top.app-header_dir
+    #navbar-container.navbar-container
+        .navbar-header.pull-left
+            a.navbar-brand(href="#/")
+                small
+                    i.fa.fa-xing &nbsp Food Inspector
+        div.navbar-header.pull-right(role="navigation")
+            ul.nav.ace-nav
+                li.light-blue
+                    a.dropdown-toggle(data-toggle="dropdown" href="#")
+                        img.nav-user-photo(src="images/def.jpg" alt="User's picture")
+                        span.user-info
+                            small Welcome
+                            | Doum Lapointe
+                        i.fa.fa-caret-down
+                    ul.user-menu.pull-right.dropdown-menu.dropdown-yellow.dropdown-caret.dropdown-close
+                        li
+                            a   
+                                i.fa.fa-power-off &nbsp Logout

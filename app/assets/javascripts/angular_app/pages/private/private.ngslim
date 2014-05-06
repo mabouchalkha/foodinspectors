@@ -1,4 +1,5 @@
-h1 Private view
+.page-header
+    h1 Private view
 p This nested view is visible to logged in users
 
 .well

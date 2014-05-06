@@ -1,0 +1,36 @@
+.app-sidebar_directive(ng-class="{'menu-min': isMenuMin == true}") 
+      a#menu-toggler.menu-toggler(href="#" ng-class="{'display': isMinimifiedDisplay==true}") 
+            span.menu-text(ng-click="isMinimifiedDisplay=!isMinimifiedDisplay")
+      #sidebar.sidebar.sidebar-fixed(ng-class="{'menu-min': isMenuMin == true, 'display': isMinimifiedDisplay==true}") 
+            #sidebar-shortcuts.sidebar-shortcuts
+                #sidebar-shortcuts-large.sidebar-shortcuts-large
+                    button.btn.btn-success(tooltip="Users" tooltip-placement="bottom") 
+                        i.fa.fa-group
+                    button.btn.btn-info tooltip="Setting" tooltip-placement="bottom" 
+                        i.fa.fa-cogs
+                #sidebar-shortcuts-mini.sidebar-shortcuts-mini
+                    span.btn.btn-success
+                    span.btn.btn-info
+                    span.btn.btn-warning
+                    span.btn.btn-danger
+                /! #sidebar-shortcuts
+            ul.nav.nav-list(app-navbar="") 
+                li 
+                    a(href="#/private") 
+                        i.fa.fa-unlock
+                        span.menu-text Private
+                li
+                    a href="#/admin" 
+                        i.fa.fa-lock
+                        span.menu-text Admin
+                li
+                    a href="#/login" 
+                        i.fa.fa-sign-in
+                        span.menu-text Login
+                li
+                    a href="#/register" 
+                        i.fa.fa-pencil
+                        span.menu-text Register       
+                /! /.nav-list
+            #sidebar-collapse.sidebar-collapse(ng-click="isMenuMin=!isMenuMin")
+                i.fa(ng-class="{'fa-angle-double-left': isMenuMin!=true, 'fa-angle-double-right': isMenuMin==true}") 
