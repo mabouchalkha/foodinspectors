@@ -1,4 +1,4 @@
-#navbar.navbar.navbar-default.navbar-fixed-top.app-header_dir
+#navbar.navbar.navbar-default.navbar-fixed-top
     #navbar-container.navbar-container
         .navbar-header.pull-left
             a.navbar-brand(href="#/")
@@ -15,5 +15,5 @@
                         i.fa.fa-caret-down
                     ul.user-menu.pull-right.dropdown-menu.dropdown-yellow.dropdown-caret.dropdown-close
                         li
-                            a   
+                            a(ng-click="logout()")   
                                 i.fa.fa-power-off &nbsp Logout

@@ -1110,10 +1110,11 @@ blockquote.pull-right {
   transform: scale(1.2);
   opacity: 1;
 }
+
 .navbar {
   margin-bottom: 0;
-}
-.navbar {
+  height: 45px;
+  max-height: 45px;
   margin-left: 0;
   margin-right: 0;
   border: none;
@@ -1466,6 +1467,7 @@ blockquote.pull-right {
   .navbar .navbar-header.pull-left {
     display: block;
     float: none !important;
+    height: 45px;
   }
   .navbar .navbar-header.pull-right {
     display: block;

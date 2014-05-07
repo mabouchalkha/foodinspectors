@@ -65364,3 +65364,3340 @@ Started GET "/private" for 127.8.80.1 at 2014-05-06 16:44:41 -0400
 Processing by PrivateController#index as HTML
   [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
 Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:06:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (21.7ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.8ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.9ms)
+Completed 200 OK in 2608ms (Views: 2607.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:06:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:06:52 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:53 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:54 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:54 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:54 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:54 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:54 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:54 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:54 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:54 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:54 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/nav_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:55 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:06:56 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:07:09 -0400
+Processing by SessionController#show_current_user as */*
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 339ms (Views: 34.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:07:09 -0400
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:07:14 -0400
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 111ms (Views: 11.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:07:16 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:07:21 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:07:22 -0400
+Processing by PrivateController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:07:26 -0400
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:07:27 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:11:21 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.2ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.2ms)
+Completed 200 OK in 1909ms (Views: 1908.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:11:23 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:11:23 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:11:23 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:11:23 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:11:23 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:11:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:11:24 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:24 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:24 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:24 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:24 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:24 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:24 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:24 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:25 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/nav_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:26 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:27 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:11:27 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:11:27 -0400
+Processing by SessionController#show_current_user as */*
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:11:27 -0400
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:11:27 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:11:32 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:12:13 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.2ms)
+Completed 200 OK in 758ms (Views: 758.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:14 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:15 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:15 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:15 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:15 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:15 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/pages/nav_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:16 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:17 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:17 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:17 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:17 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:17 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:17 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:12:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:12:17 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:12:17 -0400
+Processing by SessionController#show_current_user as */*
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:12:18 -0400
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:12:18 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.8.80.1 at 2014-05-07 08:12:23 -0400
+Processing by SessionController#destroy as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Completed 200 OK in 218ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:12:27 -0400
+Processing by PrivateController#index as HTML
+Completed 401 Unauthorized in 17ms
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:12:28 -0400
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:18:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (16.4ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.6ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.7ms)
+Completed 200 OK in 2293ms (Views: 2291.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:18:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:18:32 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:33 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:34 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:34 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:34 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:34 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:34 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:34 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:34 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:34 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:35 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:36 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:36 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:36 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:36 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:36 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:36 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:18:36 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:18:36 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:18:37 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 47ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:18:37 -0400
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:18:39 -0400
+Processing by PrivateController#index as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:18:40 -0400
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:18:45 -0400
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:18:45 -0400
+Processing by PrivateController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started POST "/login" for 127.8.80.1 at 2014-05-07 08:18:50 -0400
+Processing by SessionController#create as HTML
+  Parameters: {"user"=>{"email"=>"anon@gmail.com", "password"=>"[FILTERED]", "rememberme"=>true}, "session"=>{"user"=>{"email"=>"anon@gmail.com", "password"=>"[FILTERED]", "rememberme"=>true}}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'anon@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[35mSQL (242.8ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 4  [["last_sign_in_at", Mon, 05 May 2014 12:14:08 UTC +00:00], ["current_sign_in_at", Wed, 07 May 2014 12:18:51 UTC +00:00], ["last_sign_in_ip", "23.236.52.112"], ["current_sign_in_ip", "23.236.51.113"], ["sign_in_count", 23], ["updated_at", Wed, 07 May 2014 12:18:51 UTC +00:00]]
+  [1m[36m (44.4ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 852ms (Views: 0.9ms | ActiveRecord: 326.0ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:18:53 -0400
+Processing by PrivateController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:18:54 -0400
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+** [Airbrake] Success: Net::HTTPOK
+** [Airbrake] Environment Info: [Ruby: 1.9.3] [Rails: 4.0.0] [Env: development]
+** [Airbrake] Response from Airbrake: 
+UUID: 536a24ae8b18b0916e000006
+URL:  http://errbitrails.herokuapp.com/locate/536a24ae8b18b0916e000006
+Completed 403 Forbidden in 357ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:18:57 -0400
+Processing by PrivateController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:18:59 -0400
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+** [Airbrake] Success: Net::HTTPOK
+** [Airbrake] Environment Info: [Ruby: 1.9.3] [Rails: 4.0.0] [Env: development]
+** [Airbrake] Response from Airbrake: 
+UUID: 536a24b38b18b082ff000001
+URL:  http://errbitrails.herokuapp.com/locate/536a24b38b18b082ff000001
+Completed 403 Forbidden in 301ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:19:00 -0400
+Processing by PrivateController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.8.80.1 at 2014-05-07 08:19:03 -0400
+Processing by SessionController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 194ms (Views: 0.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:19:05 -0400
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:19:06 -0400
+Processing by PrivateController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:19:07 -0400
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:20:21 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.2ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.2ms)
+Completed 200 OK in 1875ms (Views: 1866.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:23 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:23 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:23 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:24 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:25 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:25 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:25 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:25 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:25 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:25 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:25 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:26 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:27 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:27 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:20:27 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:20:27 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:20:27 -0400
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:20:35 -0400
+Processing by PrivateController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:20:50 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.2ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (11.0ms)
+Completed 200 OK in 314ms (Views: 313.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:50 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:50 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:50 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:50 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:50 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:50 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:20:51 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:51 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:51 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:51 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:51 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:51 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:51 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:52 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:20:53 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:20:54 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:20:54 -0400
+
+
+Started POST "/register" for 127.8.80.1 at 2014-05-07 08:21:00 -0400
+Processing by RegistrationController#create as HTML
+  Parameters: {"user"=>{"email"=>"anon@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"anon@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'anon@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 706ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/login" for 127.8.80.1 at 2014-05-07 08:21:15 -0400
+Processing by SessionController#create as HTML
+  Parameters: {"user"=>{"email"=>"anon@gmail.com", "password"=>"[FILTERED]", "rememberme"=>true}, "session"=>{"user"=>{"email"=>"anon@gmail.com", "password"=>"[FILTERED]", "rememberme"=>true}}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'anon@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (8.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 4[0m  [["last_sign_in_at", Wed, 07 May 2014 12:18:51 UTC +00:00], ["current_sign_in_at", Wed, 07 May 2014 12:21:16 UTC +00:00], ["last_sign_in_ip", "23.236.51.113"], ["sign_in_count", 24], ["updated_at", Wed, 07 May 2014 12:21:16 UTC +00:00]]
+  [1m[35m (77.6ms)[0m  commit transaction
+Completed 200 OK in 378ms (Views: 1.0ms | ActiveRecord: 86.4ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:21:19 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:21:23 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+** [Airbrake] Success: Net::HTTPOK
+** [Airbrake] Environment Info: [Ruby: 1.9.3] [Rails: 4.0.0] [Env: development]
+** [Airbrake] Response from Airbrake: 
+UUID: 536a25438b18b082ff000002
+URL:  http://errbitrails.herokuapp.com/locate/536a25438b18b082ff000002
+Completed 403 Forbidden in 113ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:21:27 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.8.80.1 at 2014-05-07 08:21:34 -0400
+Processing by SessionController#destroy as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 200 OK in 34ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:22:15 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 960ms (Views: 960.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:22:16 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:22:16 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:22:16 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:22:16 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:22:16 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:22:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:22:17 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:17 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:17 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:17 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:17 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:17 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:17 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:18 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:22:19 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:22:23 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:22:24 -0400
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:22:24 -0400
+
+
+Started POST "/login" for 127.8.80.1 at 2014-05-07 08:22:34 -0400
+Processing by SessionController#create as HTML
+  Parameters: {"user"=>{"email"=>"dom.dlapointe@gmail.com", "password"=>"[FILTERED]", "rememberme"=>true}, "session"=>{"user"=>{"email"=>"dom.dlapointe@gmail.com", "password"=>"[FILTERED]", "rememberme"=>true}}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'dom.dlapointe@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (10.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["last_sign_in_at", Mon, 05 May 2014 19:04:29 UTC +00:00], ["current_sign_in_at", Wed, 07 May 2014 12:22:34 UTC +00:00], ["last_sign_in_ip", "23.236.51.113"], ["sign_in_count", 21], ["updated_at", Wed, 07 May 2014 12:22:34 UTC +00:00]]
+  [1m[35m (26.2ms)[0m  commit transaction
+Completed 200 OK in 521ms (Views: 0.7ms | ActiveRecord: 37.3ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:22:36 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:22:37 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 18ms (Views: 4.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:22:38 -0400
+Processing by PrivateController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:22:39 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:22:40 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:22:45 -0400
+Processing by PrivateController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:22:56 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:22:58 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:23:00 -0400
+Processing by PrivateController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:23:06 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.3ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 278ms (Views: 277.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:23:06 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:23:06 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:07 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:08 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:08 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:08 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:08 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:08 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:08 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:08 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:08 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:08 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:09 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:23:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:10 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:23:10 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:23:10 -0400
+Processing by SessionController#show_current_user as */*
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:23:10 -0400
+Processing by PrivateController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:23:10 -0400
+
+
+Started GET "/admin" for 127.8.80.1 at 2014-05-07 08:23:14 -0400
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (40.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 59ms (Views: 13.2ms | ActiveRecord: 41.9ms)
+
+
+Started GET "/private" for 127.8.80.1 at 2014-05-07 08:23:15 -0400
+Processing by PrivateController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.8.80.1 at 2014-05-07 08:23:16 -0400
+Processing by SessionController#destroy as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:25:35 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 869ms (Views: 868.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:36 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:37 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:37 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:37 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:38 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:38 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:38 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:38 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:38 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:38 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:39 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:40 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:25:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:40 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:25:40 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:25:40 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:25:40 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:26:07 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.2ms)
+Completed 200 OK in 839ms (Views: 838.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:08 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:09 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:09 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:09 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:09 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:10 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:11 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:26:12 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:26:12 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:26:12 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:26:26 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 758ms (Views: 757.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:27 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:28 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:28 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:28 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:28 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:28 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:29 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:26:30 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:26:31 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:26:32 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:26:32 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:27:45 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.5ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.2ms)
+Completed 200 OK in 834ms (Views: 833.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:27:46 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:27:46 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:27:46 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:27:46 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:27:46 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:27:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:27:47 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:47 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:47 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:47 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:47 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:47 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:48 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:48 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:48 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:48 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:48 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:49 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:27:50 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:27:53 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 169ms
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:27:54 -0400
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:27:54 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:29:47 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 574ms (Views: 573.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:29:48 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:29:48 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:29:48 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:29:48 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:29:48 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:29:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:29:48 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:48 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:48 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:49 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:49 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:49 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:49 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:49 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:49 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:49 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:50 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:29:51 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:29:52 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 4ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:29:52 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:30:39 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 537ms (Views: 536.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:40 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:41 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:41 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:41 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:41 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:41 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:41 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:42 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:30:43 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:30:44 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:30:44 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:31:45 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.2ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 501ms (Views: 501.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:46 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:47 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:47 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:47 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:47 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:47 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:48 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:31:49 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:34:55 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 487ms (Views: 486.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:34:56 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:34:56 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:34:56 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:34:56 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:34:56 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:34:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:34:57 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:57 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:57 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:57 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:57 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:57 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:57 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:58 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:58 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:58 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:58 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:58 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:34:59 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:35:00 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:35:00 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:35:00 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:35:00 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:35:00 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:35:00 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:35:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:35:00 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:35:00 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:35:01 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:35:01 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:36:10 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 485ms (Views: 484.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:11 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:12 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:12 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:12 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:12 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:12 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:13 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:36:14 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:36:15 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:39:36 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 623ms (Views: 622.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:37 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:38 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:38 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:38 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:38 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:38 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:39 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:40 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:39:43 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 183ms (Views: 182.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:44 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:45 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:45 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:45 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:45 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:45 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:45 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:45 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:46 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:47 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:47 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:47 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:39:47 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:39:47 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:39:47 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:39:48 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:40:30 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.2ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 987ms (Views: 986.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:40:31 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:40:31 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:40:31 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:40:31 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:40:31 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:40:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:40:32 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:32 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:32 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:32 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:32 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:32 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:32 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:33 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:33 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:33 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:33 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:33 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:33 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:33 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:33 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:33 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:34 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:34 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:34 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:34 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:34 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:34 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:34 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:34 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:40:35 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:40:36 -0400
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-07 08:41:12 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.1ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.1ms)
+Completed 200 OK in 556ms (Views: 556.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-07 08:41:13 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-07 08:41:13 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-07 08:41:13 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-07 08:41:13 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-07 08:41:13 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-07 08:41:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-07 08:41:13 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:13 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:13 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:14 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:14 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:14 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:14 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:14 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:14 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:15 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:15 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:15 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:15 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:15 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:15 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:15 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:16 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:17 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:17 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:17 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:17 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-07 08:41:17 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for 127.8.80.1 at 2014-05-07 08:41:17 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-07 08:41:17 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-07 08:41:17 -0400

@@ -4,9 +4,9 @@
       #sidebar.sidebar.sidebar-fixed(ng-class="{'menu-min': isMenuMin == true, 'display': isMinimifiedDisplay==true}") 
             #sidebar-shortcuts.sidebar-shortcuts
                 #sidebar-shortcuts-large.sidebar-shortcuts-large
-                    button.btn.btn-success(tooltip="Users" tooltip-placement="bottom") 
+                    button.btn.btn-success 
                         i.fa.fa-group
-                    button.btn.btn-info tooltip="Setting" tooltip-placement="bottom" 
+                    button.btn.btn-info
                         i.fa.fa-cogs
                 #sidebar-shortcuts-mini.sidebar-shortcuts-mini
                     span.btn.btn-success
@@ -15,19 +15,23 @@
                     span.btn.btn-danger
                 /! #sidebar-shortcuts
             ul.nav.nav-list(app-navbar="") 
-                li 
-                    a(href="#/private") 
+                li(active-nav)
+                    a(href="#/") 
+                        i.fa.fa-home
+                        span.menu-text Accueil
+                li(active-nav)
+                    a(href="#/private" access-level="2") 
                         i.fa.fa-unlock
                         span.menu-text Private
-                li
+                li(active-nav access-level="1")
                     a href="#/admin" 
                         i.fa.fa-lock
                         span.menu-text Admin
-                li
+                li(active-nav access-level="0")
                     a href="#/login" 
                         i.fa.fa-sign-in
                         span.menu-text Login
-                li
+                li(active-nav access-level="0")
                     a href="#/register" 
                         i.fa.fa-pencil
                         span.menu-text Register       
