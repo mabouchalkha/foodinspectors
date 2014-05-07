@@ -6,12 +6,12 @@
                     i.fa.fa-xing &nbsp Food Inspector
         div.navbar-header.pull-right(role="navigation")
             ul.nav.ace-nav
-                li.light-blue
+                li.light-blue(access-level="2")
                     a.dropdown-toggle(data-toggle="dropdown" href="#")
                         img.nav-user-photo(src="images/def.jpg" alt="User's picture")
                         span.user-info
                             small Welcome
-                            | Doum Lapointe
+                            | {{user.name}}
                         i.fa.fa-caret-down
                     ul.user-menu.pull-right.dropdown-menu.dropdown-yellow.dropdown-caret.dropdown-close
                         li

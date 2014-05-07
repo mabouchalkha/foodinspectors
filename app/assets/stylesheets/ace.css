@@ -1511,7 +1511,8 @@ blockquote.pull-right {
   font-size: 120%;
 }
 .user-info {
-  max-width: 100px;
+  min-width: 100px;
+  max-width:250px;
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;

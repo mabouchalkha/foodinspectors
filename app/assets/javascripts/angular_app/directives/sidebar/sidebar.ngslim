@@ -4,7 +4,7 @@
       #sidebar.sidebar.sidebar-fixed(ng-class="{'menu-min': isMenuMin == true, 'display': isMinimifiedDisplay==true}") 
             #sidebar-shortcuts.sidebar-shortcuts
                 #sidebar-shortcuts-large.sidebar-shortcuts-large
-                    button.btn.btn-success 
+                    button.btn.btn-success(style="margin-right: 5px") 
                         i.fa.fa-group
                     button.btn.btn-info
                         i.fa.fa-cogs
