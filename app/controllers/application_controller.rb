@@ -12,7 +12,6 @@ class ApplicationController < ActionController::Base
   end
   
   def rescue_cancan(ex)
-     Airbrake.notify(ex)
      render :status => 403,
                :json => { :success => false, :info => "Access denied", :data => ex }
   end

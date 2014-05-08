@@ -71445,3 +71445,145 @@ Processing by SessionController#destroy as HTML
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
 Completed 200 OK in 74ms (Views: 0.3ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/" for 127.8.80.1 at 2014-05-08 08:18:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (29.9ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_loader (0.7ms)
+DEPRECATION WARNING: The file /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _airbrake_render_template at /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/airbrake/rails/javascript_notifier.rb:70)
+  Rendered /var/lib/stickshift/535e7907500446025c00016e/app-root/data/lib/ruby/gems/gems/airbrake-3.1.16/lib/templates/javascript_notifier_configuration (0.8ms)
+Completed 200 OK in 2615ms (Views: 2610.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css?body=1" for 127.8.80.1 at 2014-05-08 08:18:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.8.80.1 at 2014-05-08 08:18:09 -0400
+
+
+Started GET "/assets/ace-fonts.css?body=1" for 127.8.80.1 at 2014-05-08 08:18:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.8.80.1 at 2014-05-08 08:18:09 -0400
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:09 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:10 -0400
+
+
+Started GET "/assets/lodash/dist/lodash.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:10 -0400
+
+
+Started GET "/assets/libs/bootstrap.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:10 -0400
+
+
+Started GET "/assets/libs/joinable.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:10 -0400
+
+
+Started GET "/assets/font-awesome/css/font-awesome.css?body=1" for 127.8.80.1 at 2014-05-08 08:18:11 -0400
+
+
+Started GET "/assets/ace-skins.css?body=1" for 127.8.80.1 at 2014-05-08 08:18:11 -0400
+
+
+Started GET "/assets/ace.css?body=1" for 127.8.80.1 at 2014-05-08 08:18:11 -0400
+
+
+Started GET "/assets/restangular/dist/restangular.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:11 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:12 -0400
+
+
+Started GET "/assets/libs/main-gsap.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:12 -0400
+
+
+Started GET "/assets/libs/neon-custom.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:12 -0400
+
+
+Started GET "/assets/libs/neon-api.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:12 -0400
+
+
+Started GET "/assets/libs/neon-demo.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:12 -0400
+
+
+Started GET "/assets/angular_app/directives/accessLvl_dir.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:13 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:13 -0400
+
+
+Started GET "/assets/libs/resizeable.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:13 -0400
+
+
+Started GET "/assets/angular_app/directives/activeNav_dir.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:14 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:14 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:14 -0400
+
+
+Started GET "/assets/angular_app/directives/breadcrumb/breadcrumb_dir.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:15 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:15 -0400
+
+
+Started GET "/assets/angular_app/directives/header/header_dir.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:15 -0400
+
+
+Started GET "/assets/angular_app/directives/sidebar/sidebar_dir.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:17 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_ctrl.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:17 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:17 -0400
+
+
+Started GET "/assets/angular_app/pages/admin/admin_resolver.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:17 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:17 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:17 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_resolver.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:18 -0400
+
+
+Started GET "/assets/angular_app/pages/home.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:18 -0400
+
+
+Started GET "/assets/angular_app/services/auth_serv.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:18 -0400
+
+
+Started GET "/assets/angular_app/pages/login/login_ctrl.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:19 -0400
+
+
+Started GET "/assets/angular_app/pages/private/private_ctrl.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:20 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:20 -0400
+
+
+Started GET "/assets/angular_app/pages/register/register_ctrl.js?body=1" for 127.8.80.1 at 2014-05-08 08:18:20 -0400
+
+
+Started GET "/current_user" for 127.8.80.1 at 2014-05-08 08:18:21 -0400
+Processing by SessionController#show_current_user as */*
+Completed 401 Unauthorized in 118ms
+
+
+Started GET "/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.8.80.1 at 2014-05-08 08:18:23 -0400
