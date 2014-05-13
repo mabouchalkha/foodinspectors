@@ -12,7 +12,12 @@
 //
 //= require jquery/dist/jquery
 //= require angular/angular
+//= require angular-sanitize/angular-sanitize
+//= require angular-strap/dist/angular-strap
+//= require angular-strap/dist/angular-strap.tpl.js
 //= require angular-route/angular-route
+//= require ng-grid/build/ng-grid
+//= require ng-grid/plugins/ng-grid-flexible-height
 //= require lodash/dist/lodash
 //= require restangular/dist/restangular
 //= require_tree ./libs

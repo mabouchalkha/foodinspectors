@@ -1,0 +1,13 @@
+.page-header
+    h1 Angularstrap test page
+.row
+    .col-md-4
+        .form-group
+            label Typeahead with icon
+            input.form-control(bs-typeahead="" data-animation="am-flip-x" data-html="1" data-min-length="0" ng-model="selected.icon" ng-options="icon as icon.label for icon in icons" placeholder="Enter icon" type="text") 
+            div 
+                | Selected : &nbsp
+                span(ng-bind-html="selected.icon.label")
+                
+    .col-md-6
+        div(ng-grid="gridOptions")
