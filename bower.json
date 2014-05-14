@@ -18,8 +18,6 @@
     "angular-route": "~1.2.16",
     "font-awesome": "~4.0.3",
     "restangular": "~1.4.0",
-    "angular-strap": "~2.0.0",
-    "angular-sanitize": "~1.2.16",
-    "ng-grid": "~2.0.11"
+    "angular-sanitize": "~1.2.16"
   }
 }

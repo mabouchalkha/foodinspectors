@@ -20,10 +20,6 @@
                         i.fa.fa-home
                         span.menu-text Accueil
                 li(active-nav)
-                    a(href="#/strap" ) 
-                        i.fa.fa-calendar
-                        span.menu-text Angular Strap test
-                li(active-nav)
                     a(href="#/private" access-level="2") 
                         i.fa.fa-unlock
                         span.menu-text Private

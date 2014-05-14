@@ -1,4 +1,4 @@
-angular.module("starterApp", ['ngRoute', 'templates', 'restangular', 'mgcrea.ngStrap', 'ngSanitize', 'ngGrid']);
+angular.module("starterApp", ['ngRoute', 'templates', 'restangular', 'ngSanitize']);
 
 /*starterApp.config(['$locationProvider', function ($locationProvider) {
     $locationProvider.html5Mode(true);
@@ -11,7 +11,6 @@ angular.module("starterApp").config(['$routeProvider', '$httpProvider', function
         .when('/register', { templateUrl: 'angular_app/pages/register/register.html', controller: 'RegisterCtrl'})
         .when('/private', { templateUrl: 'angular_app/pages/private/private.html', controller: 'PrivateCtrl', resolve: privateResolver.resolve })
         .when('/admin', { templateUrl: 'angular_app/pages/admin/admin.html', controller: 'AdminCtrl', resolve: adminResolver.resolve})
-        .when('/strap', { templateUrl: 'angular_app/pages/strap/strap.html', controller: 'StrapCtrl' })
         .otherwise({ redirectTo: '/' });
         
     var logsOutUserOn401 = ['$q', '$location', function ($q, $location) {
@@ -117,7 +116,7 @@ angular.element(document).ready(function() {
         session.currentUser = null;
         
         
-        var anonRoutes = ['/login', '/register', '/strap', '/'];
+        var anonRoutes = ['/login', '/register', '/'];
         var userRoutes = ['/private'];
         var adminRoutes = ['/admin'];
         
