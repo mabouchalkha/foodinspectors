@@ -1,7 +1,11 @@
-.page-header
-    h1 Private view (admin)
-p This nested view is visible to admin users
-
-.well
-    div(ng-repeat="user in users")
-        span(ng-bind="user.email")
+.page.ng-scope
+  section.panel.panel-default
+    .panel-heading
+      strong
+        span.fa.fa-road
+        | &nbsp Admin view
+    .panel-body
+        p This nested view is visible to admin users
+        .well
+            div(ng-repeat="user in users")
+                span(ng-bind="user.email")

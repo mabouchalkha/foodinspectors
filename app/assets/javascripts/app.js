@@ -1,9 +1,4 @@
-angular.module("starterApp", ['ngRoute', 'templates', 'restangular', 'ngSanitize']);
-
-/*starterApp.config(['$locationProvider', function ($locationProvider) {
-    $locationProvider.html5Mode(true);
-}]);*/
-
+angular.module("starterApp", ['ngRoute', 'templates', 'restangular', 'ngSanitize', 'ui.bootstrap']);
 angular.module("starterApp").config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {
     $routeProvider
         .when('/', { templateUrl: 'angular_app/pages/home.html'})
@@ -11,7 +6,8 @@ angular.module("starterApp").config(['$routeProvider', '$httpProvider', function
         .when('/register', { templateUrl: 'angular_app/pages/register/register.html', controller: 'RegisterCtrl'})
         .when('/private', { templateUrl: 'angular_app/pages/private/private.html', controller: 'PrivateCtrl', resolve: privateResolver.resolve })
         .when('/admin', { templateUrl: 'angular_app/pages/admin/admin.html', controller: 'AdminCtrl', resolve: adminResolver.resolve})
-        .otherwise({ redirectTo: '/' });
+        .when('/404', { templateUrl: 'angular_app/pages/404.html'})
+        .otherwise({ redirectTo: '/404' });
         
     var logsOutUserOn401 = ['$q', '$location', function ($q, $location) {
     var success = function (response) {
@@ -38,39 +34,6 @@ angular.module("starterApp").config(['$routeProvider', '$httpProvider', function
   $httpProvider.responseInterceptors.push(logsOutUserOn401);
 }]);
 
-angular.module("starterApp").config(['$provide', function($provide) {
-    $provide.decorator("$exceptionHandler", function($delegate, $injector) {
-        return function(exception, cause) {
-            $delegate(exception, cause);
-            
-            var session = $injector.get('Session')
-            session.logError(exception, cause);
-            
-            Airbrake.captureException(exception);
-        };
-    });
-}]);
-
-angular.module("starterApp").run(function ($rootScope, $location, Session) {
-
-  /*var anonRoutes = ['/login', '/register', '/'];
-  var userRoutes = ['/private'];
-  var adminRoutes = ['/admin'];
-
-  $rootScope.$on('$routeChangeStart', function (event, next, current) {
-    if (anonRoutes.indexOf($location.url()) == -1 && !Session.isAuthenticated()) {
-      $location.path('/login');
-    }
-    else if(Session.isAuthenticated()) {
-        var mask = Session.currentUser.roles_mask;
-        
-        if (mask > 1 && adminRoutes.indexOf($location.url()) != -1) {
-            $location.path('/');
-        }
-    }
-  });*/
-});
-
 angular.element(document).ready(function() {
     var req = $.ajax({ url: '/current_user' });
     req.done(function (resp) {
@@ -86,8 +49,8 @@ angular.element(document).ready(function() {
           session.currentUser = null;
         }
         
-        var anonRoutes = ['/login', '/register', '/'];
-        var userRoutes = ['/private'];
+        var anonRoutes = ['/login', '/register', '/404', '/'];
+        var userRoutes = ['/private', '/lock'];
         var adminRoutes = ['/admin'];
         
         root.$on('$routeChangeStart', function (event, next, current) {
@@ -116,11 +79,15 @@ angular.element(document).ready(function() {
         session.currentUser = null;
         
         
-        var anonRoutes = ['/login', '/register', '/'];
-        var userRoutes = ['/private'];
+        var anonRoutes = ['/login', '/register', '/404', '/'];
+        var userRoutes = ['/private', '/lock'];
         var adminRoutes = ['/admin'];
         
         root.$on('$routeChangeStart', function (event, next, current) {
+            if (anonRoutes.indexOf($location.url()) == -1 && userRoutes.indexOf($location.url()) == -1 && adminRoutes.indexOf($location.url()) == -1) {
+                $location.path('/404');
+            }
+            
             if (anonRoutes.indexOf($location.url()) == -1 && !session.isAuthenticated()) {
                 $location.path('/login');
             }

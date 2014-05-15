@@ -1,7 +1,11 @@
-.page-header
-    h1 Private view
-p This nested view is visible to logged in users
-
-.well
-    div(ng-repeat="role in roles")
-        span(ng-bind="role")
+.page.ng-scope
+  section.panel.panel-default
+    .panel-heading
+      strong
+        span.fa.fa-road
+        | &nbsp Private view
+    .panel-body
+        p This nested view is visible to logged in users
+        .well
+            div(ng-repeat="role in roles")
+                span(ng-bind="role")

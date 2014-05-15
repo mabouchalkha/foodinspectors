@@ -47,9 +47,6 @@ angular.module("starterApp").factory('Session', function($location, $http, $q) {
         isAuthenticated: function(){
             return !!service.currentUser;
         },
-        logError: function (ex, cause) {
-            // to do send custom error to errbit
-        }
     };
     return service;
 });

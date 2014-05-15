@@ -1,0 +1,10 @@
+{
+    "my profile": "my profile",
+    "home": "Home",
+    "private": "Private",
+    "admin": "Admin",
+    "login": "Login",
+    "register": "Register",
+    "log out": "Log Out",
+    "lock": "Lock"
+}
