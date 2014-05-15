@@ -1,6 +1,0 @@
-#breadcrumbs.breadcrumbs.breadcrumbs-fixed.app-breadcrumb_directive
-    ul.breadcrumb
-        li
-            i.fa.fa-home.home-icon
-            a href="#"  Home
-        li.active Dashboard

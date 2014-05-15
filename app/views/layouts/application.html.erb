@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html >
     <head>
-      <title>Food Inspector</title>
+      <title>Food Inspection</title>
       <%= airbrake_javascript_notifier %>
+      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
       <%= stylesheet_link_tag    "application", media: "all" %>
       <%= javascript_include_tag "application" %>
       <%= csrf_meta_tags %>
     </head>
-    <body ng-cloak class="skin-1 navbar-fixed breadcrumbs-fixed">
-        <header></header>
-        <div class="main-container">
-            <div class="main-container-inner">
-                <sidebar></sidebar>
-                <div class="main-content">
-                    <breadcrumb></breadcrumb>
-                    <div class="page-content" ng-view>
-                        <!-- Here are the angular view -->
-                    </div>
-                </div>
+    <body id="app" data-custom-background data-off-canvas-nav>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div data-ng-controller="AppCtrl">
+            <div data-ng-hide="isSpecificPage()" data-ng-cloak class="no-print">
+                <section data-ng-include="'angular_app/pages/header.html'"
+                     id="header" class="top-header"></section>
+
+                <aside data-ng-include="'angular_app/pages/nav.html'"
+                     id="nav-container"></aside>
+            </div>
+
+            <div class="view-container">
+                <section data-ng-view id="content" class="animate-fade-up"></section>
             </div>
         </div>
-    
     </body>
 </html>
