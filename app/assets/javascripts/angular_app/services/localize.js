@@ -41,26 +41,6 @@ angular.module('starterApp').factory('localize', [
           return $rootScope.$broadcast('localizeResourcesUpdated');
         });
       },
-//      getLocalizedString: function(value) {
-//        var result, valueLowerCase;
-//        result = void 0;
-//        if (localize.dictionary && value) {
-//            valueLowerCase = value.toLowerCase();
-//            if($cookieStore.get(valueLowerCase)){
-//                result = $cookieStore.get(valueLowerCase);
-//            }else {
-//                if (localize.dictionary[valueLowerCase] === '') {
-//                    result = value;
-//                } else {
-//                    result = localize.dictionary[valueLowerCase];
-//                    $cookieStore.put(valueLowerCase, result);
-//                }
-//            }
-//        } else {
-//            result = value;
-//        }
-//        return result;
-//      }
       getLocalizedString: function(value) {
         var result, valueLowerCase;
         result = void 0;
