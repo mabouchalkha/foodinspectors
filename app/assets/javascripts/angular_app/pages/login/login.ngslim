@@ -43,7 +43,7 @@
                             i.fa.fa-check.fa-fw
                 .form-group
                 .form-group
-                    a.btn.btn-primary.btn-lg.btn-block data-ng-disabled="loginForm.$invalid" Login
+                    button.btn.btn-primary.btn-lg.btn-block data-ng-disabled="loginForm.$invalid" type="submit" Login
         section
             p.text-center
                 a href="#/"  Forgot your password?
