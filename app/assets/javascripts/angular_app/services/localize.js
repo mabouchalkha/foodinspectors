@@ -1,6 +1,6 @@
 'use strict';
 angular.module('starterApp').factory('localize', [
-  '$http', '$rootScope', '$window', function($http, $rootScope, $window) {
+  '$http', '$rootScope', '$window', '$cookieStore', function($http, $rootScope, $window, $cookieStore) {
     var localize;
     localize = {
       language: '',
@@ -11,8 +11,12 @@ angular.module('starterApp').factory('localize', [
         localize.resourceFileLoaded = true;
         return $rootScope.$broadcast('localizeResourcesUpdated');
       },
-      setLanguage: function(value) {
+      setLanguage: function(value, lang) {
         localize.language = value.toLowerCase().split("-")[0];
+        if($cookieStore.get('localizeLang')){
+           $cookieStore.remove('localizeLang');
+        }
+        $cookieStore.put('localizeLang', lang);
         return localize.initLocalizedResources();
       },
       setUrl: function(value) {
@@ -37,6 +41,26 @@ angular.module('starterApp').factory('localize', [
           return $rootScope.$broadcast('localizeResourcesUpdated');
         });
       },
+//      getLocalizedString: function(value) {
+//        var result, valueLowerCase;
+//        result = void 0;
+//        if (localize.dictionary && value) {
+//            valueLowerCase = value.toLowerCase();
+//            if($cookieStore.get(valueLowerCase)){
+//                result = $cookieStore.get(valueLowerCase);
+//            }else {
+//                if (localize.dictionary[valueLowerCase] === '') {
+//                    result = value;
+//                } else {
+//                    result = localize.dictionary[valueLowerCase];
+//                    $cookieStore.put(valueLowerCase, result);
+//                }
+//            }
+//        } else {
+//            result = value;
+//        }
+//        return result;
+//      }
       getLocalizedString: function(value) {
         var result, valueLowerCase;
         result = void 0;
@@ -83,39 +107,54 @@ angular.module('starterApp').factory('localize', [
     return i18nDirective;
   }
 ]).controller('LangCtrl', [
-  '$scope', 'localize', function($scope, localize) {
-    $scope.lang = 'English';
+  '$scope', 'localize', '$cookieStore', function($scope, localize, $cookieStore) {
+    if($cookieStore.get('localizeLang')){
+        $scope.lang = $cookieStore.get('localizeLang');
+        var langString;
+        switch ($scope.lang) {
+            case 'English':
+                langString = 'EN-US';
+                break;
+            case 'Français':
+                langString = 'FR-FR';
+                break;
+        }
+        localize.setLanguage(langString, $scope.lang);
+    }else{
+        $scope.lang = 'English';
+    }
+
     $scope.setLang = function(lang) {
       switch (lang) {
         case 'English':
-          localize.setLanguage('EN-US');
+          localize.setLanguage('EN-US', lang);
           break;
         case 'Español':
-          localize.setLanguage('ES-ES');
+          localize.setLanguage('ES-ES', lang);
           break;
         case '日本語':
-          localize.setLanguage('JA-JP');
+          localize.setLanguage('JA-JP', lang);
           break;
         case '中文':
-          localize.setLanguage('ZH-TW');
+          localize.setLanguage('ZH-TW', lang);
           break;
         case 'Deutsch':
-          localize.setLanguage('DE-DE');
+          localize.setLanguage('DE-DE', lang);
           break;
-        case 'français':
-          localize.setLanguage('FR-FR');
+        case 'Français':
+          localize.setLanguage('FR-FR', lang);
           break;
         case 'Italiano':
-          localize.setLanguage('IT-IT');
+          localize.setLanguage('IT-IT', lang);
           break;
         case 'Portugal':
-          localize.setLanguage('PT-BR');
+          localize.setLanguage('PT-BR', lang);
           break;
         case 'Русский язык':
-          localize.setLanguage('RU-RU');
+          localize.setLanguage('RU-RU', lang);
           break;
         case '한국어':
-          localize.setLanguage('KO-KR');
+          localize.setLanguage('KO-KR', lang);
       }
       return $scope.lang = lang;
     };
@@ -133,7 +172,7 @@ angular.module('starterApp').factory('localize', [
           return 'flags-china';
         case 'Deutsch':
           return 'flags-germany';
-        case 'français':
+        case 'Français':
           return 'flags-france';
         case 'Italiano':
           return 'flags-italy';

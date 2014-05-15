@@ -31,7 +31,7 @@ header.clearfix
             a data-ng-click="setLang('English')" href="javascript:;" 
               .flag.flags-american
               | English
-          li data-ng-show="lang !== 'français' " 
-            a data-ng-click="setLang('français')" href="javascript:;" 
+          li data-ng-show="lang !== 'Français' "
+            a data-ng-click="setLang('Français')" href="javascript:;"
               .flag.flags-france
-              | français
+              | Français

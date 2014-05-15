@@ -1,4 +1,4 @@
-angular.module("starterApp", ['ngRoute', 'templates', 'restangular', 'ngSanitize', 'ui.bootstrap']);
+angular.module("starterApp", ['ngRoute', 'templates', 'restangular', 'ngSanitize', 'ui.bootstrap','ngCookies']);
 angular.module("starterApp").config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {
     $routeProvider
         .when('/', { templateUrl: 'angular_app/pages/home.html'})
