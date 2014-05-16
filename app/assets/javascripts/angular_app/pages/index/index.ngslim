@@ -1,0 +1,35 @@
+.page.page-table
+    section.panel.panel-default.table-dynamic
+        .panel-heading
+            strong
+                span.fa.fa-road &nbsp
+                span data-i18n="Users"
+        .table-filters
+            .row 
+                .col-sm-3.col-xs-6
+                    form(ng-submit="search(searchValue)" name="searchForm" role="form" novalidate)
+                        .input-group.input-group-sm
+                            span.input-group-btn
+                                button.btn.btn-xs ng-click="clearSearchValue()" style=("line-height: 10px;") type="button" 
+                                    i.fa.fa-times
+                            input.form-control ng-model="searchValue" type="text"
+                            span.input-group-btn
+                                button.btn.btn-xs.btn-primary ng-click="search(searchValue)" style=("line-height: 10px;") type="button" 
+                                    i.fa.fa-search &nbsp
+                                    span data-i18n="Search"
+        table.table.table-bordered.table-striped.table-responsive.table-hover
+            thead
+                tr ng-model="config.columns"
+                    th ng-click="sort(col)" ng-repeat="col in config.columns"
+                        .th ng-bind="col.name" ng-class="{'sorting': predicate!=col.field, 'sorting_asc': predicate==col.field && reverse, 'sorting_desc': predicate==col.field && !reverse }" 
+            tbody ng-if="data.length > 0" 
+                tr ng-repeat="item in data | limitTo:config.pageLimit" 
+                    td ng-repeat="col in config.columns" 
+                        span ng-bind="item[col.field]" 
+            tbody ng-if="data.length < 1" 
+                tr
+                    td colspan="{{config.columns.length}}" 
+                        span data-i18n="No Data"
+        footer.table-footer
+            .text-right.pagination-container
+                pagination.pagination-sm items-per-page="config.pageLimit" next-text=">" ng-change="changePage(page)" ng-model="page" previous-text="<" total-items="count"

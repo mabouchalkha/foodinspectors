@@ -1,4 +1,4 @@
-.page.ng-scope
+.page
   section.panel.panel-default
     .panel-heading
       strong

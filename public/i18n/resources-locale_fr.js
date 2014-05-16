@@ -6,5 +6,8 @@
     "login": "Connexion",
     "register": "Inscription",
     "log out" : "Deconnexion",
-    "lock": "Vérouillé"
-}
+    "lock": "Vérouillé",
+    "user": "Utilisateur",
+    "users": "Utilisateurs",
+    "search": "Chercher"
+} 

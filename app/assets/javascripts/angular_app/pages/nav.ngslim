@@ -11,12 +11,12 @@
     li access-level="1"
         a href="#/admin" 
             i.fa.fa-lock
-            span data-i18n="Admin" 
+            span data-i18n="Admin"
+    li access-level="1"
+        a href="#/user" 
+            i.fa.fa-group
+            span data-i18n="User" 
     li access-level="0"
         a href="#/login" 
             i.fa.fa-sign-in
-            span data-i18n="Login" 
-    li access-level="0"
-        a href="#/register" 
-            i.fa.fa-pencil
-            span data-i18n="Register" 
+            span data-i18n="Login"

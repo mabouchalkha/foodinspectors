@@ -14,8 +14,8 @@
 //= require angular/angular
 //= require angular-sanitize/angular-sanitize
 //= require angular-route/angular-route
+//= require angular-resource/angular-resource
 //= require lodash/dist/lodash
-//= require restangular/dist/restangular
 //= require angular-bootstrap/ui-bootstrap-tpls
 //= require_tree ./libs
 //= require app

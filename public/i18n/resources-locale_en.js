@@ -6,5 +6,8 @@
     "login": "Login",
     "register": "Register",
     "log out": "Log Out",
-    "lock": "Lock"
+    "lock": "Lock",
+    "user": "User",
+    "users": "Users",
+    "search": "Search"
 }
