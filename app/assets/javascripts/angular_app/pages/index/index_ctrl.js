@@ -1,4 +1,4 @@
-angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'config', '$modal', function ($scope, viewModel, config, $modal) {
+angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'config', '$modal', '$location', function ($scope, viewModel, config, $modal, $location) {
     var _init = function () {
         $scope.data = viewModel.data;
         $scope.count = viewModel.meta.count;
@@ -10,6 +10,24 @@ angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'co
         $scope.searchValue = '';
     };
 
+    $scope.create = function () {
+        $location.path($location.path() + '/create');
+    };
+
+    $scope.goToEntity = function (item) {
+        if (item !== null) {
+            if (item[$scope.config.id] !== null) {
+                $location.path($location.path() + '/' + item[$scope.config.id]);
+            }
+            else {
+                throw 'Index listing cannot retrieve entity by id.'
+            }
+        }  
+        else {
+            throw 'Index listing need primary key in its confirugation'
+        }
+    };
+    
     $scope.changePage = function (page) {
       $scope.page = page;
       _updateData($scope.predicate, $scope.reverse, $scope.page);

@@ -7,6 +7,8 @@ angular.module("starterApp").config(['$routeProvider', '$httpProvider', '$inject
         
         /* USERS */
         .when('/user', { templateUrl: 'angular_app/pages/index/index.html', controller: 'IndexCtrl', resolve: $injector.get('userResolver').resolveIndex })
+        .when('/user/create', { templateUrl: 'angular_app/pages/user/edit.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
+        .when('/user/:id', { templateUrl: 'angular_app/pages/user/edit.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
         .when('/login', { templateUrl: 'angular_app/pages/login/login.html', controller: 'LoginCtrl'})
         
         /* GLOBAL */

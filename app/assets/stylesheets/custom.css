@@ -36,6 +36,10 @@
   display: none;
 }
 
+.table td {
+    cursor: pointer;
+}
+
 #loading {
     height:90px; 
     line-height: 4; 

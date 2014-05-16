@@ -11,7 +11,8 @@ angular.module('starterApp').constant('userResolver', {
                 columns: [{name: 'Email', field: 'email'}, {name: 'First Name', field: 'first_name'}, {name: 'Last Name', field: 'last_name'}],
                 predicate: 'email',
                 resource: userResource,
-                pageLimit: 2
+                pageLimit: 2,
+                createLink: true
             }
         }]
     }

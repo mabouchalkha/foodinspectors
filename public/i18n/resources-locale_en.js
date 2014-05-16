@@ -9,5 +9,7 @@
     "lock": "Lock",
     "user": "User",
     "users": "Users",
-    "search": "Search"
+    "search": "Search",
+    "create": "Create",
+    "no data": "No Data"
 }

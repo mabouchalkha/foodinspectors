@@ -9,5 +9,7 @@
     "lock": "Vérouillé",
     "user": "Utilisateur",
     "users": "Utilisateurs",
-    "search": "Chercher"
+    "search": "Chercher",
+    "create": "Créer",
+    "no data": "Pas de données"
 } 
