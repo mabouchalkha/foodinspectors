@@ -1,4 +1,4 @@
-angular.module("starterApp", ['ngRoute', 'templates', 'ngResource', 'ngSanitize', 'ui.bootstrap']);
+angular.module("starterApp", ['ngRoute', 'templates', 'ngResource', 'ngSanitize', 'ui.bootstrap', 'ngCookies']);
 
 angular.module("starterApp").config(['$routeProvider', '$httpProvider', '$injector', function($routeProvider, $httpProvider, $injector) {
     $routeProvider
