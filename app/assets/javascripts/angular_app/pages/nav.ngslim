@@ -2,20 +2,29 @@
   ul#nav data-collapse-nav="" data-highlight-active="" data-slim-scroll=""
     li.home_link
         a href="#/" 
-            i.fa.fa-home
-            span data-i18n="Home" 
+            i.fa.fa-tachometer
+            span data-i18n="Dashboard"
+    li access-level="1"
+        a href="#/company"
+            i.fa.fa-group
+            span data-i18n="Relationships"
+    li access-level="1"
+        a href="#/settings"
+            i.fa.fa-cog
+            span data-i18n="Settings"
+            ul
+              li
+                a href="#/user"
+                  i.fa.fa-group
+                  span data-i18n="User"
     li access-level="2"
-        a href="#/private" 
+        a href="#/private"
             i.fa.fa-unlock
             span data-i18n="Private"
     li access-level="1"
-        a href="#/admin" 
+        a href="#/admin"
             i.fa.fa-lock
             span data-i18n="Admin"
-    li access-level="1"
-        a href="#/user" 
-            i.fa.fa-group
-            span data-i18n="User" 
     li access-level="0"
         a href="#/login" 
             i.fa.fa-sign-in

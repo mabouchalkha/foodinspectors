@@ -10,7 +10,12 @@ angular.module("starterApp").config(['$routeProvider', '$httpProvider', '$inject
         .when('/user/create', { templateUrl: 'angular_app/pages/user/edit.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
         .when('/user/:id', { templateUrl: 'angular_app/pages/user/edit.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
         .when('/login', { templateUrl: 'angular_app/pages/login/login.html', controller: 'LoginCtrl'})
-        
+
+        /* COMPANY*/
+        .when('/company', { templateUrl: 'angular_app/pages/index/index.html', controller: 'IndexCtrl', resolve: $injector.get('companyResolver').resolveIndex })
+        .when('/company/create', { templateUrl: 'angular_app/pages/company/edit.html', controller: 'CompanyCtrl', resolve: $injector.get('companyResolver').resolve })
+        .when('/company/:id', { templateUrl: 'angular_app/pages/company/edit.html', controller: 'CompanyCtrl', resolve: $injector.get('companyResolver').resolve })
+
         /* GLOBAL */
         .when('/private', { templateUrl: 'angular_app/pages/private/private.html', controller: 'PrivateCtrl', resolve: privateResolver.resolve })
         .when('/admin', { templateUrl: 'angular_app/pages/admin/admin.html', controller: 'AdminCtrl', resolve: adminResolver.resolve})

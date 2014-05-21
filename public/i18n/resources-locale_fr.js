@@ -1,6 +1,9 @@
 {
     "my profile": "mon profil",
     "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "relationships": "Clients",
+    "settings": "Préférences",
     "private": "Privé",
     "admin": "Admin",
     "login": "Connexion",

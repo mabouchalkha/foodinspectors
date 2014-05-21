@@ -11,6 +11,9 @@ PlaygroundOnrails::Application.routes.draw do
     end
     
     post '/error', to: 'error#create'
-    
+
+    # needs to be the very last route
+    # match '*path' => "homes#index", :via => [:get, :post]
+
     root to: "homes#index"
 end
