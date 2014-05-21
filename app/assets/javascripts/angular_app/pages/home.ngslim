@@ -3,6 +3,7 @@
     .panel-heading
       strong
         span.fa.fa-road
-        | &nbsp Acceuil
+        | &nbsp 
+        span data-i18n="Home"
     .panel-body
       p view is visible to every in users.

@@ -11,5 +11,14 @@
     "users": "Users",
     "search": "Search",
     "create": "Create",
-    "no data": "No Data"
+    "no data": "No Data",
+    "save": "Save",
+    "apply": "Apply",
+    "cancel": "Cancel",
+    "first name": "First name",
+    "last name": "Last name",
+    "user name": "User name",
+    "email": "Email",
+    "enabled": "Enabled",
+    "title": "Title"
 }

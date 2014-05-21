@@ -22,4 +22,56 @@ class UserController < ApplicationController
         render :status => 200,
                :json => { :success => true, :info => "", :data => users, :meta => { :count => count } }
     end
+    
+    def read
+        id = params[:id]
+        
+        raise "Cannot retrieve user without an ID. Please provide one." unless !id.blank?
+        
+        if id.to_i == -1
+            render :status => 200,
+                   :json => { :success => true, :info => "", :data => User.new, :meta => { }}
+        else
+            user = User.where(:id => id).first
+            
+            raise "Cannot retrieve user with ID " + id unless !user.nil?
+            
+            render :status => 200,
+                   :json => { :success => true, :info => "", :data => user, :meta => { }}
+       end
+    end
+    
+    def update
+        id = params[:id]
+        
+        if id.blank?
+            user = User.new(user_params_create)
+            
+            if user.save
+                render :status => 200,
+                       :json => { :success => true, :info => "Account created", :data => { } }
+            else
+                warden.custom_failure!
+                render :status => 422,
+                       :json => { :success => true, :info => user.errors}
+            end
+        else
+            User.update(params[:id], user_params_update)
+            render :status => 200,
+                   :json => { :success => true, :info => { }, :data => { }, :meta => { }}
+        end
+    end
+    
+    def delete
+        
+    end
+    
+    private
+        def user_params_update
+            params.require(:user).permit(:user_name, :email, :first_name, :last_name, :title, :is_enabled, :roles_mask)
+        end
+        
+        def user_params_create
+            params.require(:user).permit(:user_name, :email, :first_name, :last_name, :title, :is_enabled, :roles_mask, :password)
+        end
 end

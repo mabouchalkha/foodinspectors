@@ -7,13 +7,11 @@ angular.module("starterApp").config(['$routeProvider', '$httpProvider', '$inject
         
         /* USERS */
         .when('/user', { templateUrl: 'angular_app/pages/index/index.html', controller: 'IndexCtrl', resolve: $injector.get('userResolver').resolveIndex })
-        .when('/user/create', { templateUrl: 'angular_app/pages/user/edit.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
-        .when('/user/:id', { templateUrl: 'angular_app/pages/user/edit.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
+        .when('/user/create', { templateUrl: 'angular_app/pages/user/user.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
+        .when('/user/:id', { templateUrl: 'angular_app/pages/user/user.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
         .when('/login', { templateUrl: 'angular_app/pages/login/login.html', controller: 'LoginCtrl'})
         
         /* GLOBAL */
-        .when('/private', { templateUrl: 'angular_app/pages/private/private.html', controller: 'PrivateCtrl', resolve: privateResolver.resolve })
-        .when('/admin', { templateUrl: 'angular_app/pages/admin/admin.html', controller: 'AdminCtrl', resolve: adminResolver.resolve})
         .when('/404', { templateUrl: 'angular_app/pages/404.html'})
         
         .otherwise({ redirectTo: '/404' });

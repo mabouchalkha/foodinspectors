@@ -60,7 +60,8 @@ angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'co
     var _updateData = function (predicate, reverse, page) {
         var popup = $modal.open({
             template: '<div id="loading" class="text-center"><i class="fa fa-spinner fa-spin fa-2x"></i> &nbsp Loading data</div>',
-            backdrop: 'static'
+            backdrop: 'static',
+            windowClass: "modal fade in"
         });
         $scope.resource.getList({ predicate: predicate, reverse: reverse, page: page, searchValue: $scope.searchValue }).$promise.then(function (resp) {
            $scope.data = resp.data;

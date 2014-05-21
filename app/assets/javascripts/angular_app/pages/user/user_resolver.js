@@ -15,5 +15,17 @@ angular.module('starterApp').constant('userResolver', {
                 createLink: true
             }
         }]
+    },
+    resolve: {
+        viewModel: ['userResource', '$route', function (userResource, $route) {
+            var id = $route.current.params.id;
+            
+            if (id == null) {
+                return userResource.getOne({id: -1}).$promise.then();
+            }
+            else {
+                return userResource.getOne({id: id}).$promise.then();   
+            }
+        }]
     }
 });
