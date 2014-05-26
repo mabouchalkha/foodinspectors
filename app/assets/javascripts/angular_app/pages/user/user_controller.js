@@ -43,6 +43,15 @@ angular.module('starterApp').controller('UserCtrl', ['$scope', 'viewModel', 'use
         }
     };
     
+    $scope.delete = function () {
+        var toast = notif.wait('Loading', 'Please wait while deleting user');
+        userResource.delete({id : $scope.user.id}).$promise.then(function (resp) {
+             notif.clear(toast);
+             notif.log('User deleted', 'The user has been successfully deleted');
+             $location.path('/user');
+        });
+    };
+    
     var _assignIsAdmin = function (user) {
         if (user != null) {
             if (user.roles_mask == 1) {

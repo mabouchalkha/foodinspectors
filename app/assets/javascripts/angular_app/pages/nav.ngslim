@@ -12,19 +12,11 @@
         a href="#/settings"
             i.fa.fa-cog
             span data-i18n="Settings"
-            ul
-              li
+        ul
+            li
                 a href="#/user"
-                  i.fa.fa-group
-                  span data-i18n="User"
-    li access-level="2"
-        a href="#/private"
-            i.fa.fa-unlock
-            span data-i18n="Private"
-    li access-level="1"
-        a href="#/admin"
-            i.fa.fa-lock
-            span data-i18n="Admin"
+                    i.fa.fa-group &nbsp
+                    span data-i18n="User"
     li access-level="0"
         a href="#/login" 
             i.fa.fa-sign-in

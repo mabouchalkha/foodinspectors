@@ -13,14 +13,15 @@ angular.module("starterApp").config(['$routeProvider', '$httpProvider', '$inject
         .when('/login', { templateUrl: 'angular_app/pages/login/login.html', controller: 'LoginCtrl'})
 
         /* COMPANY*/
-        .when('/company', { templateUrl: 'angular_app/pages/index/index.html', controller: 'IndexCtrl', resolve: $injector.get('companyResolver').resolveIndex })
-        .when('/company/create', { templateUrl: 'angular_app/pages/company/edit.html', controller: 'CompanyCtrl', resolve: $injector.get('companyResolver').resolve })
-        .when('/company/:id', { templateUrl: 'angular_app/pages/company/edit.html', controller: 'CompanyCtrl', resolve: $injector.get('companyResolver').resolve })
+        //.when('/company', { templateUrl: 'angular_app/pages/index/index.html', controller: 'IndexCtrl', resolve: $injector.get('companyResolver').resolveIndex })
+        //.when('/company/create', { templateUrl: 'angular_app/pages/company/edit.html', controller: 'CompanyCtrl', resolve: $injector.get('companyResolver').resolve })
+        //.when('/company/:id', { templateUrl: 'angular_app/pages/company/edit.html', controller: 'CompanyCtrl', resolve: $injector.get('companyResolver').resolve })
 
         /* GLOBAL */
         .when('/404', { templateUrl: 'angular_app/pages/404.html'})
         
         .otherwise({ redirectTo: '/404' });
+        
     var toast;   
     var responseInterceptor = ['$q', '$location', '$injector', '$rootScope', function ($q, $location, $injector, $rootScope) {
         var success = function (response) {
@@ -95,8 +96,8 @@ angular.element(document).ready(function() {
         }
         
         var anonRoutes = ['/login', '/register', '/404', '/'];
-        var userRoutes = ['/private', '/lock'];
-        var adminRoutes = ['/admin', '/user'];
+        var userRoutes = ['/lock'];
+        var adminRoutes = ['/user'];
         var toast;
         
         root.$on('$routeChangeStart', function (event, next, current) {

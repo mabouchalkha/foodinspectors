@@ -24,5 +24,8 @@
     "email": "Couriel",
     "enabled": "Actif",
     "title": "Titre",
-    "password": "Mot de passe"
+    "password": "Mot de passe",
+    "delete": "Supprimer",
+    "deleteconfirmtitle": "Confirmation de supprimation",
+    "deleteconfirmbody": "Voulez-vous vraiment supprimer cet entité ?"
 } 

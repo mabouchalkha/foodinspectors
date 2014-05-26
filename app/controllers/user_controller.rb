@@ -12,10 +12,10 @@ class UserController < ApplicationController
         
         if !search.blank?
             search = '%%' + search + '%%'
-            users = User.all(:order => order, :limit => 2, :offset => offset, :conditions => ['email like ? or first_name like ? or last_name like ?', search, search, search])
+            users = User.all(:order => order, :limit => 20, :offset => offset, :conditions => ['email like ? or first_name like ? or last_name like ?', search, search, search])
             count = users.count
         else
-            users = User.all(:order => order, :limit => 2, :offset => offset)
+            users = User.all(:order => order, :limit => 20, :offset => offset)
             count = User.count
         end
         
@@ -66,8 +66,13 @@ class UserController < ApplicationController
     def delete
         id = params[:id]
         
-        if !current_user.nil? && current_user.id != id
-            User.remove(:id => id)
+        if !current_user.nil? && current_user.id.to_s != id.to_s
+            if User.destroy(id)
+                render :status => 200,
+                       :json => { :success => true, :info => "Account deleted", :data => { }, :meta => { }}
+            else
+                raise "Cannot remove the account"
+            end
         else
             raise "Cannot remove your own account while connected"
         end

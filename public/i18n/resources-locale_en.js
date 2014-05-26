@@ -24,5 +24,8 @@
     "email": "Email",
     "enabled": "Enabled",
     "title": "Title",
-    "password": "Password"
+    "password": "Password",
+    "delete": "Delete",
+    "deleteconfirmtitle": "Delete Confirmation",
+    "deleteconfirmbody": "Are you sure you want to delete this entity ?"
 }

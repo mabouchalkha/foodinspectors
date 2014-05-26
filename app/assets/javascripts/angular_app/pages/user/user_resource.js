@@ -13,6 +13,9 @@ angular.module('starterApp').factory('userResource', ['$resource', function ($re
         },
         save: {
             method: 'PUT', url: '/user'
+        },
+        delete: {
+            method: 'DELETE', url: '/user/:id'
         }
     });
 }]);
