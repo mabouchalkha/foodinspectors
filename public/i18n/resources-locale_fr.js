@@ -20,5 +20,6 @@
     "user name": "Nom d'utilisateur",
     "email": "Couriel",
     "enabled": "Actif",
-    "title": "Titre"
+    "title": "Titre",
+    "password": "Mot de passe"
 } 

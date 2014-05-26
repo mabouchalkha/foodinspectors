@@ -1,6 +1,6 @@
 //'use strict';
 
-angular.module('starterApp').controller('UserCtrl', ['$scope', 'viewModel', 'userResource', '$location', '$route', function ($scope, viewModel, userResource, $location, $route) {
+angular.module('starterApp').controller('UserCtrl', ['$scope', 'viewModel', 'userResource', '$location', '$route', 'notif', function ($scope, viewModel, userResource, $location, $route, notif) {
     var _init = function () {
         $scope.user = viewModel.data;
         $scope.meta = viewModel.meta;
@@ -16,19 +16,28 @@ angular.module('starterApp').controller('UserCtrl', ['$scope', 'viewModel', 'use
     
     $scope.save = function () {
         if ($scope.user != null) {
+            var toast = notif.wait('Loading', 'Please wait while saving user');
             userResource.save({id: $scope.user.id, user: $scope.user}).$promise.then(function (resp) {
-                $location.path('/user/');
+                notif.clear(toast);
+                
+                if ($scope.meta.is_new == true) {
+                    notif.log('User created', 'The user will receive his password by email');
+                }
+                
+                $location.path('/user');
             });
         }
     };
     
     $scope.cancel = function () {
-        $location.path('/user/');
+        $location.path('/user');
     };
     
     $scope.apply = function () {
         if ($scope.user != null) {
+            var toast = notif.wait('Loading', 'Please wait while saving user');
             userResource.save({id: $scope.user.id, user: $scope.user}).$promise.then(function (resp) {
+                notif.clear(toast);
                 $route.reload();
             });
         }

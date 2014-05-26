@@ -8,7 +8,9 @@ PlaygroundOnrails::Application.routes.draw do
         post 'register', to: 'session#new', :as => 'register'
     end
     
+    # USER ROUTES -----------------------------------------------------------------
     get '/user', to: 'user#index'
+    get '/user/new', to: 'user#get_new'
     get '/user/:id', to: 'user#read'
     put '/user/', to: 'user#update'
     delete '/user/:id', to: 'user#delete'

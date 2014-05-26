@@ -20,5 +20,6 @@
     "user name": "User name",
     "email": "Email",
     "enabled": "Enabled",
-    "title": "Title"
+    "title": "Title",
+    "password": "Password"
 }

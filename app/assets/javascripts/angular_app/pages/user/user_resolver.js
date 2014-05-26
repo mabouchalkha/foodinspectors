@@ -21,7 +21,7 @@ angular.module('starterApp').constant('userResolver', {
             var id = $route.current.params.id;
             
             if (id == null) {
-                return userResource.getOne({id: -1}).$promise.then();
+                return userResource.getNew().$promise.then();
             }
             else {
                 return userResource.getOne({id: id}).$promise.then();   

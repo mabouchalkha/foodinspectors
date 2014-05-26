@@ -8,6 +8,9 @@ angular.module('starterApp').factory('userResource', ['$resource', function ($re
         getOne: {
             method: 'GET', url: '/user/:id'
         },
+        getNew: {
+            method: 'GET', url: '/user/new'
+        },
         save: {
             method: 'PUT', url: '/user'
         }

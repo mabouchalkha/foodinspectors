@@ -1,4 +1,4 @@
-angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'config', '$modal', '$location', function ($scope, viewModel, config, $modal, $location) {
+angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'config', '$modal', '$location', 'notif', function ($scope, viewModel, config, $modal, $location, notif) {
     var _init = function () {
         $scope.data = viewModel.data;
         $scope.count = viewModel.meta.count;
@@ -11,7 +11,7 @@ angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'co
     };
 
     $scope.create = function () {
-        $location.path($location.path() + '/create');
+        $location.path($location.path() + '/new');
     };
 
     $scope.goToEntity = function (item) {
@@ -58,16 +58,17 @@ angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'co
     };
     
     var _updateData = function (predicate, reverse, page) {
-        var popup = $modal.open({
+        /*var popup = $modal.open({
             template: '<div id="loading" class="text-center"><i class="fa fa-spinner fa-spin fa-2x"></i> &nbsp Loading data</div>',
             backdrop: 'static',
             windowClass: "modal fade in"
-        });
+        });*/
+        var toast = notif.wait('Loading', 'Please wait while loading data');
         $scope.resource.getList({ predicate: predicate, reverse: reverse, page: page, searchValue: $scope.searchValue }).$promise.then(function (resp) {
            $scope.data = resp.data;
            $scope.count = resp.meta.count;
-           
-           popup.dismiss();
+           notif.clear(toast);
+           //popup.dismiss();
         });
     };
     
