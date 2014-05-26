@@ -5,5 +5,14 @@ angular.module('starterApp').factory('userResource', ['$resource', function ($re
         getList: {
             method: 'GET', url: '/user'
         },
+        getOne: {
+            method: 'GET', url: '/user/:id'
+        },
+        getNew: {
+            method: 'GET', url: '/user/new'
+        },
+        save: {
+            method: 'PUT', url: '/user'
+        }
     });
 }]);

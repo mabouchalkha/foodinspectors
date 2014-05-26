@@ -18,6 +18,7 @@
 //= require lodash/dist/lodash
 //= require angular-bootstrap/ui-bootstrap-tpls
 //= require angular-cookies/angular-cookies
+//= require angular-toastr/dist/angular-toastr
 //= require_tree ./libs
 //= require app
 //= require_tree ./angular_app

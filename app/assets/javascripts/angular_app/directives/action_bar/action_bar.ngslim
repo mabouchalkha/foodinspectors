@@ -1,0 +1,9 @@
+.action-bar
+    .pull-right
+        button.btn.btn-link type="submit" ng-if="allowCancel!=false" ng-click="cancel()"
+            span data-i18n="Cancel" 
+        button.btn.btn-primary type="submit" ng-if="allowApply!=false" ng-click="apply()"
+            span data-i18n="Apply"
+        button.btn.btn-primary type="submit" ng-if="allowSave!=false" ng-click="save()"
+            i.fa.fa-save &nbsp
+            span data-i18n="Save"
