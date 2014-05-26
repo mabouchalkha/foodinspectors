@@ -6,6 +6,7 @@ PlaygroundOnrails::Application.routes.draw do
         delete 'logout' => 'session#destroy', :as => 'logout'
         get 'current_user' => 'session#show_current_user', :as => 'show_current_user'
         post 'register', to: 'session#new', :as => 'register'
+        post '/user/resetPassword', to: 'session#reset_password'
     end
     
     # USER ROUTES -----------------------------------------------------------------

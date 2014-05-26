@@ -27,5 +27,8 @@
     "password": "Mot de passe",
     "delete": "Supprimer",
     "deleteconfirmtitle": "Confirmation de supprimation",
-    "deleteconfirmbody": "Voulez-vous vraiment supprimer cet entité ?"
+    "deleteconfirmbody": "Voulez-vous vraiment supprimer cet entité ?",
+    "resetpassword": "Mot de passe oublié ?",
+    "change password": "Réinitialiser mot de passe",
+    "resetpasswordconfirm": "Voulez-vous vraiment réinitialiser votre mot de passe ?"
 } 

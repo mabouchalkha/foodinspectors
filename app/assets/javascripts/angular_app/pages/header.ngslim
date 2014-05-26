@@ -20,6 +20,10 @@ header.clearfix
               span ng-bind="user.name"
         ul.dropdown-menu.dropdown-dark.with-arrow
           li
+            a href="#" ng-click="changePassword()"
+              i.fa.fa-key
+              span data-i18n="Change password" 
+          li
             a href="#" ng-click="logout()"
               i.fa.fa-sign-out
               span data-i18n="Log Out" 

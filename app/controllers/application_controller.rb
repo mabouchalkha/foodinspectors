@@ -27,14 +27,12 @@ class ApplicationController < ActionController::Base
         if e.class == CanCan::AccessDenied
             err_info = { :success => false,  :info => "#{e.class.name}", :data => "#{e.message}", :meta => nil}
             err_info[:trace] = e.backtrace[0, 10]
-            render :status => 403,
-                   :json => err_info.to_json 
+            render :status => 403, :json => err_info.to_json 
         else 
             guid = Airbrake.notify(e)
             err_info = { :success => false,  :info => "#{e.class.name}", :data => "#{e.message}", :meta => guid}
             err_info[:trace] = e.backtrace[0, 10]
-            render :status => 500,
-                   :json => err_info.to_json 
+            render :status => 500, :json => err_info.to_json 
         end
     end
 end

@@ -7,9 +7,9 @@ angular.module("starterApp").controller('LoginCtrl', ['$scope', '$location', 'Se
         Session.login($scope.user);
     };
 
-    $scope.loginOauth = function(provider) {
-        $window.location.href = '/auth/' + provider;
-    };
+    $scope.resetPassword = function () {
+        Session.resetPassword($scope.user.email);
+    }
     
     _init();
 }]);

@@ -27,5 +27,8 @@
     "password": "Password",
     "delete": "Delete",
     "deleteconfirmtitle": "Delete Confirmation",
-    "deleteconfirmbody": "Are you sure you want to delete this entity ?"
+    "deleteconfirmbody": "Are you sure you want to delete this entity ?",
+    "resetpassword": "Forgot your password ?",
+    "change password": "Reset password",
+    "resetpasswordconfirm": "Are you sure you want to reset your password ?"
 }

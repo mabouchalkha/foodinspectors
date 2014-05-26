@@ -1,6 +1,7 @@
-angular.module("starterApp").controller('AppCtrl', ['$scope', '$location', 'Session', function($scope, $location, Session) {
+angular.module("starterApp").controller('AppCtrl', ['$scope', '$location', 'Session', '$modal', function($scope, $location, Session, $modal) {
     $scope.user = {};
     $scope.service = Session;
+    $scope.filter = {};
     
     $scope.$watch('service.currentUser', function(user, oldUser) {
         if(!_.isEmpty(user))
@@ -25,6 +26,15 @@ angular.module("starterApp").controller('AppCtrl', ['$scope', '$location', 'Sess
     
     $scope.logout = function () {
         Session.logout();
+    }
+    
+    $scope.changePassword = function () {
+        $scope.filter.newPassword = '';
+        $modal.open({
+            templateUrl: 'angular_app/pages/change_password.html',
+        }).result.then(function () {
+            Session.resetPassword(Session.currentUser.email);
+        });
     }
     
     return $scope.main = {

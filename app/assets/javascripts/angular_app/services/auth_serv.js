@@ -1,4 +1,4 @@
-angular.module("starterApp").factory('Session', function($location, $http, $q) {
+angular.module("starterApp").factory('Session',['$location', '$http', '$q', 'notif', function($location, $http, $q, notif) {
     function redirect(url) {
         url = url || '/';
         $location.path(url);
@@ -33,6 +33,15 @@ angular.module("starterApp").factory('Session', function($location, $http, $q) {
                 redirect(redirectTo);
             });
         },
+        resetPassword: function (email) {
+            var toast = notif.wait('Reseting password', 'Please wait while reseting your password');
+            $http.post('user/resetPassword', {email: email}).then(function (resp) {
+                 notif.clear(toast);
+                 notif.log('Password reseted', 'Your new password has been sent through email.');
+            }, function (resp) {
+                notif.clear(toast);
+            });
+        },
         requestCurrentUser: function() {
             if (service.isAuthenticated()) {
                 return $q.when(service.currentUser);
@@ -49,4 +58,4 @@ angular.module("starterApp").factory('Session', function($location, $http, $q) {
         },
     };
     return service;
-});
+}]);

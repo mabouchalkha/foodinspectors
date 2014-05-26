@@ -19,21 +19,18 @@ class UserController < ApplicationController
             count = User.count
         end
         
-        render :status => 200,
-               :json => { :success => true, :info => "", :data => users, :meta => { :count => count } }
+        render :status => 200, :json => { :success => true, :info => "", :data => users, :meta => { :count => count } }
     end
     
     def read
         id = params[:id]
         
         user = User.where(:id => id).first || raise(ActiveRecord::RecordNotFound)
-        render :status => 200,
-               :json => { :success => true, :info => "", :data => user, :meta => { :is_new => false }}
+        render :status => 200, :json => { :success => true, :info => "", :data => user, :meta => { :is_new => false }}
     end
     
     def get_new
-        render :status => 200,
-               :json => { :success => true, :info => "", :data => User.new, :meta => { :is_new => true }}
+        render :status => 200, :json => { :success => true, :info => "", :data => User.new, :meta => { :is_new => true }}
     end
     
     def update
@@ -43,23 +40,20 @@ class UserController < ApplicationController
             raise "Email already registered" unless User.exists?(:email => params[:user][:email]).nil?
 
             user = User.new(user_params_create)
-            user.password = SecureRandom.hex(8)
+            user.password = Devise.friendly_token.first(8)
             
-            if user.save
+            if user.save!
                 GenericMailer.welcome_email(user).deliver
                 
-                render :status => 200,
-                       :json => { :success => true, :info => "Account created", :data => { } }
+                render :status => 200, :json => { :success => true, :info => "Account created", :data => { } }
             else
                 #warden.custom_failure!
-                render :status => 500,
-                       :json => { :success => false,  :info => "internal error", :data => user.errors.full_message}
+                render :status => 500, :json => { :success => false,  :info => "internal error", :data => user.errors.full_message}
             end
         else
 
-            User.update(params[:id], user_params_update)
-            render :status => 200,
-                   :json => { :success => true, :info => "Account updated", :data => { }, :meta => { }}
+            User.update!(params[:id], user_params_update)
+            render :status => 200, :json => { :success => true, :info => "Account updated", :data => { }, :meta => { }}
         end
     end
     
@@ -67,9 +61,8 @@ class UserController < ApplicationController
         id = params[:id]
         
         if !current_user.nil? && current_user.id.to_s != id.to_s
-            if User.destroy(id)
-                render :status => 200,
-                       :json => { :success => true, :info => "Account deleted", :data => { }, :meta => { }}
+            if User.destroy!(id)
+                render :status => 200, :json => { :success => true, :info => "Account deleted", :data => { }, :meta => { }}
             else
                 raise "Cannot remove the account"
             end
