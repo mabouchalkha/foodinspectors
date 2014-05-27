@@ -51,8 +51,8 @@ class UserController < ApplicationController
                 render :status => 500, :json => { :success => false,  :info => "internal error", :data => user.errors.full_message}
             end
         else
-
-            User.update!(params[:id], user_params_update)
+            user = User.find(params[:id])
+            user.update!(user_params_update)
             render :status => 200, :json => { :success => true, :info => "Account updated", :data => { }, :meta => { }}
         end
     end
