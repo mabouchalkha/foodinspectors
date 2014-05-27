@@ -3,7 +3,7 @@
         .panel-heading
             strong
                 span.fa.fa-road &nbsp
-                span data-i18n="Users"
+                span data-i18n="{{config.name}}"
         .table-filters
             .row 
                 .col-sm-3.col-xs-6

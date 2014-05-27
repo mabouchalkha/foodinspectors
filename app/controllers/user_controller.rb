@@ -51,7 +51,7 @@ class UserController < ApplicationController
                 render :status => 500, :json => { :success => false,  :info => "internal error", :data => user.errors.full_message}
             end
         else
-            user = User.find(params[:id])
+            user = User.find(id)
             user.update!(user_params_update)
             render :status => 200, :json => { :success => true, :info => "Account updated", :data => { }, :meta => { }}
         end
@@ -61,7 +61,8 @@ class UserController < ApplicationController
         id = params[:id]
         
         if !current_user.nil? && current_user.id.to_s != id.to_s
-            if User.destroy!(id)
+            user = User.find(id)
+            if user.destroy!
                 render :status => 200, :json => { :success => true, :info => "Account deleted", :data => { }, :meta => { }}
             else
                 raise "Cannot remove the account"

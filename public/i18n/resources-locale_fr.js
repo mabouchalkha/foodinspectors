@@ -30,5 +30,8 @@
     "deleteconfirmbody": "Voulez-vous vraiment supprimer cet entité ?",
     "resetpassword": "Mot de passe oublié ?",
     "change password": "Réinitialiser mot de passe",
-    "resetpasswordconfirm": "Voulez-vous vraiment réinitialiser votre mot de passe ?"
+    "resetpasswordconfirm": "Voulez-vous vraiment réinitialiser votre mot de passe ?",
+    "payement term": "Terme de paiement",
+    "dueindays": "Due (jour)",
+    "name": "Nom"
 } 

@@ -1,4 +1,6 @@
 PlaygroundOnrails::Application.routes.draw do
+  resources :payement_terms
+
     devise_for :users
 
     devise_scope :user do
@@ -15,6 +17,13 @@ PlaygroundOnrails::Application.routes.draw do
     get '/user/:id', to: 'user#read'
     put '/user/', to: 'user#update'
     delete '/user/:id', to: 'user#delete'
+    
+     # PAYEMENT_TERM ROUTES -------------------------------------------------------
+    get '/payementTerm', to: 'payement_term#index'
+    get '/payementTerm/new', to: 'payement_term#get_new'
+    get '/payementTerm/:id', to: 'payement_term#read'
+    put '/payementTerm/', to: 'payement_term#update'
+    delete '/payementTerm/:id', to: 'payement_term#delete'
     
     post '/error', to: 'error#create'
 
