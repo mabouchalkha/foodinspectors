@@ -41,4 +41,4 @@
                                 input type="checkbox" name="is_enabled" id="is_enabled" data-ng-model="user.is_enabled"
                                     span data-i18n="Enabled"
                 
-                action-bar allow-delete="{{meta.is_new==false}}"
+                action-bar allow-delete="{{meta.is_new==false}}" allow-apply="{{meta.is_new==false}}"

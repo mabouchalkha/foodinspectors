@@ -9,6 +9,10 @@
             i.fa.fa-group
             span data-i18n="Relationships"
     li access-level="1"
+        a href="#/payementTerm"
+            i.fa.fa-clock-o
+            span data-i18n="Payement term"
+    li access-level="1"
         a href="#/settings"
             i.fa.fa-cog
             span data-i18n="Settings"

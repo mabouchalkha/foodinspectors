@@ -7,10 +7,14 @@ angular.module("starterApp").config(['$routeProvider', '$httpProvider', '$inject
         
         /* USERS */
         .when('/user', { templateUrl: 'angular_app/pages/index/index.html', controller: 'IndexCtrl', resolve: $injector.get('userResolver').resolveIndex })
-        .when('/user/create', { templateUrl: 'angular_app/pages/user/user.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
         .when('/user/:id', { templateUrl: 'angular_app/pages/user/user.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
         .when('/user/new', { templateUrl: 'angular_app/pages/user/user.html', controller: 'UserCtrl', resolve: $injector.get('userResolver').resolve })
         .when('/login', { templateUrl: 'angular_app/pages/login/login.html', controller: 'LoginCtrl'})
+
+        /* PAYEMENT_TERM */
+        .when('/payementTerm', { templateUrl: 'angular_app/pages/index/index.html', controller: 'IndexCtrl', resolve: $injector.get('payementTermResolver').resolveIndex })
+        .when('/payementTerm/:id', { templateUrl: 'angular_app/pages/payement_term/payement_term.html', controller: 'PayementTermCtrl', resolve: $injector.get('payementTermResolver').resolve })
+        .when('/payementTerm/new', { templateUrl: 'angular_app/pages/payement_term/payement_term.html', controller: 'PayementTermCtrl', resolve: $injector.get('payementTermResolver').resolve })
 
         /* COMPANY*/
         //.when('/company', { templateUrl: 'angular_app/pages/index/index.html', controller: 'IndexCtrl', resolve: $injector.get('companyResolver').resolveIndex })
@@ -97,7 +101,7 @@ angular.element(document).ready(function() {
         
         var anonRoutes = ['/login', '/register', '/404', '/'];
         var userRoutes = ['/lock'];
-        var adminRoutes = ['/user'];
+        var adminRoutes = ['/user', '/payementTerm'];
         var toast;
         
         root.$on('$routeChangeStart', function (event, next, current) {

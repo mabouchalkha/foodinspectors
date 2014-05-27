@@ -1,0 +1,24 @@
+.page
+    section.panel.panel-default
+        .panel-heading
+            strong
+                span.fa.fa-road
+                | &nbsp 
+                span data-i18n="Payement term"
+        .panel-body
+            form(name="paiementTermForm" role="form" novalidate)
+                .row
+                    .col-md-6.col-sm-12
+                        .form-group
+                            label for="name" 
+                                span data-i18n="Name"
+                            input.form-control(type="text" required data-ng-model="payementTerm.name" name="name" autofocus id="name")
+                        .form-group
+                            label for="due_in_days" 
+                                span data-i18n="DueInDays"
+                            input.form-control(type="text" required data-ng-model="payementTerm.due_in_days" name="due_in_days" id="due_in_days") 
+                        .checkbox
+                            label
+                                input type="checkbox" name="is_enabled" id="is_enabled" data-ng-model="payementTerm.is_enabled"
+                                    span data-i18n="Enabled"
+                action-bar allow-delete="{{meta.is_new==false}}" allow-apply="{{meta.is_new==false}}"

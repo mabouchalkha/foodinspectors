@@ -23,6 +23,9 @@ angular.module('starterApp').controller('UserCtrl', ['$scope', 'viewModel', 'use
                 if ($scope.meta.is_new == true) {
                     notif.log('User created', 'The user will receive his password by email');
                 }
+                else {
+                    notif.log('User updated', 'The user has been successfully updated');
+                }
                 
                 $location.path('/user');
             });
@@ -38,6 +41,14 @@ angular.module('starterApp').controller('UserCtrl', ['$scope', 'viewModel', 'use
             var toast = notif.wait('Loading', 'Please wait while saving user');
             userResource.save({id: $scope.user.id, user: $scope.user}).$promise.then(function (resp) {
                 notif.clear(toast);
+                
+                if ($scope.meta.is_new == true) {
+                    notif.log('User created', 'The user will receive his password by email');
+                }
+                else {
+                    notif.log('User updated', 'The user has been successfully updated');
+                }
+                
                 $route.reload();
             });
         }
