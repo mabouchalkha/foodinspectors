@@ -21,6 +21,11 @@
                 a href="#/user"
                     i.fa.fa-group &nbsp
                     span data-i18n="User"
+        ul
+            li
+                a href="#/entity"
+                    i.fa.fa-book &nbsp
+                    span data-i18n="Entity"
     li access-level="0"
         a href="#/login" 
             i.fa.fa-sign-in

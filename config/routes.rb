@@ -18,12 +18,19 @@ PlaygroundOnrails::Application.routes.draw do
     put '/user/', to: 'user#update'
     delete '/user/:id', to: 'user#delete'
     
-     # PAYEMENT_TERM ROUTES -------------------------------------------------------
+    # PAYEMENT_TERM ROUTES -------------------------------------------------------
     get '/payementTerm', to: 'payement_term#index'
     get '/payementTerm/new', to: 'payement_term#get_new'
     get '/payementTerm/:id', to: 'payement_term#read'
     put '/payementTerm/', to: 'payement_term#update'
     delete '/payementTerm/:id', to: 'payement_term#delete'
+    
+    # ENTITY ROUTES -------------------------------------------------------
+    get '/entity', to: 'entity#index'
+    get '/entity/new', to: 'entity#get_new'
+    get '/entity/:id', to: 'entity#read'
+    put '/entity/', to: 'entity#update'
+    delete '/entity/:id', to: 'entity#delete'
     
     post '/error', to: 'error#create'
 
