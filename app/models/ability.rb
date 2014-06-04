@@ -4,9 +4,9 @@ class Ability
     def initialize(user)
         user ||= current_user
       
-        if user.roles_mask == 1 #admin
+        if user.roles_mask == 1 #admin => could be user.has_roles? :admin
             can :manage, :all
-        elsif user.roles_mask == 2 #user
+        elsif user.roles_mask == 2 #user  => could be user.has_roles? :user
             can :manage, :private
         end
         
