@@ -19,18 +19,18 @@ class EntityController < ApplicationController
             count = Entity.count
         end
         
-        render :status => 200, :json => { :success => true, :info => "", :data => entity, :meta => { :count => count } }
+        render FormatResponse.success(nil, entity, { :count => count })
     end
     
     def read
         id = params[:id]
         
         entity = Entity.where(:id => id).first || raise(ActiveRecord::RecordNotFound)
-        render :status => 200, :json => { :success => true, :info => "", :data => entity, :meta => { :is_new => false }}
+        render FormatResponse.success(nil, entity, { :is_new => false })
     end
     
     def get_new
-        render :status => 200, :json => { :success => true, :info => "", :data => Entity.new, :meta => { :is_new => true }}
+        render FormatResponse.success(nil, Entity.new, { :is_new => true })
     end
     
     def update
@@ -40,12 +40,12 @@ class EntityController < ApplicationController
             entity = Entity.new(entity_params_update)
 
             if entity.save!
-                render :status => 200, :json => { :success => true, :info => "Entity created", :data => { } }
+                render FormatResponse.success("Entity created", nil)
             end
         else
             entity = Entity.find(id)
             entity.update!(entity_params_update)
-            render :status => 200, :json => { :success => true, :info => "Entity updated", :data => { }, :meta => { }}
+            render FormatResponse.success("Entity updated", nil)
         end
     end
     
@@ -54,7 +54,7 @@ class EntityController < ApplicationController
         
         entity = Entity.find(id)
         if entity.destroy!
-            render :status => 200, :json => { :success => true, :info => "Entity deleted", :data => { }, :meta => { }}
+            render FormatResponse.success("Entity deleted", nil)
         else
             raise "Cannot remove the entity"
         end
