@@ -19,18 +19,18 @@ class UserController < ApplicationController
             count = User.count
         end
         
-        render :status => 200, :json => { :success => true, :info => "", :data => users, :meta => { :count => count } }
+        render FormatResponse.success(nil, users, { :count => count })
     end
     
     def read
         id = params[:id]
         
         user = User.where(:id => id).first || raise(ActiveRecord::RecordNotFound)
-        render :status => 200, :json => { :success => true, :info => "", :data => user, :meta => { :is_new => false }}
+        render FormatResponse.success(nil, users, { :is_new => false })
     end
     
     def get_new
-        render :status => 200, :json => { :success => true, :info => "", :data => User.new, :meta => { :is_new => true }}
+        render FormatResponse.success(nil, User.new, { :is_new => true })
     end
     
     def update
@@ -44,16 +44,15 @@ class UserController < ApplicationController
             
             if user.save!
                 GenericMailer.welcome_email(user).deliver
-                
-                render :status => 200, :json => { :success => true, :info => "Account created", :data => { } }
+                render FormatResponse.success("Account created", nil)
             else
                 #warden.custom_failure!
-                render :status => 500, :json => { :success => false,  :info => "internal error", :data => user.errors.full_message}
+                render FormatResponse.error(500, "internal error", user.errors.full_message)
             end
         else
             user = User.find(id)
             user.update!(user_params_update)
-            render :status => 200, :json => { :success => true, :info => "Account updated", :data => { }, :meta => { }}
+            render FormatResponse.success("Account updated", nil)
         end
     end
     
@@ -63,7 +62,7 @@ class UserController < ApplicationController
         if !current_user.nil? && current_user.id.to_s != id.to_s
             user = User.find(id)
             if user.destroy!
-                render :status => 200, :json => { :success => true, :info => "Account deleted", :data => { }, :meta => { }}
+                render FormatResponse.success("Account deleted", nil)
             else
                 raise "Cannot remove the account"
             end

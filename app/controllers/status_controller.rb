@@ -19,18 +19,18 @@ class StatusController < ApplicationController
             count = Status.count
         end
         
-        render :status => 200, :json => { :success => true, :info => "", :data => entity, :meta => { :count => count } }
+        render FormatResponse.success(nil, status, { :count => count })
     end
     
     def read
         id = params[:id]
         
         status = Status.where(:id => id).first || raise(ActiveRecord::RecordNotFound)
-        render :status => 200, :json => { :success => true, :info => "", :data => status, :meta => { :is_new => false }}
+        render FormatResponse.success(nil, status, { :is_new => false })
     end
     
     def get_new
-        render :status => 200, :json => { :success => true, :info => "", :data => Status.new, :meta => { :is_new => true }}
+        render FormatResponse.success(nil, Status.new, { :is_new => true })
     end
     
     def update
@@ -40,12 +40,12 @@ class StatusController < ApplicationController
             status = Status.new(status_params_update)
 
             if entity.save!
-                render :status => 200, :json => { :success => true, :info => "Status created", :data => { } }
+                render FormatResponse.success("Status created", nil)
             end
         else
             status = Status.find(id)
             status.update!(status_params_update)
-            render :status => 200, :json => { :success => true, :info => "Status updated", :data => { }, :meta => { }}
+            render FormatResponse.success("Status updated", nil)
         end
     end
     
@@ -54,7 +54,7 @@ class StatusController < ApplicationController
         
         status = Status.find(id)
         if status.destroy!
-            render :status => 200, :json => { :success => true, :info => "Status deleted", :data => { }, :meta => { }}
+            render FormatResponse.success("Status deleted", nil)
         else
             raise "Cannot remove the status"
         end

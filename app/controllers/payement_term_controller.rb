@@ -19,18 +19,18 @@ class PayementTermController < ApplicationController
             count = PayementTerm.count
         end
         
-        render :status => 200, :json => { :success => true, :info => "", :data => payementTerms, :meta => { :count => count } }
+        render FormatResponse.success(nil, payementTerms, { :count => count })
     end
     
     def read
         id = params[:id]
         
         pt = PayementTerm.where(:id => id).first || raise(ActiveRecord::RecordNotFound)
-        render :status => 200, :json => { :success => true, :info => "", :data => pt, :meta => { :is_new => false }}
+        render FormatResponse.success(nil, pt, { :is_new => false })
     end
     
     def get_new
-        render :status => 200, :json => { :success => true, :info => "", :data => PayementTerm.new, :meta => { :is_new => true }}
+        render FormatResponse.success(nil, PayementTerm.new, { :is_new => true })
     end
     
     def update
@@ -40,12 +40,12 @@ class PayementTermController < ApplicationController
             pt = PayementTerm.new(pt_params_update)
 
             if pt.save!
-                render :status => 200, :json => { :success => true, :info => "Payement term created", :data => { } }
+                render FormatResponse.success("Payement term created", nil)
             end
         else
             pt = PayementTerm.find(id)
             pt.update!(pt_params_update)
-            render :status => 200, :json => { :success => true, :info => "Payement term updated", :data => { }, :meta => { }}
+            render FormatResponse.success("Payement term updated", nil)
         end
     end
     
@@ -54,7 +54,7 @@ class PayementTermController < ApplicationController
         
         pt = PayementTerm.find(id)
         if pt.destroy!
-            render :status => 200, :json => { :success => true, :info => "PayementTerm deleted", :data => { }, :meta => { }}
+            render FormatResponse.success("PayementTerm deleted", nil)
         else
             raise "Cannot remove the payement term"
         end

@@ -4,13 +4,13 @@ class SessionController < Devise::SessionsController
     
     def create
         resource = warden.authenticate!(:scope => resource_name, :recall => "#{controller_path}#failure")
-        render :status => 200, :json => { :success => true, :info => "Logged in", :data => current_user }
+        render FormatResponse.success("Logged in", current_user)
     end
     
     def destroy
         warden.authenticate!(:scope => resource_name, :recall => "#{controller_path}#failure")
         sign_out
-        render :status => 200, :json => { :success => true, :info => "Logged out" }
+        render FormatResponse.success("Logged out", nil)
     end
     
     def failure
@@ -18,7 +18,7 @@ class SessionController < Devise::SessionsController
             format.html { super }
             format.json {
                 warden.custom_failure!
-                render :json => {:success => false, :errors => ["Login Failed"]}
+                render FormatResponse.failure("Logged out", nil, ["Login Failed"])
             }
         end
     end
@@ -35,7 +35,7 @@ class SessionController < Devise::SessionsController
           user.password = password;
           if user.save!
               GenericMailer.retrieve_password(user).deliver
-              render :status => 200, :json => { :success => true, :info => "Password reseted", :data => { }, :meta => { }}
+              render FormatResponse.success("Password reseted", nil)
           end
        else
            raise "Cannot retrieve user with email "+ email
@@ -46,7 +46,7 @@ class SessionController < Devise::SessionsController
     
     def show_current_user
         warden.authenticate!(:scope => resource_name, :recall => "#{controller_path}#failure")
-        render :status => 200, :json => { :success => true, :info => "Current User", :data => current_user }
+        render FormatResponse.success("Current User", current_user)
     end
     
     def new
@@ -55,10 +55,10 @@ class SessionController < Devise::SessionsController
         
         if user.save
             sign_in(user)
-            render :status => 200, :json => { :success => true, :info => "Account created", :data => user }
+            render FormatResponse.success("Account created", user)
         else
             warden.custom_failure!
-            render :status => 422, :json => { :success => true, :info => user.errors}
+            render FormatResponse.error(422, "Account not created", nil, user.errors)
        end
     end
     
