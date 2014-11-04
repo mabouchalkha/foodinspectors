@@ -34,5 +34,4 @@
     "payement term": "Terme de paiement",
     "dueindays": "Due (jour)",
     "name": "Nom",
-    "entity": "Entité"
 } 
