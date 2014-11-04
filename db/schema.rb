@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141103213440) do
+ActiveRecord::Schema.define(version: 20141104214621) do
 
   create_table "authorizations", force: true do |t|
     t.string   "provider"
@@ -25,24 +25,10 @@ ActiveRecord::Schema.define(version: 20141103213440) do
     t.datetime "updated_at"
   end
 
-  create_table "entities", force: true do |t|
-    t.string   "name",       null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "payement_terms", force: true do |t|
     t.string   "name",                       null: false
     t.integer  "due_in_days",                null: false
     t.boolean  "is_enabled",  default: true
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "statuses", force: true do |t|
-    t.string   "name",       null: false
-    t.string   "display_id", null: false
-    t.integer  "entity_id",  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
