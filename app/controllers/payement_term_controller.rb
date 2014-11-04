@@ -29,9 +29,9 @@ class PayementTermController < ApplicationController
         render FormatResponse.success(nil, pt, { :is_new => false })
     end
     
-    #def get_new
-    #    render FormatResponse.success(nil, PayementTerm.new, { :is_new => true })
-    #end
+    def get_new
+        render FormatResponse.success(nil, PayementTerm.new, { :is_new => true })
+    end
     
     def update
         id = params[:id]
