@@ -12,6 +12,10 @@ admin = User.new({:first_name => "Dominic", :last_name => "Lapointe", :user_name
 admin.roles = [:admin]
 admin.save
 
+admin = User.new({:first_name => "Amine", :last_name => "Bouchalkha", :user_name => "mabouchalkha", :email => "mabouchalkha@gmail.com", :password => "12345", :password_confirmation => "12345", :title => "Programmer"})
+admin.roles = [:admin]
+admin.save
+
 user = User.new({:first_name => "Anonymous", :last_name => "User", :user_name => "anon", :email => "anon@gmail.com", :password => "12345", :password_confirmation => "12345", :title => "Watcher"})
 user.roles = [:user]
 user.save

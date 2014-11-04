@@ -26,7 +26,7 @@ class UserController < ApplicationController
         id = params[:id]
         
         user = User.where(:id => id).first || raise(ActiveRecord::RecordNotFound)
-        render FormatResponse.success(nil, users, { :is_new => false })
+        render FormatResponse.success(nil, user, { :is_new => false })
     end
     
     def get_new
