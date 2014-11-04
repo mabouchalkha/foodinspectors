@@ -9,6 +9,9 @@ gem 'sqlite3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
+# allow to audit model (crud operation)
+gem 'paper_trail', '~> 3.0.6'
+
 gem 'slim'
 
 gem 'angular-rails-templates'
