@@ -25,20 +25,6 @@ PlaygroundOnrails::Application.routes.draw do
     put '/payementTerm/', to: 'payement_term#update'
     delete '/payementTerm/:id', to: 'payement_term#delete'
     
-    # ENTITY ROUTES -------------------------------------------------------
-    get '/entity', to: 'entity#index'
-    get '/entity/new', to: 'entity#get_new'
-    get '/entity/:id', to: 'entity#read'
-    put '/entity/', to: 'entity#update'
-    delete '/entity/:id', to: 'entity#delete'
-    
-    # STATUS ROUTES -------------------------------------------------------
-    get '/status', to: 'status#index'
-    get '/status/new', to: 'status#get_new'
-    get '/status/:id', to: 'status#read'
-    put '/status/', to: 'status#update'
-    delete '/status/:id', to: 'status#delete'
-    
     post '/error', to: 'error#create'
 
     # needs to be the very last route
