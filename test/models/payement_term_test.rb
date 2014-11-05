@@ -7,7 +7,7 @@ describe PayementTerm do
     let(:payement_term) { PayementTerm.new payement_term_params }
     
     it "is invalid with invalid params" do
-        assert !payement_term_invalid.valid?, "Can create with invalid params: #{payement_term.errors.messages}"
+        assert payement_term_invalid.valid?, "Can create with invalid params: #{payement_term.errors.messages}"
     end
     
     it "is valid with valid params" do
