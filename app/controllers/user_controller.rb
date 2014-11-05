@@ -13,7 +13,7 @@ class UserController < ApplicationController
         if !search.blank?
             search = '%%' + search + '%%'
             users = User.all(:order => order, :limit => 20, :offset => offset, :conditions => ['email like ? or first_name like ? or last_name like ?', search, search, search])
-            count = users.count
+            count = users.count(:conditions => ['email like ? or first_name like ? or last_name like ?', search, search, search])
         else
             users = User.all(:order => order, :limit => 20, :offset => offset)
             count = User.count
@@ -23,37 +23,29 @@ class UserController < ApplicationController
     end
     
     def read
-        id = params[:id]
-        
-        user = User.where(:id => id).first || raise(ActiveRecord::RecordNotFound)
-        render FormatResponse.success(nil, user, { :is_new => false })
-    end
-    
-    def get_new
-        render FormatResponse.success(nil, User.new, { :is_new => true })
+        if params[:id].casecmp("new") == 0
+            render FormatResponse.success(nil, nil, { is_new: true})
+        else
+            user = User.where(:id => params[:id]).first || raise(ActiveRecord::RecordNotFound)
+            render FormatResponse.success nil, user, { :is_new => false }
+        end
     end
     
     def update
-        id = params[:id]
-        
-        if id.blank?
-            raise "Email already registered" unless User.exists?(:email => params[:user][:email]).nil?
+        user = User.find(params[:id]) 
+        user.update! user_params_update
+        render FormatResponse.success("Account updated", user.id)
+    end
+    
+    def create
+        raise "Email already registered" unless User.exists?(:email => params[:user][:email]).nil?
 
-            user = User.new(user_params_create)
-            user.password = Devise.friendly_token.first(8)
-            
-            if user.save!
-                GenericMailer.welcome_email(user).deliver
-                render FormatResponse.success("Account created", nil)
-            else
-                #warden.custom_failure!
-                render FormatResponse.error(500, "internal error", user.errors.full_message)
-            end
-        else
-            user = User.find(id)
-            user.update!(user_params_update)
-            render FormatResponse.success("Account updated", nil)
-        end
+        user = User.new(user_params_create)
+        user.password = Devise.friendly_token.first(8)
+        
+        user.save!
+        GenericMailer.welcome_email(user).deliver
+        render FormatResponse.success("Account created", user.id)
     end
     
     def delete
@@ -72,10 +64,6 @@ class UserController < ApplicationController
     end
     
     private
-        def user_exist(email)
-            User.exists?(:email => email)
-        end
-    
         def user_params_update
             params.require(:user).permit(:user_name, :email, :first_name, :last_name, :title, :is_enabled, :roles_mask)
         end

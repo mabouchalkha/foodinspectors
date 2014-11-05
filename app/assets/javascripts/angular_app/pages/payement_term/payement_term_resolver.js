@@ -1,7 +1,7 @@
 angular.module('starterApp').constant('payementTermResolver', {
     resolveIndex: {
         viewModel: ['payementTermResource', function (payementTermResource) {
-            return payementTermResource.getList({limit: 2, predicate: 'name'}).$promise.then()
+            return payementTermResource.index({limit: 2, predicate: 'name'}).$promise.then()
         }],
         config: ['payementTermResource', function (payementTermResource) {
             return {
@@ -18,14 +18,8 @@ angular.module('starterApp').constant('payementTermResolver', {
     },
     resolve: {
         viewModel: ['payementTermResource', '$route', function (payementTermResource, $route) {
-            var id = $route.current.params.id;
-            
-            if (id == null) {
-                return payementTermResource.getNew().$promise.then();
-            }
-            else {
-                return payementTermResource.getOne({id: id}).$promise.then();   
-            }
+            var id = $route.current.params.id || 'new';
+            return payementTermResource.read({id: id}).$promise.then();
         }]
     }
 });

@@ -33,5 +33,5 @@
     "resetpasswordconfirm": "Are you sure you want to reset your password ?",
     "payement term": "Payement Term",
     "dueindays": "Due (day)",
-    "name": "Name",
+    "name": "Name"
 }

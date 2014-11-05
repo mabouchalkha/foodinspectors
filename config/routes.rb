@@ -13,16 +13,16 @@ PlaygroundOnrails::Application.routes.draw do
     
     # USER ROUTES -----------------------------------------------------------------
     get '/user', to: 'user#index'
-    get '/user/new', to: 'user#get_new'
     get '/user/:id', to: 'user#read'
     put '/user/', to: 'user#update'
+    post '/user/', to: 'user#create'
     delete '/user/:id', to: 'user#delete'
     
     # PAYEMENT_TERM ROUTES -------------------------------------------------------
     get '/payementTerm', to: 'payement_term#index'
-    get '/payementTerm/new', to: 'payement_term#get_new'
     get '/payementTerm/:id', to: 'payement_term#read'
     put '/payementTerm/', to: 'payement_term#update'
+    post '/payementTerm/', to: 'payement_term#create'
     delete '/payementTerm/:id', to: 'payement_term#delete'
     
     post '/error', to: 'error#create'

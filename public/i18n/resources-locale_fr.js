@@ -33,5 +33,5 @@
     "resetpasswordconfirm": "Voulez-vous vraiment réinitialiser votre mot de passe ?",
     "payement term": "Terme de paiement",
     "dueindays": "Due (jour)",
-    "name": "Nom",
+    "name": "Nom"
 } 

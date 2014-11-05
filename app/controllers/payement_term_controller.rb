@@ -13,7 +13,7 @@ class PayementTermController < ApplicationController
         if !search.blank?
             search = '%%' + search + '%%'
             payementTerms = PayementTerm.all(:order => order, :limit => 20, :offset => offset, :conditions => ['name like ?', search])
-            count = payementTerms.count
+            count = payementTerms.count(:conditions => ['name like ?', search])
         else
             payementTerms = PayementTerm.all(:order => order, :limit => 20, :offset => offset)
             count = PayementTerm.count
@@ -23,41 +23,33 @@ class PayementTermController < ApplicationController
     end
     
     def read
-        id = params[:id]
+        if params[:id].casecmp("new") == 0
+            render FormatResponse.success(nil, nil, { is_new: true})
+        else
+            id = params[:id]
         
-        pt = PayementTerm.where(:id => id).first || raise(ActiveRecord::RecordNotFound)
-        render FormatResponse.success(nil, pt, { :is_new => false })
-    end
-    
-    def get_new
-        render FormatResponse.success(nil, PayementTerm.new, { :is_new => true })
+            pt = PayementTerm.where(:id => id).first || raise(ActiveRecord::RecordNotFound)
+            render FormatResponse.success nil, pt, { :is_new => false }
+        end
     end
     
     def update
-        id = params[:id]
-        
-        if id.blank?
-            pt = PayementTerm.new(pt_params_update)
-
-            if pt.save!
-                render FormatResponse.success("Payement term created", nil)
-            end
-        else
-            pt = PayementTerm.find(id)
-            pt.update!(pt_params_update)
-            render FormatResponse.success("Payement term updated", nil)
-        end
+        pt = PayementTerm.find params[:id]
+        pt.update! pt_params_update
+        render FormatResponse.success "Payement term updated", pt.id
+    end
+    
+    def create
+        pt = PayementTerm.new pt_params_update
+        savedPt = pt.save!
+        render FormatResponse.success "Payement term created", pt.id
     end
     
     def delete
-        id = params[:id]
+        pt = PayementTerm.find(params[:id])
+        pt.destroy!
+        render FormatResponse.success "PayementTerm deleted", nil
         
-        pt = PayementTerm.find(id)
-        if pt.destroy!
-            render FormatResponse.success("PayementTerm deleted", nil)
-        else
-            raise "Cannot remove the payement term"
-        end
     end
     
     private 

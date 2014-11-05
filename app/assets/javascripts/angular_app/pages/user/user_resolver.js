@@ -1,7 +1,7 @@
 angular.module('starterApp').constant('userResolver', {
     resolveIndex: {
         viewModel: ['userResource', function (userResource) {
-            return userResource.getList({limit: 2, predicate: 'email'}).$promise.then()
+            return userResource.index({limit: 2, predicate: 'email'}).$promise.then()
         }],
         config: ['userResource', function (userResource) {
             return {
@@ -18,14 +18,8 @@ angular.module('starterApp').constant('userResolver', {
     },
     resolve: {
         viewModel: ['userResource', '$route', function (userResource, $route) {
-            var id = $route.current.params.id;
-            
-            if (id == null) {
-                return userResource.getNew().$promise.then();
-            }
-            else {
-                return userResource.getOne({id: id}).$promise.then();   
-            }
+            var id = $route.current.params.id || 'new';
+            return userResource.read({id: id}).$promise.then();
         }]
     }
 });
