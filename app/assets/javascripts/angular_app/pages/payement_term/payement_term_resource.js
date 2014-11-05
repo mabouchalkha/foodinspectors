@@ -2,17 +2,17 @@
 
 angular.module('starterApp').factory('payementTermResource', ['$resource', function ($resource) {
     return $resource('', {}, {
-        getList: {
+        index: {
             method: 'GET', url: '/payementTerm'
         },
-        getOne: {
+        read: {
             method: 'GET', url: '/payementTerm/:id'
         },
-        getNew: {
-            method: 'GET', url: '/payementTerm/new'
-        },
-        save: {
+        update: {
             method: 'PUT', url: '/payementTerm'
+        },
+        create: {
+            method: 'POST', url: '/payementTerm'
         },
         delete: {
             method: 'DELETE', url: '/payementTerm/:id'

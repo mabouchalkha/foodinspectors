@@ -2,16 +2,16 @@
 
 angular.module('starterApp').factory('userResource', ['$resource', function ($resource) {
     return $resource('', {}, {
-        getList: {
+        index: {
             method: 'GET', url: '/user'
         },
-        getOne: {
+        read: {
             method: 'GET', url: '/user/:id'
         },
-        getNew: {
-            method: 'GET', url: '/user/new'
+        create: {
+            method: 'POST', url: '/user'
         },
-        save: {
+        update: {
             method: 'PUT', url: '/user'
         },
         delete: {

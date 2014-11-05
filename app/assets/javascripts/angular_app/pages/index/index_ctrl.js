@@ -64,7 +64,7 @@ angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'co
             windowClass: "modal fade in"
         });*/
         var toast = notif.wait('Loading', 'Please wait while loading data');
-        $scope.resource.getList({ predicate: predicate, reverse: reverse, page: page, searchValue: $scope.searchValue }).$promise.then(function (resp) {
+        $scope.resource.index({ predicate: predicate, reverse: reverse, page: page, searchValue: $scope.searchValue }).$promise.then(function (resp) {
            $scope.data = resp.data;
            $scope.count = resp.meta.count;
            notif.clear(toast);

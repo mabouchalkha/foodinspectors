@@ -6,26 +6,25 @@ angular.module('starterApp').controller('PayementTermCtrl', ['$scope', 'viewMode
         $scope.meta = viewModel.meta;
     };
     
-    $scope.save = function () {
+    $scope.save = function (isSave) {
         if ($scope.payementTerm != null) {
             var toast = notif.wait('Loading', 'Please wait while saving payement term');
-            payementTermResource.save({id: $scope.payementTerm.id, payementTerm: $scope.payementTerm}).$promise.then(function (resp) {
-                _saveCallback(true, toast);
-            });
+            
+            if ($scope.meta.is_new == true) {
+                payementTermResource.create({id: $scope.payementTerm.id, payementTerm: $scope.payementTerm}).$promise.then(function (resp) {
+                    _saveCallback(isSave, toast, resp);
+                });   
+            }
+            else {
+                payementTermResource.update({id: $scope.payementTerm.id, payementTerm: $scope.payementTerm}).$promise.then(function (resp) {
+                    _saveCallback(isSave, toast, resp);
+                });
+            }
         }
     };
     
     $scope.cancel = function () {
         $location.path('/payementTerm');
-    };
-    
-    $scope.apply = function () {
-        if ($scope.user != null) {
-            var toast = notif.wait('Loading', 'Please wait while saving payement term');
-            payementTermResource.save({id: $scope.payementTerm.id, payementTerm: $scope.payementTerm}).$promise.then(function (resp) {
-                _saveCallback(false, toast);
-            });
-        }
     };
     
     $scope.delete = function () {
@@ -46,7 +45,7 @@ angular.module('starterApp').controller('PayementTermCtrl', ['$scope', 'viewMode
         }
     };
     
-    var _saveCallback = function (isSave, toast) {
+    var _saveCallback = function (isSave, toast, resp) {
         notif.clear(toast);
         _notifyUpdateOrCreate($scope.meta.is_new);
         
@@ -54,7 +53,7 @@ angular.module('starterApp').controller('PayementTermCtrl', ['$scope', 'viewMode
             $location.path('/payementTerm');
         }
         else {
-            $route.reload();
+            $location.path('/payementTerm/' + resp.data);
         }
     }
     
