@@ -80,6 +80,7 @@ GEM
     paper_trail (3.0.6)
       activerecord (>= 3.0, < 5.0)
       activesupport (>= 3.0, < 5.0)
+    pg (0.17.1)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -146,6 +147,7 @@ DEPENDENCIES
   omniauth-google
   omniauth-twitter
   paper_trail (~> 3.0.6)
+  pg
   rails (= 4.0.0)
   role_model
   sdoc
