@@ -6867,7 +6867,7 @@ img.img80_80 {
     border-top: 2px solid #e87352;
 }
 .flags-sprite, .flags-american, .flags-china, .flags-france, .flags-germany, .flags-italy, .flags-japan, .flags-korea, .flags-portugal, .flags-russia, .flags-spain {
-    background: url('ui/images/flags.png') no-repeat;
+    background: url('/images/flags.png') no-repeat;
 }
 .flags-american {
     background-position: 0 -160px;
