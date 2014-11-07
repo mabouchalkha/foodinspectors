@@ -1,4 +1,4 @@
-Food inspector application
+Food inspectors application
 
 <img src="https://magnum-ci.com/status/3785b25b65faa26df85234c2caa0c57a.png"/>
 
