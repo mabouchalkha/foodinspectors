@@ -62,6 +62,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
+    newrelic_rpm (3.9.6.257)
     oauth (0.4.7)
     omniauth (1.2.1)
       hashie (>= 1.2, < 3)
@@ -148,6 +149,7 @@ DEPENDENCIES
   cancancan (~> 1.7)
   debugger
   devise
+  newrelic_rpm
   omniauth
   omniauth-google
   omniauth-twitter

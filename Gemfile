@@ -30,6 +30,8 @@ gem 'airbrake'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+gem 'newrelic_rpm'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'debugger'
