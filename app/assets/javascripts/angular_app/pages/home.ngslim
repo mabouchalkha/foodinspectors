@@ -7,3 +7,4 @@
         span data-i18n="Home"
     .panel-body
       p view is visible to every in users.
+      p This release as been deployed automaticaly by magnum-ci

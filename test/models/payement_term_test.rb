@@ -20,7 +20,6 @@ describe PayementTerm do
         
         current = Time.now + pt.due_in_days.days
         
-        #due.must_equal current.to_date
         assert_equal current.to_date, due.to_date, "Due date should be #{current.to_date}, but was #{due.to_date}"
     end
 end
