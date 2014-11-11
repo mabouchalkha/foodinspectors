@@ -1,3 +1,4 @@
+# broken git
 class UserController < ApplicationController
     before_action :authenticate_user!
     authorize_resource :class => false
