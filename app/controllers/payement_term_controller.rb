@@ -1,4 +1,3 @@
-# broken git
 class PayementTermController < ApplicationController
     before_action :authenticate_user!
     authorize_resource :class => false
