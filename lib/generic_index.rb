@@ -7,7 +7,6 @@ module GenericIndex
         order = predicate + ' ' + reverse
         
         if !search.blank?
-            search = '%%' + search + '%%'
             objects = model.all(:order => order, :limit => 20, :offset => offset, :conditions => conditions)
             count = objects.count(:conditions => conditions)
         else
