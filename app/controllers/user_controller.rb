@@ -4,22 +4,10 @@ class UserController < ApplicationController
     respond_to :json
     
     def index
-        predicate = params[:predicate] || 'email'
-        reverse = params[:reverse] != nil ? params[:reverse] == 'true' ? 'DESC' : 'ASC' : 'ASC'
-        offset = params[:page] || 0
-        order = predicate + ' ' + reverse
-        search = params[:searchValue]
-        
-        if !search.blank?
-            search = '%%' + search + '%%'
-            users = User.all(:order => order, :limit => 20, :offset => offset, :conditions => ['email like ? or first_name like ? or last_name like ?', search, search, search])
-            count = users.count(:conditions => ['email like ? or first_name like ? or last_name like ?', search, search, search])
-        else
-            users = User.all(:order => order, :limit => 20, :offset => offset)
-            count = User.count
-        end
-        
-        render FormatResponse.success(nil, users, { :count => count })
+        search = GenericIndex.generate_search_string params[:searchValue]
+        conditions = ['email like ? or first_name like ? or last_name like ?', search, search, search]
+        indexData = GenericIndex.retrieve_index User, params[:predicate], params[:reverse], params[:page], params[:searchValue], conditions
+        render FormatResponse.success(nil, indexData[:objects], { :count => indexData[:count] })
     end
     
     def read
