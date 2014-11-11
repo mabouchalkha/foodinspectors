@@ -1,3 +1,4 @@
+# create generic index
 module GenericIndex
     def self.retrieve_index model, predicate, reverse, offset, search, conditions
         raise "You need to specify a model to generate a generic index" unless !model.nil?
