@@ -20,7 +20,7 @@ module GenericIndex
     
     def self.generate_search_string search
        if !search.blank?
-           '%' + search + 'search'
+           '%' + search + '%'
        else
           nil 
        end
