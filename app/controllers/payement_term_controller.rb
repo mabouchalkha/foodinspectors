@@ -4,22 +4,10 @@ class PayementTermController < ApplicationController
     respond_to :json
     
     def index
-        predicate = params[:predicate] || 'name'
-        reverse = params[:reverse] != nil ? params[:reverse] == 'true' ? 'DESC' : 'ASC' : 'ASC'
-        offset = params[:page] || 0
-        order = predicate + ' ' + reverse
-        search = params[:searchValue]
-        
-        if !search.blank?
-            search = '%%' + search + '%%'
-            payementTerms = PayementTerm.all(:order => order, :limit => 20, :offset => offset, :conditions => ['name like ?', search])
-            count = payementTerms.count(:conditions => ['name like ?', search])
-        else
-            payementTerms = PayementTerm.all(:order => order, :limit => 20, :offset => offset)
-            count = PayementTerm.count
-        end
-        
-        render FormatResponse.success(nil, payementTerms, { :count => count })
+        search = GenericIndex.generate_search_string params[:reverse]
+        conditions = ['name like ?', search]
+        indexData = GenericIndex.retrieve_index PayementTerm, params[:predicate], params[:reverse], params[:page], params[:searchValue], conditions
+        render FormatResponse.success(nil, indexData[:objects], { :count => indexData[:count] })
     end
     
     def read
