@@ -7,10 +7,10 @@ module GenericIndex
         order = predicate + ' ' + reverse
         
         if !search.blank?
-            objects = model.all(:order => order, :limit => 20, :offset => offset, :conditions => conditions)
+            objects = model.where(conditions).order(order).limit(20).offset(offset)
             count = objects.count(:conditions => conditions)
         else
-            objects = model.all(:order => order, :limit => 20, :offset => offset)
+            objects = model.order(order).limit(20).offset(offset)
             count = model.count
         end
         
