@@ -2,3 +2,6 @@
 /tmp
 /db/development.sqlite3
 /.c9
+/.bundle
+Gemfile.lock
+
