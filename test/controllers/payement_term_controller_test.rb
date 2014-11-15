@@ -6,7 +6,7 @@ class PayementTermControllerTest < ActionController::TestCase
     test "should block if user not logged in" do
         get :index
         
-        json = JSON.parse(@response.body, symbolize_names: true)
+        json = json(@response.body)
         assert_response 401
         assert_equal "false", json[:success]
     end
@@ -17,7 +17,7 @@ class PayementTermControllerTest < ActionController::TestCase
         
         get :index
     
-        json = JSON.parse(@response.body, symbolize_names: true)
+        json = json(@response.body)
         assert_response :success
         assert_equal true, json[:success]
     end
