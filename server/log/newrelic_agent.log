@@ -1,0 +1,229 @@
+# Logfile created on 2014-11-15 10:56:13 -0500 by logger.rb/44203
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Environment: development
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Dispatcher: webrick
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Application: My Application (Development)
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Installing Net instrumentation
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Installing deferred Rack instrumentation
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 10:56:13 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Finished instrumentation
+[11/15/14 10:56:14 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 10:56:14 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 10:56:45 -0500 Bahijas-MacBook-Pro.local (21558)] INFO : Starting Agent shutdown
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Environment: development
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Dispatcher: webrick
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Application: My Application (Development)
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Installing Net instrumentation
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Installing deferred Rack instrumentation
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Finished instrumentation
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 10:57:13 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 10:59:06 -0500 Bahijas-MacBook-Pro.local (21595)] INFO : Starting Agent shutdown
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Environment: development
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Dispatcher: webrick
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Application: My Application (Development)
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Installing Net instrumentation
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Installing deferred Rack instrumentation
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 11:05:59 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Finished instrumentation
+[11/15/14 11:06:00 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 11:06:00 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 11:06:33 -0500 Bahijas-MacBook-Pro.local (21647)] INFO : Starting Agent shutdown
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Environment: development
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Dispatcher: webrick
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Application: My Application (Development)
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Installing Net instrumentation
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Installing deferred Rack instrumentation
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 11:07:08 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Finished instrumentation
+[11/15/14 11:07:09 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 11:07:09 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 11:11:29 -0500 Bahijas-MacBook-Pro.local (21679)] INFO : Starting Agent shutdown
+[11/15/14 11:12:27 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 11:12:27 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 11:12:27 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Environment: development
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Dispatcher: webrick
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Application: My Application (Development)
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Installing Net instrumentation
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Installing deferred Rack instrumentation
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Finished instrumentation
+[11/15/14 11:12:28 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 11:14:21 -0500 Bahijas-MacBook-Pro.local (21729)] INFO : Starting Agent shutdown
+[11/15/14 11:14:50 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 11:14:50 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 11:14:50 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Environment: development
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Dispatcher: webrick
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Application: My Application (Development)
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Installing Net instrumentation
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Installing deferred Rack instrumentation
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Finished instrumentation
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 11:14:51 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 11:19:19 -0500 Bahijas-MacBook-Pro.local (21754)] INFO : Starting Agent shutdown
+[11/15/14 11:19:42 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 11:19:42 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 11:19:42 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Environment: development
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Dispatcher: webrick
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Application: My Application (Development)
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Installing Net instrumentation
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Installing deferred Rack instrumentation
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Finished instrumentation
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 11:19:43 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 11:21:10 -0500 Bahijas-MacBook-Pro.local (21792)] INFO : Starting Agent shutdown
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Environment: development
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Dispatcher: webrick
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Application: My Application (Development)
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Installing Net instrumentation
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Installing deferred Rack instrumentation
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Finished instrumentation
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 11:21:38 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 11:22:06 -0500 Bahijas-MacBook-Pro.local (21809)] INFO : Starting Agent shutdown
+[11/15/14 11:22:20 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 11:22:20 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 11:22:20 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 11:22:20 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 11:22:20 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Environment: development
+[11/15/14 11:22:20 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Dispatcher: webrick
+[11/15/14 11:22:20 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Application: My Application (Development)
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Installing Net instrumentation
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Installing deferred Rack instrumentation
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Finished instrumentation
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 11:22:21 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 11:23:59 -0500 Bahijas-MacBook-Pro.local (21824)] INFO : Starting Agent shutdown
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Environment: development
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Dispatcher: webrick
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Application: My Application (Development)
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Installing Net instrumentation
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Installing deferred Rack instrumentation
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 11:25:05 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Finished instrumentation
+[11/15/14 11:25:06 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 11:25:06 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 11:26:29 -0500 Bahijas-MacBook-Pro.local (21874)] INFO : Starting Agent shutdown
+[11/15/14 15:02:28 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 15:02:28 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 15:02:28 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Environment: development
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Dispatcher: webrick
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Application: My Application (Development)
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Installing Net instrumentation
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Installing deferred Rack instrumentation
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Finished instrumentation
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 15:02:29 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 15:12:30 -0500 Bahijas-MacBook-Pro.local (22178)] INFO : Starting Agent shutdown
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Starting the New Relic agent in "development" environment.
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Reading configuration from config/newrelic.yml (/Users/mohamedamine/Desktop/work/foodinspectors)
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : New Relic Agent Developer Mode enabled.
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Environment: development
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Dispatcher: webrick
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Application: My Application (Development)
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Installing ActiveRecord 4 instrumentation
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Installing Net instrumentation
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Installing deferred Rack instrumentation
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Installing Rack::Builder middleware instrumentation
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Installing Rails 3+ middleware instrumentation
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Installing Rails 4 Controller instrumentation
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Installing Rails 4 view instrumentation
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Installing Rails 4 Error instrumentation
+[11/15/14 18:29:27 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Finished instrumentation
+[11/15/14 18:29:28 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/15/14 18:29:28 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Doing deferred dependency-detection before Rack startup
+[11/15/14 18:29:50 -0500 Bahijas-MacBook-Pro.local (729)] INFO : Starting Agent shutdown
