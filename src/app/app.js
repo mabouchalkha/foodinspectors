@@ -1,3 +1,5 @@
 angular.module('inspectors', [
-	'inspectors.login'
+	'inspectors.login',
+	'ui.router',
+	'templates-app'
 ]);
