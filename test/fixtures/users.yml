@@ -1,6 +1,0 @@
-admin:
-  id: 1
-  user_name: Admin
-  roles_mask: 1
-  encrypted_password: <%= Devise.bcrypt(User, 'password') %>
-  email: dom.dlapointe@gmail.com
