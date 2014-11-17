@@ -7,12 +7,27 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-html2js');
+	grunt.loadNpmTasks('grunt-connect-proxy');
 
   var userConfig = require('./build.config.js');
 
   var taskConfig = {
   	pkg: grunt.file.readJSON('package.json'),
 
+		  connect: {
+		      server: {
+		        port: 9000,
+		        // Change this to '0.0.0.0' to access the server from outside.
+		        hostname: 'localhost'
+		      },
+		      proxies: [
+		        {
+		          context: '/',
+		          host: 'localhost',
+		          port: 3000
+		        }
+		      ]
+		  },
   		watch: {
 				options: {
 				  livereload: true,
@@ -45,7 +60,7 @@ module.exports = function(grunt) {
 			},
 			concurrent: {
 				dev: {
-				   tasks: [/*'nodemon:dev',*/ 'watch'],
+				   tasks: [/*'nodemon:dev',*/ 'configureProxies:server','watch'],
 				   options: {
 				      logConcurrentOutput: true
 					} 
