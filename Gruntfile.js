@@ -4,8 +4,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-concurrent');
-  grunt.loadNpmTasks('grunt-html2js');
+  grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-browserify');
+	grunt.loadNpmTasks('grunt-html2js');
 
   var userConfig = require('./build.config.js');
 
@@ -61,6 +62,29 @@ module.exports = function(grunt) {
 		      src: [ '<%= app_files.atpl %>' ],
 		      dest: '<%= build_dir %>/templates-app.js'
 				}
+			},
+			less: {
+		   	build: {
+		     	files: {
+		      	'<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': 'src/less/main.less'
+		      }
+				} 
+			},
+			browserify: {
+      	build: {
+        	src: ['src/modules/modules.js'],
+        	dest: '<%= build_dir %>/bundle.js',
+        	options: {
+						debug: true 
+					},
+				aliasMappings: [
+	         	{
+	            cwd: 'src/modules/',
+	            src: ['**/*.js', '!**/*.spec.js'],
+	            dest: 'modules/'
+	         	}
+        	]
+        }
 			},
 			index: {
 			 	build: {
