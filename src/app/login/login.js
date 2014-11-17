@@ -7,4 +7,5 @@ angular.module('inspectors.login', [
 		        url: '/login',
 		        templateUrl: 'login/login.tpl.html'
 	      	});
-	}]);
+	}])
+	.value('test', 2);

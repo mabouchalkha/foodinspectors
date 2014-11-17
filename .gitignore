@@ -6,4 +6,5 @@ server/.bundle
 server/Gemfile.lock
 build
 vendor
+node_modules
 
