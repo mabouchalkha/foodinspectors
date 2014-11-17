@@ -2,6 +2,8 @@
 /tmp
 /db/development.sqlite3
 /.c9
-/.bundle
-Gemfile.lock
+server/.bundle
+server/Gemfile.lock
+build
+vendor
 
