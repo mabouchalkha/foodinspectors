@@ -6,10 +6,21 @@
   		<link rel="stylesheet" type="text/css" href="<%= file %>"/>
    	<% }); %>
 	</head>
-	<body>
-		<div ui-view>
-			
-		</div>
+	<body id="app" data-custom-background data-off-canvas-nav>
+        <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="modal_overlay"> </div>
+        <!--<div ng-controller="LayoutsCtrl">-->
+
+					<div class="view-container">
+						<section ui-view id="content" class="animate-fade-up">
+							
+						</section>
+					</div>
+        <!--</div>-->
+		
+		
 		<% scripts.forEach( function ( file ) { %>
 		<script type="text/javascript" src="<%= file %>"></script>
 		<% }); %>
