@@ -246,3 +246,21 @@
 [11/17/14 18:59:45 +0000 mabouchalkha-foodinspectors-1075498 (8398)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
 [11/17/14 18:59:45 +0000 mabouchalkha-foodinspectors-1075498 (8398)] INFO : Doing deferred dependency-detection before Rack startup
 [11/17/14 19:11:19 +0000 mabouchalkha-foodinspectors-1075498 (8398)] INFO : Starting Agent shutdown
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Starting the New Relic agent in "development" environment.
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/server)
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : New Relic Agent Developer Mode enabled.
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Environment: development
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Dispatcher: webrick
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Application: My Application (Development)
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Installing ActiveRecord 4 instrumentation
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Installing deferred Rack instrumentation
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Installing Rack::Builder middleware instrumentation
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Installing Rails 3+ middleware instrumentation
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Installing Net instrumentation
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Installing Rails 4 Controller instrumentation
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Installing Rails 4 Error instrumentation
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Installing Rails 4 view instrumentation
+[11/18/14 16:42:04 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Finished instrumentation
+[11/18/14 16:42:05 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Reporting to: https://rpm.newrelic.com/accounts/814507/applications/5425590
+[11/18/14 16:42:05 +0000 mabouchalkha-foodinspectors-1075498 (9140)] INFO : Doing deferred dependency-detection before Rack startup
