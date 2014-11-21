@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-browserify');
@@ -22,7 +23,7 @@ module.exports = function(grunt) {
 		      },
 		      proxies: [
 		        {
-		          context: '/',
+		          context: '/api',
 		          host: 'localhost',
 		          port: 3000
 		        }
@@ -58,9 +59,17 @@ module.exports = function(grunt) {
 				 }
 				}
 			},
+			nodemon: {
+	      dev: {
+	      	script: 'server_test/server.js',
+	        options: {
+	          watch: ['server_test']
+	        }
+	      }
+    	},
 			concurrent: {
 				dev: {
-				   tasks: [/*'nodemon:dev',*/ 'configureProxies:server','watch'],
+				   tasks: ['nodemon:dev', 'configureProxies:server','watch'],
 				   options: {
 				      logConcurrentOutput: true
 					} 

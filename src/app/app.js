@@ -19,4 +19,5 @@ angular.module('inspectors', [
 	}])
 	.controller('TestCtrl', ['debug', function(debug) {
   		debug('say it is so.');
+  		this.statement = 'This is the application root.'
 	}]);

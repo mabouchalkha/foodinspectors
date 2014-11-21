@@ -4,20 +4,21 @@
   "devDependencies": {
     "browserify": "^4.1.8",
     "doge-debug": "^1.0.3",
+    "express": "^4.10.2",
     "grunt": "~0.4.2",
     "grunt-browserify": "^3.0.1",
     "grunt-concurrent": "^1.0.0",
+    "grunt-connect-proxy": "^0.1.11",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.6.0",
     "grunt-contrib-less": "^0.11.4",
     "grunt-contrib-watch": "~0.4.0",
     "grunt-html2js": "^0.2.9",
     "grunt-nodemon": "^0.3.0",
-    "grunt-connect-proxy": "^0.1.11",
     "karma": "^0.12.24",
     "karma-jasmine": "^0.1.5",
-    "karma-phantomjs-launcher": "^0.1.4"
+    "karma-phantomjs-launcher": "^0.1.4",
+    "protractor": "^1.4.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
