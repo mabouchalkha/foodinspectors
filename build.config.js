@@ -8,7 +8,9 @@ module.exports = {
     // our partial templates
     atpl: [ 'src/app/**/*.tpl.html' ],
     // the index.html
-    html: [ 'src/index.html' ]
+    html: [ 'src/index.html' ],
+    // fonts
+    fonts: ['fonts/**']
   },
 
   vendor_files: {

@@ -1,11 +1,11 @@
-angular.module('inspectors.login', [
+angular.module('authentication.login', [
 		'ui.router'])
 			.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
 				function ($stateProvider, $urlRouterProvider, $locationProvider) {
 				   $stateProvider
 				      .state('login', {
 				        url: '/login',
-				        templateUrl: 'login/login.tpl.html'
+				        templateUrl: 'authentication/login/login.tpl.html'
 			      	});
 			}])
 			.value('test', 2);

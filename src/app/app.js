@@ -1,16 +1,21 @@
-angular.module('inspectors', [
-	'inspectors.login',
+angular.module('app', [
+	//module's app
+	'layouts',
+	'authentication',
+	'dashboard',
+	//module's's angularjs
 	'ui.router',
+	//all template html 
 	'templates-app',
-	'inspectors.modules'
+	//module npm 
+	'app.modules'
 ])
-	.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
-		function($stateProvider, $urlRouterProvider, $locationProvider) {
+	.config(['$stateProvider', '$urlRouterProvider', 
+		function($stateProvider, $urlRouterProvider) {
 			$stateProvider
-				.state('home', {
-					url: '/',
-					template: '<div>This is the application root.</div>',
-					controller: 'TestCtrl'
+				.state('app', {
+					url: '',
+					abstract: true,
 				});
 
 				$urlRouterProvider.otherwise('/');

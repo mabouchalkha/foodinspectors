@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 
 		  connect: {
 		      server: {
-		        port: 9000,
+		        port: 3444,
 		        // Change this to '0.0.0.0' to access the server from outside.
 		        hostname: 'localhost'
 		      },
@@ -145,7 +145,17 @@ module.exports = function(grunt) {
 	            expand: true
 	         	}
         	]
-      	} 
+      	},
+      	fonts: {
+        	files: [
+	         	{
+	            src: [ '<%= app_files.fonts %>' ],
+	            dest: '<%= build_dir %>/',
+	            cwd: '.',
+	            expand: true
+	         	}
+        	]
+      	}  
 			}
   	};
 
