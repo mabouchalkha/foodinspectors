@@ -9,15 +9,15 @@ angular.module('layouts', [
 			        url: '/',
 			        views: {
 			        	'header@': {
-			        		controller: 'HeaderCtrl',
+			        		controller: 'HeaderCtrl as header',
 			        		templateUrl: 'layouts/header/header.tpl.html'
 			        	},
 			        	'nav@': {
-			        		controller: 'NavCtrl',
+			        		controller: 'NavCtrl as nav',
 			        		templateUrl: 'layouts/nav/nav.tpl.html'
 			        	},
 			        	'content@': {
-			        		controller: 'DashboardCtrl',
+			        		controller: 'DashboardCtrl as dashboard',
 			        		templateUrl: 'dashboard/dashboard.tpl.html'
 			        	}
 			        }

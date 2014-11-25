@@ -7,12 +7,12 @@ angular.module('dashboard', [
 			        url: 'dashboard',
 			        views: {
 			        	'content@': {
-			        		controller: 'DashboardCtrl',
+			        		controller: 'DashboardCtrl as dashboard',
 			        		templateUrl: 'dashboard/dashboard.tpl.html'
 			        	}
 			        }
 		      	});
 			}])
 		.controller('DashboardCtrl', ['$scope', '$stateParams', function ($scope, $stateParams) {
-			
+			var dashboard = this;
 		}]);
