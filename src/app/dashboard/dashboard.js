@@ -4,7 +4,7 @@ angular.module('dashboard', [
 		.config(['$stateProvider', function ($stateProvider) {
 			   $stateProvider
 			      .state('app.layouts.dashboard', {
-			        url: '/dashboard',
+			        url: 'dashboard',
 			        views: {
 			        	'content@': {
 			        		controller: 'DashboardCtrl',
@@ -13,6 +13,6 @@ angular.module('dashboard', [
 			        }
 		      	});
 			}])
-		.controller('DashboardCtrl', ['$scope', function ($scope) {
+		.controller('DashboardCtrl', ['$scope', '$stateParams', function ($scope, $stateParams) {
 			
 		}]);
