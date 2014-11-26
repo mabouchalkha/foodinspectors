@@ -1,12 +1,12 @@
 angular.module('services.userService', [])
-	.factory('UserService', ['$q', '$cookieStore', '$rootScope', '$http', 'AuthService',
-						function ($q, $cookieStore, $rootScope, $http, AuthService) {
+	.factory('UserService', ['$q', '$cookieStore', '$rootScope', 'AuthService',
+						function ($q, $cookieStore, $rootScope, AuthService) {
 						
 					
 						var userService = {
 							login: login,
 							logout: logout,
-							singup: singup
+							signup: signup
 						};
 
 						return userService;
