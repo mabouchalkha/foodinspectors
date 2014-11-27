@@ -3,8 +3,10 @@ angular.module('app', [
 	'layouts',
 	'authentication',
 	'dashboard',
-	//module's's angularjs
+	'interceptors.authInterceptor',
+	//module's angularjs
 	'ui.router',
+	'restangular',
 	//all template html 
 	'templates-app',
 	//module npm 
@@ -21,7 +23,13 @@ angular.module('app', [
 				$urlRouterProvider.otherwise('/');
 					
 				// $locationProvider.html5Mode(true);
-	}]);
+	}])
+	.config(['$httpProvider', function ($httpProvider) {
+		$httpProvider.interceptors.push('AuthInterceptor');
+	}])
+	.config(['RestangularProvider', function(RestangularProvider) {
+    RestangularProvider.setBaseUrl('/api');
+  }]);
 	// .controller('AppCtrl', ['debug', function(debug) {
  //  		debug('say it is so.');
  //  		this.statement = 'This is the application root.'

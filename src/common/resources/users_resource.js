@@ -1,6 +1,6 @@
-angular.module('services.userService', [])
-    .factory('User', [function () {
-        
+angular.module('services.userService', ['restangular'])
+    .factory('User', ['Restangular', function (Restangular) {
+        return Restangular.service('users');
     }]);
 						
 					
