@@ -5,7 +5,8 @@ angular.module('authentication.login', [
 				   $stateProvider
 				      .state('login', {
 				        url: '/login',
-				        templateUrl: 'authentication/login/login.tpl.html'
+				        templateUrl: 'authentication/login/login.tpl.html',
+				        controller: 'LoginController as login'
 			      	});
 			}])
 			.value('test', 2);
