@@ -1,5 +1,5 @@
-angular.module('services.userService', [])
-	.factory('UserService', ['$q', '$cookieStore', '$rootScope', 'AuthService', 'User'
+angular.module('app.services.userService', [])
+	.factory('UserService', ['$q', '$cookieStore', '$rootScope', 'AuthService', 'User',
 						function ($q, $cookieStore, $rootScope, AuthService, User) {
 					
 							var userService = {
@@ -24,7 +24,6 @@ angular.module('services.userService', [])
 										} else {
 											reject({ response });
 										}
-										
 									});
 								});
 							};

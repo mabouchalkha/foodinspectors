@@ -3,30 +3,49 @@ angular.module('app', [
 	'layouts',
 	'authentication',
 	'dashboard',
-	'interceptors.authInterceptor',
 	//module's angularjs
 	'ui.router',
 	'restangular',
 	//all template html 
 	'templates-app',
+	//'app.interceptors.authInterceptor',
 	//module npm 
 	'app.modules'
 ])
 	.config(['$stateProvider', '$urlRouterProvider', 
 		function($stateProvider, $urlRouterProvider) {
 			$stateProvider
-				.state('app', {
+				.state('home', {
 					url: '',
 					abstract: true,
-				});
+					views: {
+						'header@': {
+							controller: 'HeaderCtrl as header',
+							templateUrl: 'layouts/header/header.tpl.html'
+						},
+						'nav@': {
+							controller: 'NavCtrl as nav',
+							templateUrl: 'layouts/nav/nav.tpl.html'
+						}
+					}
+				})
+				.state('home.index', {
+					url: '/',
+					views: {
+						'content@': {
+							controller: 'DashboardCtrl as dashboard',
+							templateUrl: 'dashboard/dashboard.tpl.html'
+						}
+					}
+		      });
 
 				$urlRouterProvider.otherwise('/');
 					
 				// $locationProvider.html5Mode(true);
 	}])
-	.config(['$httpProvider', function ($httpProvider) {
-		$httpProvider.interceptors.push('AuthInterceptor');
-	}])
+	// .config(['$httpProvider', function ($httpProvider) {
+	// 	$httpProvider.interceptors.push('AuthInterceptor');
+	// }])
 	.config(['RestangularProvider', function(RestangularProvider) {
     RestangularProvider.setBaseUrl('/api');
   }]);

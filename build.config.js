@@ -12,12 +12,15 @@ module.exports = {
     // fonts
     fonts: ['fonts/**']
   },
-
+  common_files: {
+    js: [ 'src/common/**/*.js']
+  },
   vendor_files: {
     js: [
       'vendor/angular/angular.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-translate/angular-translate.js',
+      'vendor/restangular/dist/restangular.js',
       'vendor/lodash/dist/lodash.js'
     ]
   }

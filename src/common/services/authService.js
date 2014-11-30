@@ -1,4 +1,4 @@
-angular.module('services.authService', [])
+angular.module('app.services.authService', [])
 	.factory('AuthService', ['$q', '$cookieStore', '$rootScope', 
 					function ($q, $cookieStore, $rootScope) {
 
@@ -27,13 +27,13 @@ angular.module('services.authService', [])
 						function currentUser() {
 							return $q(function(resolve, reject) {
 								if(_user){
-									resolve({ _user; });
+									resolve({ _user });
 								} else if($cookieStore.get('user')) {
 									_user = $cookieStore.get('user');
 									$rootScope.$broadcast("user:set", _user);
-									resolve({ _user; });
+									resolve({ _user });
 								} else{
-									resolve({ null; });
+									resolve({ null });
 								}
 							});
 						};

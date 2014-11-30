@@ -6,7 +6,10 @@ angular.module('authentication.login', [
 				      .state('login', {
 				        url: '/login',
 				        templateUrl: 'authentication/login/login.tpl.html',
-				        controller: 'LoginController as login'
+				        controller: 'LoginController as login',
+				        data: {
+				        		// userLimit: 5 etc... some Params
+				        }
 			      	});
 			}])
 			.value('test', 2);

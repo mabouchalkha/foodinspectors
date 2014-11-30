@@ -35,7 +35,8 @@ module.exports = function(grunt) {
 				},
 				jssrc: {
 					files: [
-						'<%= app_files.js %>'
+						'<%= app_files.js %>',
+						'<%= common_files.js %>'
 					],
 					tasks: ['copy', 'index']
 				},
@@ -78,14 +79,14 @@ module.exports = function(grunt) {
 			html2js: {
 				/*
 	      	* These are the templates from `src/app`.
-	      */
-		  	app: {
-		      options: {
-		          base: 'src/app'
-		      },
-		      src: [ '<%= app_files.atpl %>' ],
-		      dest: '<%= build_dir %>/templates-app.js'
-				}
+	    	   */
+		  		app: {
+			      options: {
+			          base: 'src/app'
+			      },
+			      src: [ '<%= app_files.atpl %>' ],
+			      dest: '<%= build_dir %>/templates-app.js'
+				},
 			},
 			less: {
 		   	build: {
@@ -130,6 +131,16 @@ module.exports = function(grunt) {
 					files: [ 
 						{
 			        src: [ '<%= app_files.js %>' ],
+			        dest: '<%= build_dir %>/',
+			        cwd: '.',
+			        expand: true
+						} 
+					]
+				},
+				commonjs: {
+					files: [ 
+						{
+			        src: [ '<%= common_files.js %>' ],
 			        dest: '<%= build_dir %>/',
 			        cwd: '.',
 			        expand: true

@@ -3,7 +3,7 @@ angular.module('dashboard', [
 	])
 		.config(['$stateProvider', function ($stateProvider) {
 			   $stateProvider
-			      .state('app.layouts.dashboard', {
+			      .state('home.dashboard', {
 			        url: 'dashboard',
 			        views: {
 			        	'content@': {
