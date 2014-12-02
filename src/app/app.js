@@ -3,7 +3,7 @@ angular.module('app', [
 	'layouts',
 	'authentication',
 	'dashboard',
-	'interceptors.authInterceptor',
+	'common.authInterceptor',
 	//module's angularjs
 	'ui.router',
 	'restangular',
@@ -24,10 +24,6 @@ angular.module('app', [
 					
 				// $locationProvider.html5Mode(true);
 	}]);
-	// .config(['$httpProvider', function ($httpProvider) {
-	// 	$httpProvider.interceptors.push('AuthInterceptor');
-	// }])
-
 	// .controller('AppCtrl', ['debug', function(debug) {
  //  		debug('say it is so.');
  //  		this.statement = 'This is the application root.'

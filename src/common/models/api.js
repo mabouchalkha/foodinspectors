@@ -1,7 +1,7 @@
-angular.module('common.models.modelConfig', [
+angular.module('common.models.api', [
 	'restangular'
 	])
-	    .factory('ModelConfig', ['Restangular', function(Restangular) {
+	    .factory('API', ['Restangular', function(Restangular) {
 	        return Restangular.withConfig(function(RestangularProvider) {
 	            
 	            RestangularProvider.setBaseUrl('/api');
