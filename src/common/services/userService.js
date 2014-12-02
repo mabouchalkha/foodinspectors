@@ -20,9 +20,9 @@ angular.module('common.services.userService', [])
 					
 											AuthService.setCurrentUser(user);
 					
-											resolve({ user });
+											resolve( user );
 										} else {
-											reject({ response });
+											reject( response );
 										}
 									});
 								});
@@ -31,8 +31,8 @@ angular.module('common.services.userService', [])
 							function logout() {
 								return $q(function(resolve, reject) {
 									AuthService.removeCurrentUser();
-									resolve({ });
-									reject({ });
+									resolve( );
+									reject( );
 								});
 							};
 	
@@ -44,7 +44,7 @@ angular.module('common.services.userService', [])
 										user.auth_token = response.data.auth_token;
 					
 										AuthService.setCurrentUser(user);
-										resolve({ user });
+										resolve( user );
 									});
 								});
 							};
