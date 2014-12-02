@@ -1,4 +1,4 @@
-angular.module('app.services.userService', [])
+angular.module('common.services.userService', [])
 	.factory('UserService', ['$q', '$cookieStore', '$rootScope', 'AuthService', 'User',
 						function ($q, $cookieStore, $rootScope, AuthService, User) {
 					

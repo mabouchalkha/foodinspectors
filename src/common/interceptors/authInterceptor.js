@@ -1,32 +1,32 @@
-angular.module('app.interceptors.authInterceptor', [
-	'services.authService'
+angular.module('common.authInterceptor', [
+	'common.services.authService'
 	])
-	.factory('AuthInterceptor', ['$q', 'AuthService', function ($q, AuthService) {
+		.factory('AuthInterceptor', ['$q', 'AuthService', function ($q, AuthService) {
+			
+			var authInterceptor = {
+				'request': addTokenWithUser,
+				'requestError': requestError
+			};
 		
-		var authInterceptor = {
-			'request': addTokenWithUser,
-			'requestError': requestError
-		};
+			return authInterceptor;
 
-		return authInterceptor;
-		
-		function addTokenWithUser(req) {
-			return $q(function(resolve, reject) {
-							AuthService.currentUser().then(function(user) {
-								if(user) {
-									req.params = req.params || {};
-									req.params['auth_token'] = req.params['auth_token'] || user.auth_token;
-									req.params['auth_user_id'] = req.params['auth_user_id'] || user.id;
-									resolve({ req });
-								} else {
-									resolve({ req });
-								}
+			function addTokenWithUser(req) {
+				return $q(function(resolve, reject) {
+								AuthService.currentUser().then(function(user) {
+									if(user) {
+										req.params = req.params || {};
+										req.params['auth_token'] = req.params['auth_token'] || user.auth_token;
+										req.params['auth_user_id'] = req.params['auth_user_id'] || user.id;
+										resolve( req );
+									} else {
+										resolve( req );
+									}
+								});
 							});
-						});
-		};
+			};
 
-		function requestError(reqErr) {
-			return reqErr;
-		};
+			function requestError(reqErr) {
+				return reqErr;
+			};
 
-	}]);
+		}]);

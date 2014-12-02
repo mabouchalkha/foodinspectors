@@ -1,9 +1,10 @@
-angular.module('app.services.authService', [])
+angular.module('common.services.authService', [])
 	.factory('AuthService', ['$q', '$cookieStore', '$rootScope', 
 					function ($q, $cookieStore, $rootScope) {
 
 						var _user = null;
 	
+						// The public API of the service
 						var service = {
 							setCurrentUser: setCurrentUser,
 							removeCurrentUser: removeCurrentUser,
@@ -27,16 +28,15 @@ angular.module('app.services.authService', [])
 						function currentUser() {
 							return $q(function(resolve, reject) {
 								if(_user){
-									resolve({ _user });
+									resolve( _user );
 								} else if($cookieStore.get('user')) {
 									_user = $cookieStore.get('user');
 									$rootScope.$broadcast("user:set", _user);
-									resolve({ _user });
+									resolve( _user );
 								} else{
-									resolve({ null });
+									resolve( null );
 								}
 							});
 						};
 
-					}]
-	);
+					}]);

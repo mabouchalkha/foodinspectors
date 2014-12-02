@@ -3,12 +3,12 @@ angular.module('app', [
 	'layouts',
 	'authentication',
 	'dashboard',
+	'common.authInterceptor',
 	//module's angularjs
 	'ui.router',
 	'restangular',
 	//all template html 
 	'templates-app',
-	//'app.interceptors.authInterceptor',
 	//module npm 
 	'app.modules'
 ])

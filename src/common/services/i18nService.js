@@ -1,4 +1,4 @@
-angular.module('app.services.i18n', ['pascalprecht.translate'])
+angular.module('common.services.i18n', ['pascalprecht.translate'])
     .config(['$translateProvider', function($translateProvider) {
           $translateProvider
             .translations('en', translations)

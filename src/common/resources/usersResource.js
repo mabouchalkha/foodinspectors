@@ -1,4 +1,4 @@
-angular.module('services.userService', ['restangular'])
+angular.module('common.services.userService', ['restangular'])
     .factory('User', ['$rootScope', 'Restangular', function ($rootScope, Restangular) {
 
     		var userResource = Restangular.all('users');
