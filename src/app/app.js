@@ -4,6 +4,7 @@ angular.module('app', [
 	'authentication',
 	'dashboard',
 	//module's angularjs
+	'ngAria',
 	'ui.router',
 	'restangular',
 	//all template html 
