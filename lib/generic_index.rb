@@ -24,4 +24,8 @@ module GenericIndex
           nil 
        end
     end
+    
+    def self.get_index_limit user
+        !user.nil? && !user.config.nil? ? user.config.index_qty : 20
+    end
 end
