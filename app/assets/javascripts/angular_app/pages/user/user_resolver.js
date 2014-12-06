@@ -1,7 +1,7 @@
 angular.module('starterApp').constant('userResolver', {
     resolveIndex: {
         viewModel: ['userResource', function (userResource) {
-            return userResource.index({limit: 2, predicate: 'email'}).$promise.then()
+            return userResource.index({predicate: 'email'}).$promise.then()
         }],
         config: ['userResource', function (userResource) {
             return {
@@ -11,7 +11,6 @@ angular.module('starterApp').constant('userResolver', {
                 columns: [{name: 'Email', field: 'email'}, {name: 'First Name', field: 'first_name'}, {name: 'Last Name', field: 'last_name'}],
                 predicate: 'email',
                 resource: userResource,
-                pageLimit: 20,
                 createLink: true
             }
         }]

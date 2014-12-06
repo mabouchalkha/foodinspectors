@@ -1,16 +1,16 @@
 module GenericIndex
-    def self.retrieve_index model, predicate, reverse, offset, search, conditions
+    def self.retrieve_index model, predicate, reverse, offset, search, conditions, limit
         raise "You need to specify a model to generate a generic index" unless !model.nil?
         predicate = predicate || 'name'
         reverse = !reverse.nil? ? reverse == 'true' ? 'DESC' : 'ASC' : 'ASC'
         offset = offset || 0
         order = predicate + ' ' + reverse
-        
+
         if !search.blank?
-            objects = model.where(conditions).order(order).limit(20).offset(offset)
+            objects = model.where(conditions).order(order).limit(limit).offset(offset)
             count = objects.count(:conditions => conditions)
         else
-            objects = model.order(order).limit(20).offset(offset)
+            objects = model.order(order).limit(limit).offset(offset)
             count = model.count
         end
         
@@ -23,5 +23,9 @@ module GenericIndex
        else
           nil 
        end
+    end
+    
+    def self.get_index_limit user
+        !user.nil? && !user.config.nil? ? user.config.index_qty : 20
     end
 end

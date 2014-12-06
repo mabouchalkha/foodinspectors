@@ -14,7 +14,7 @@ gem 'paper_trail', '~> 3.0.6'
 
 gem 'slim'
 
-gem 'angular-rails-templates'
+gem 'angular-rails-templates', '0.0.7'
 
 gem 'devise'
 gem 'omniauth'

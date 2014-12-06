@@ -1,7 +1,7 @@
 angular.module('starterApp').constant('payementTermResolver', {
     resolveIndex: {
         viewModel: ['payementTermResource', function (payementTermResource) {
-            return payementTermResource.index({limit: 2, predicate: 'name'}).$promise.then()
+            return payementTermResource.index({predicate: 'name'}).$promise.then()
         }],
         config: ['payementTermResource', function (payementTermResource) {
             return {
@@ -11,7 +11,6 @@ angular.module('starterApp').constant('payementTermResolver', {
                 columns: [{name: 'Name', field: 'name'}, {name: 'Due in days', field: 'due_in_days'}],
                 predicate: 'name',
                 resource: payementTermResource,
-                pageLimit: 20,
                 createLink: true
             }
         }]
