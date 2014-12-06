@@ -22,3 +22,5 @@
 //= require_tree ./libs
 //= require app
 //= require_tree ./angular_app
+
+

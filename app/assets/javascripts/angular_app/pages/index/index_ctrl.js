@@ -3,6 +3,7 @@ angular.module('starterApp').controller('IndexCtrl', ['$scope', 'viewModel', 'co
         $scope.data = viewModel.data;
         $scope.count = viewModel.meta.count;
         $scope.config = config;
+        $scope.pageLimit = viewModel.meta.pageLimit;
         $scope.predicate = config.predicate;
         $scope.reverse = false;
         $scope.resource = config.resource;

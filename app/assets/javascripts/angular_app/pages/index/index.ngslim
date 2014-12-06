@@ -26,7 +26,7 @@
                     th ng-click="sort(col)" ng-repeat="col in config.columns"
                         .th ng-bind="col.name" ng-class="{'sorting': predicate!=col.field, 'sorting_asc': predicate==col.field && reverse, 'sorting_desc': predicate==col.field && !reverse }" 
             tbody ng-if="data.length > 0" 
-                tr ng-repeat="item in data | limitTo:config.pageLimit" 
+                tr ng-repeat="item in data | limitTo:pageLimit" 
                     td ng-repeat="col in config.columns" ng-click="goToEntity(item)"
                         span ng-bind="item[col.field]" 
             tbody ng-if="data.length < 1" 
@@ -35,4 +35,4 @@
                         span data-i18n="No Data"
         footer.table-footer
             .text-right.pagination-container
-                pagination.pagination-sm items-per-page="config.pageLimit" next-text=">" ng-change="changePage(page)" ng-model="page" previous-text="<" total-items="count"
+                pagination.pagination-sm items-per-page="pageLimit" next-text=">" ng-change="changePage(page)" ng-model="page" previous-text="<" total-items="count"

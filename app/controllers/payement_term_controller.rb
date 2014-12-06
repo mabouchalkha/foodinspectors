@@ -6,8 +6,9 @@ class PayementTermController < ApplicationController
     def index
         search = GenericIndex.generate_search_string params[:searchValue]
         conditions = ['name like ?', search]
-        indexData = GenericIndex.retrieve_index PayementTerm, params[:predicate], params[:reverse], params[:page], params[:searchValue], conditions
-        render FormatResponse.success(nil, indexData[:objects], { :count => indexData[:count] })
+        limit = !current_user.nil? ? current_user.config.index_qty : 20
+        indexData = GenericIndex.retrieve_index PayementTerm, params[:predicate], params[:reverse], params[:page], params[:searchValue], conditions, limit
+        render FormatResponse.success(nil, indexData[:objects], { :count => indexData[:count], :pageLimit => limit })
     end
     
     def read

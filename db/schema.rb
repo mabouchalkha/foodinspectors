@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104214621) do
+ActiveRecord::Schema.define(version: 20141205212706) do
 
   create_table "authorizations", force: true do |t|
     t.string   "provider"
@@ -29,6 +29,13 @@ ActiveRecord::Schema.define(version: 20141104214621) do
     t.string   "name",                       null: false
     t.integer  "due_in_days",                null: false
     t.boolean  "is_enabled",  default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_configs", force: true do |t|
+    t.integer  "index_qty",  null: false
+    t.integer  "user_id",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
