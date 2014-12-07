@@ -4,12 +4,12 @@ angular.module('dashboard', [
 		.config(['$stateProvider', function ($stateProvider) {
 			   $stateProvider
 			      .state('home.dashboard', {
-			        url: 'dashboard',
+			        url: "/dashboard",
 			        views: {
-			        	'content@': {
-			        		controller: 'DashboardCtrl as dashboard',
-			        		templateUrl: 'dashboard/dashboard.tpl.html'
-			        	}
+				        	'content@': {
+				        		controller: 'DashboardCtrl as dashboard',
+				        		templateUrl: 'dashboard/dashboard.tpl.html'
+			        		}
 			        }
 		      	});
 			}])

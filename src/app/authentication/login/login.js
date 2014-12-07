@@ -1,5 +1,6 @@
 angular.module('authentication.login', [
-		'ui.router'])
+		'ui.router'
+		])
 			.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
 				function ($stateProvider, $urlRouterProvider, $locationProvider) {
 				   $stateProvider

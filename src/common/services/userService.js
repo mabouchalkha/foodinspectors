@@ -1,4 +1,8 @@
-angular.module('common.services.userService', [])
+angular.module('common.services.userService', [
+	'ngCookies',
+	'common.services.authService',
+	'common.models.user'
+	])
 	.factory('UserService', ['$q', '$cookieStore', '$rootScope', 'AuthService', 'User',
 						function ($q, $cookieStore, $rootScope, AuthService, User) {
 					
@@ -39,7 +43,7 @@ angular.module('common.services.userService', [])
 							function signup(userParams) {
 								return $q(function(resolve, reject) {
 									
-									User.post().then(function(response){
+									User.create(userParams).then(function(response){
 										var user = response.data.user;
 										user.auth_token = response.data.auth_token;
 					

@@ -1,10 +1,11 @@
 angular.module('common.models.user', [
-	'restangular'
+	'restangular',
+	'common.models.api'
 	])
 	    .factory('User', ['$rootScope', 'API', 'Restangular', function ($rootScope, API, Restangular) {
 	
-	    	   //var userResource = API.all('users');
-	    	   var userResource = API.service('users');
+	    	   var userResource = API.all('users');
+	    	   //var userResource = API.service('users');
 	
 	    	   var User = {
 	    			read: read,

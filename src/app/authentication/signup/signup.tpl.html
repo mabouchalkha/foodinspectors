@@ -1,12 +1,4 @@
-<div class="page-signup">
 
-    <div class="signin-header">
-        <div class="container text-center">
-            <section class="logo">
-                <a href="#/">{{main.brand}}</a>
-            </section>
-        </div>
-    </div>
 
     <div class="main-body">
         <div class="container">
@@ -22,20 +14,21 @@
 
                 <span class="line-thru">OR</span>
 
-                <section>
-                    <form name="signup_form" role="form" class="form-horizontal" 
-                    ng-submit="submitSignup()">
+                <form class="form-horizontal" ng-submit="signup.submitSignup()">
+                    <fieldset>
                         <div class="form-group">
                             <div class="input-group input-group-lg">
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                <input type="email" 
-                                class="form-control" 
-                                placeholder="Your Email"
-                                name="signup.email"
-                                ng-model="signup.email"
-                                required>
+                                
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="Email"
+                                       name="signup.registerParams.email"
+                                       ng-model="signup.registerParams.email"
+                                       >
+                                       {{signup.registerParams.email}}
                             </div>
                         </div>
                         <div class="form-group">
@@ -43,32 +36,25 @@
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-lock"></span>
                                 </span>
-                                <input type="password" 
-                                class="form-control" 
-                                placeholder="Your Password"
-                                name="signup.password"
-                                ng-model="signup.password"
-                                required>
+                                
+                                <input type="password"
+                                       class="form-control"
+                                       placeholder="password"
+                                       name="signup.registerParams.password"
+                                       ng-model="signup.registerParams.password"
+                                       >
+                                       {{signup.registerParams.password}}
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <p class="text-muted text-small">By clicking on Sign up, you agree to <a href="javascript:;">terms & conditions</a> and <a href="javascript:;">privacy policy</a></p>
-                            <div class="divider"></div>
-                            <button type="submit" 
-                            class="btn btn-primary btn-lg btn-block ">
-                            Sign Up</button>
                         </div>
-                    </form>
-                    <div ng-if="signup.errors" class="alert alert-danger">
-                      <h2>{{signup.errors}}</h2>
-                    </div>
-                </section>
-                <section>
-                     <p class="text-center text-muted">Already have an account? 
-                     <a ui-sref="login" >Log in now</a></p>
-                </section>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Sign up</button>
+                        </div>
+                    </fieldset>
+                </form>
+                
             </div>
         </div>
     </div>
-</div>
+

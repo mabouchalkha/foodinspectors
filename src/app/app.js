@@ -3,6 +3,7 @@ angular.module('app', [
 	'layouts',
 	'authentication',
 	'dashboard',
+	'common.services.authService',
 	//module's angularjs
 	'ngAria',
 	'ui.router',

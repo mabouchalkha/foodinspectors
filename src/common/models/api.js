@@ -4,7 +4,7 @@ angular.module('common.models.api', [
 	    .factory('API', ['Restangular', function(Restangular) {
 	        return Restangular.withConfig(function(RestangularProvider) {
 	            
-	            RestangularProvider.setBaseUrl('/api');
+	            RestangularProvider.setBaseUrl('http://localhost:3000/api');
 	            // add a response intereceptor
                 RestangularProvider.addResponseInterceptor(function(data, operation, what, url, response, deferred) {
                   var extractedData;

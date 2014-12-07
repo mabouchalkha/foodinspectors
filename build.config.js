@@ -19,6 +19,7 @@ module.exports = {
     js: [
       'vendor/angular/angular.js',
       'vendor/angular-aria/angular-aria.js',
+      'vendor/angular-cookies/angular-cookies.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-translate/angular-translate.js',
       'vendor/restangular/dist/restangular.js',

@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 
 		  connect: {
 		      server: {
-		        port: 3444,
+		        port: 3000,
 		        // Change this to '0.0.0.0' to access the server from outside.
 		        hostname: 'localhost'
 		      },
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 		        {
 		          context: '/api',
 		          host: 'localhost',
-		          port: 3000
+		          port: 3444
 		        }
 		      ]
 		  },
