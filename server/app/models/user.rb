@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
 	devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-
+   before_save :ensure_authentication_token
    # We’ll also want to make sure that the authentication_token 
    # actually generates when the user is saved, so we’ll add a 
    # before action that ensures token generation for us

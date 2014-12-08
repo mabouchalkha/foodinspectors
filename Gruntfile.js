@@ -16,7 +16,7 @@ module.exports = function(grunt) {
   	pkg: grunt.file.readJSON('package.json'),
 
 		  connect: {
-		      server: {
+		      options: {
 		        port: 3000,
 		        // Change this to '0.0.0.0' to access the server from outside.
 		        hostname: 'localhost'
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 		        {
 		          context: '/api',
 		          host: 'localhost',
-		          port: 3444
+		          port: 3000
 		        }
 		      ]
 		  },
@@ -173,7 +173,7 @@ module.exports = function(grunt) {
   grunt.initConfig(grunt.util._.extend(taskConfig, userConfig));
 
   
-	grunt.registerTask('default', ['build', 'concurrent']);
+	grunt.registerTask('default', ['build', 'concurrent', 'configureProxies']);
 
 	grunt.registerTask('build', ['clean', 'copy', 'html2js', 'browserify', 'less', 'index']);
 
