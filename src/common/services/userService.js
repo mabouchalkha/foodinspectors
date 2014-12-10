@@ -41,16 +41,32 @@ angular.module('common.services.userService', [
 							};
 	
 							function signup(userParams) {
-								return $q(function(resolve, reject) {
-									
-									User.create(userParams).then(function(response){
-										var user = response.data.user;
-										user.auth_token = response.data.auth_token;
-					
-										AuthService.setCurrentUser(user);
-										resolve( user );
-									});
+								var d = $q.defer();
+								$http({
+									url: 'api/v1/users',
+									method: 'POST',
+									data: {
+									user: userParams
+									}
+								}).success(function(response) { 
+									var user = response.data.user;
+									user.auth_token = response.data.auth_token; // talk about this
+									AuthService.setCurrentUser(user);
+									d.resolve(user);
+								}).error(function(reason) { 
+									d.reject(reason);
 								});
+								return d.promise;
+								// return $q(function(resolve, reject) {
+									
+								// 	User.create(userParams).then(function(response){
+								// 		var user = response.data.user;
+								// 		user.auth_token = response.data.auth_token;
+					
+								// 		AuthService.setCurrentUser(user);
+								// 		resolve( user );
+								// 	});
+								// });
 							};
 
 						}]
