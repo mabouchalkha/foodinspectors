@@ -3,8 +3,8 @@ angular.module('common.services.userService', [
 	'common.services.authService',
 	'common.models.user'
 	])
-	.factory('UserService', ['$q', '$cookieStore', '$rootScope', 'AuthService', 'User',
-						function ($q, $cookieStore, $rootScope, AuthService, User) {
+	.factory('UserService', ['$q', '$cookieStore', '$rootScope', '$http', 'AuthService', 'User',
+						function ($q, $cookieStore, $rootScope, $http, AuthService, User) {
 					
 							var userService = {
 								login: login,
@@ -41,16 +41,35 @@ angular.module('common.services.userService', [
 							};
 	
 							function signup(userParams) {
-								return $q(function(resolve, reject) {
+										var d = $q.defer();
+
+										$http({
+											url: 'http://localhost:3000/api/v1/users',
+											method: 'POST',
+											data: {
+												user: userParams
+											}
+										}).success(function(response) { 
+											var user = response.data.user;
+											user.auth_token = response.data.auth_token; // talk about this
+
+											AuthService.setCurrentUser(user);
+
+											d.resolve(user);
+										}).error(function(reason) { 
+											d.reject(reason);
+										});
+										return d.promise;
+								// return $q(function(resolve, reject) {
 									
-									User.create(userParams).then(function(response){
-										var user = response.data.user;
-										user.auth_token = response.data.auth_token;
+								// 	User.create(userParams).then(function(response){
+								// 		var user = response.data.user;
+								// 		user.auth_token = response.data.auth_token;
 					
-										AuthService.setCurrentUser(user);
-										resolve( user );
-									});
-								});
+								// 		AuthService.setCurrentUser(user);
+								// 		resolve( user );
+								// 	});
+								// });
 							};
 
 						}]
