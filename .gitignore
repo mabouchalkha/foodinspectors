@@ -4,6 +4,8 @@
 /.c9
 server/.bundle
 server/Gemfile.lock
+server/tmp
+server/log
 build
 vendor
 node_modules
