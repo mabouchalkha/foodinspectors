@@ -1,11 +1,9 @@
-angular.module('common.authInterceptor', [
-	'common.services.authService'
-	])
+angular.module('common.authInterceptor', ['common.services.authService'])
 		.factory('AuthInterceptor', ['$q', 'AuthService', function ($q, AuthService) {
 			
 			var authInterceptor = {
-				'request': addTokenWithUser,
-				'requestError': requestError
+				request: addTokenWithUser,
+				requestError: requestError
 			};
 		
 			return authInterceptor;

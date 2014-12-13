@@ -13,8 +13,8 @@ angular.module('app', [
 	//module npm 
 	'app.modules'
 ])
-	.config(['$stateProvider', '$urlRouterProvider', 
-		function($stateProvider, $urlRouterProvider) {
+	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
+		function($stateProvider, $urlRouterProvider, $httpProvider) {
 			$stateProvider
 				.state('home', {
 					url: '',
@@ -41,9 +41,20 @@ angular.module('app', [
 					});
 
 				$urlRouterProvider.otherwise('/');
-					
+				
+				$httpProvider.defaults.useXDomain = true;
+				delete $httpProvider.defaults.headers.common["X-Requested-With"]; 
 				// $locationProvider.html5Mode(true);
-	}]);
+	}])
+	.config(['$httpProvider' ,function($httpProvider) {
+
+		$httpProvider.interceptors.push('AuthInterceptor');
+  }])
+  .run(['$rootScope', '$http', '$state', function($rootScope, $http, $state) {
+	    $rootScope.$on('event:unauthorized', function() {
+	      $state.go('home.signup')
+	    });
+	 }]);
 	// .controller('AppCtrl', ['debug', function(debug) {
  //  		debug('say it is so.');
  //  		this.statement = 'This is the application root.'

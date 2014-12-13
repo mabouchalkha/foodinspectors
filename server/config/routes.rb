@@ -1,23 +1,29 @@
-require 'api_constraints'
+Foodinspectors::Application.routes.draw do
 
-Rails.application.routes.draw do
+   
 
-   namespace :api, defaults: {format: :json} do
+   namespace :api, defaults: {format: 'json'} do
       namespace :v1 do
-         devise_for :users, :controllers =>  {
-                                                registrations: "api/v1/users/registrations",
-                                                sessions: "api/v1/users/sessions"
-                                             }
-      end
-      # scope module: :v1, constraints: ApiConstraints.new(version: 1, default: :true) do
-      #    devise_for :users, :controllers =>  {
-      #                                           registrations: "api/v1/users/registrations",
-      #                                           sessions: "api/v1/users/sessions"
-      #                                        }
-      # end 
-   end
-  
-  match "*path" => "welcome#index", :via => [:get, :post]
-  root to: 'welcome#index'
 
+      end 
+   end
+
+   devise_for :users, 
+      :controllers => {
+         registrations: "users/registrations", 
+         sessions: "users/sessions"
+      }
+      
+   devise_scope :user do
+      post '/check/is_user' => 'users/users#is_user', as: 'is_user'
+      post '/current_user' => 'users/sessions#get_current_user'
+   end
+
+   get 'users', :to => 'users#index'
+
+
+
+   get "foodinspectors/index"
+   root "foodinspectors#index"
+   match '*path' => "foodinspectors#index", :via => [:get, :post]
 end

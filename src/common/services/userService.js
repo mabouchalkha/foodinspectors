@@ -44,7 +44,7 @@ angular.module('common.services.userService', [
 										var d = $q.defer();
 
 										$http({
-											url: 'http://localhost:3000/api/v1/users',
+											url: 'http://127.0.0.1:3000/users',
 											method: 'POST',
 											data: {
 												user: userParams
