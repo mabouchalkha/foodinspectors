@@ -3,7 +3,7 @@ angular.module('app', [
 	'layouts',
 	'authentication',
 	'dashboard',
-	'common.services.authService',
+	'app.common',
 	//module's angularjs
 	'ngAria',
 	'ui.router',
@@ -42,8 +42,8 @@ angular.module('app', [
 
 				$urlRouterProvider.otherwise('/');
 				
-				$httpProvider.defaults.useXDomain = true;
-				delete $httpProvider.defaults.headers.common["X-Requested-With"]; 
+				// $httpProvider.defaults.useXDomain = true;
+				// delete $httpProvider.defaults.headers.common["X-Requested-With"]; 
 				// $locationProvider.html5Mode(true);
 	}]);
 	// .controller('AppCtrl', ['debug', function(debug) {

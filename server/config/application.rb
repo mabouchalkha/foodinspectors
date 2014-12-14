@@ -14,7 +14,7 @@ module Foodinspectors
         resource '*',
             :headers => :any,
             :methods => [:get, :post, :delete, :put, :options],
-            :max_age => 0
+            :max_age => 3628800
         end
     end
     # Settings in config/environments/* take precedence over those specified here.

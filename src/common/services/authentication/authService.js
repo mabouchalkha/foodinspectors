@@ -1,4 +1,4 @@
-angular.module('common.services.authService', [])
+angular.module('common.services.authentication.authService', [])
 	.factory('AuthService', ['$q', '$cookieStore', '$rootScope', 
 					function ($q, $cookieStore, $rootScope) {
 

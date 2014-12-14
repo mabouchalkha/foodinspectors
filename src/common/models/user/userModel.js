@@ -30,9 +30,10 @@ angular.module('common.models.user', [
 			   }
 	
 			   function create(user) {
-			   	userResource.post(user).then(function() {
-			   		$rootScope.broadcast('users.create');
-			   	});
+			   	userResource.post(user);
+			   	// .then(function() {
+			   	// 	$rootScope.broadcast('users.create');
+			   	// });
 			   }
 	
 			   function update(user) {
@@ -46,7 +47,7 @@ angular.module('common.models.user', [
 			   }
 	
 			   function createCustom(customData) {
-			   	return Restangular.one('users').customPOST(customData);
+			   	return API.one('users').customPOST(customData);
 			   }
 	
 			   function resource() {

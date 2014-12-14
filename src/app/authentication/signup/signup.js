@@ -1,6 +1,6 @@
 angular.module('authentication.signup', [
 	'ui.router',
-	'common.services.userService'
+	'common.services.user.userService'
 	])
 		.config(['$stateProvider', function ($stateProvider) {
 			   $stateProvider
