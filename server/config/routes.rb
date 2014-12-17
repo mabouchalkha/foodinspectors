@@ -8,11 +8,13 @@ Foodinspectors::Application.routes.draw do
       end 
    end
 
+   resources :contacts
+   
    devise_for :users, 
       :controllers => {
          registrations: "users/registrations", 
          sessions: "users/sessions"
-      }, via: :options
+      } #, via: :options
       
    devise_scope :user do
       post '/check/is_user' => 'users/users#is_user', as: 'is_user'
