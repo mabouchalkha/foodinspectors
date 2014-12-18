@@ -2,14 +2,9 @@ class ContactsController < ApplicationController
     def create
 		@contact = Contact.new(@contact_params);
 		if @contact.save
-			respond_to do |format|
-				format.json { render json: @contact.as_json, status: 201 }
-				# format.json { render json: @customers, status: 201, location: @customers }
-			end
+			render status: :ok, json: @contact.as_json
 		else
-			respond_to do |format|
-				format.json { render json: @contact.errors.as_json, status: 422 }
-			end
+			render status: :unprocessable_entity, json: @contact.errors.as_json
 		end
 	end
 
