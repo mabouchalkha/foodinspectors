@@ -1,14 +1,16 @@
 angular.module('app', [
+	//module's angularjs
+	'ngMessages',
+	'ngAnimate',
+	'ngAria',
+	'ui.router',
+	'restangular',
 	//module's app
 	'layouts',
 	'authentication',
 	'dashboard',
 	'contact',
 	'app.common',
-	//module's angularjs
-	'ngAria',
-	'ui.router',
-	'restangular',
 	//all template html 
 	'templates-app',
 	//module npm 
@@ -43,10 +45,13 @@ angular.module('app', [
 
 				$urlRouterProvider.otherwise('/');
 				
-				// $httpProvider.defaults.useXDomain = true;
-				// delete $httpProvider.defaults.headers.common["X-Requested-With"]; 
 				// $locationProvider.html5Mode(true);
-	}]);
+	}])
+	.run(function ($rootScope, $translate) {
+		$rootScope.$on('$translatePartialLoaderStructureChanged', function () {
+		 	$translate.refresh();
+		});
+	});
 	// .controller('AppCtrl', ['debug', function(debug) {
  //  		debug('say it is so.');
  //  		this.statement = 'This is the application root.'

@@ -10,7 +10,9 @@ module.exports = {
     // the index.html
     html: [ 'src/index.html' ],
     // fonts
-    fonts: ['fonts/**']
+    fonts: ['fonts/**'],
+    //json locale i18n
+    json: ['src/**/*.json']
   },
   common_files: {
     js: [ 'src/common/**/*.js']
@@ -18,10 +20,13 @@ module.exports = {
   vendor_files: {
     js: [
       'vendor/angular/angular.js',
+      'vendor/angular-messages/angular-messages.js',
+      'vendor/angular-animate/angular-animate.js',
       'vendor/angular-aria/angular-aria.js',
       'vendor/angular-cookies/angular-cookies.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-translate/angular-translate.js',
+      'vendor/angular-translate-loader-partial/angular-translate-loader-partial.js',
       'vendor/restangular/dist/restangular.js',
       'vendor/lodash/dist/lodash.js'
     ]

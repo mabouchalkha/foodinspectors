@@ -15,20 +15,20 @@ module.exports = function(grunt) {
   var taskConfig = {
   	pkg: grunt.file.readJSON('package.json'),
 
-		  connect: {
-		      options: {
-		        port: 3000,
-		        // Change this to '0.0.0.0' to access the server from outside.
-		        hostname: 'localhost'
-		      },
-		      proxies: [
-		        {
-		          context: '/api',
-		          host: 'localhost',
-		          port: 3000
-		        }
-		      ]
-		  },
+		  // connect: {
+		  //     options: {
+		  //       port: 3000,
+		  //       // Change this to '0.0.0.0' to access the server from outside.
+		  //       hostname: 'localhost'
+		  //     },
+		  //     proxies: [
+		  //       {
+		  //         context: '/api',
+		  //         host: 'localhost',
+		  //         port: 3000
+		  //       }
+		  //     ]
+		  // },
   		watch: {
 				options: {
 				  livereload: true,
@@ -148,25 +148,35 @@ module.exports = function(grunt) {
 					]
 				},
 				vendorjs: {
-        	files: [
-	         	{
-	            src: [ '<%= vendor_files.js %>' ],
-	            dest: '<%= build_dir %>/',
-	            cwd: '.',
-	            expand: true
-	         	}
-        	]
-      	},
-      	fonts: {
-        	files: [
-	         	{
-	            src: [ '<%= app_files.fonts %>' ],
-	            dest: '<%= build_dir %>/',
-	            cwd: '.',
-	            expand: true
-	         	}
-        	]
-      	}  
+		        	files: [
+			         	{
+			            src: [ '<%= vendor_files.js %>' ],
+			            dest: '<%= build_dir %>/',
+			            cwd: '.',
+			            expand: true
+			         	}
+		        	]
+      		},
+	      	fonts: {
+		        	files: [
+			         	{
+			            src: [ '<%= app_files.fonts %>' ],
+			            dest: '<%= build_dir %>/',
+			            cwd: '.',
+			            expand: true
+			         	}
+		        	]
+	      	},
+	      	json: {
+	      		files: [
+	      				{
+	      					src: ['<%= app_files.json %>'],
+	      					dest: '<%= build_dir %>/',
+			           		cwd: '.',
+			            	expand: true
+	      				}
+	      		]
+	      	}
 			}
   	};
 

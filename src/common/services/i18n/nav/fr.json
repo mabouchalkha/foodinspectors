@@ -1,0 +1,11 @@
+{
+	"NAV": 	
+		{
+			"DASHBOARD" : "Tableau de bord",
+			"PARAGRAPH": "Et il est livré avec des fonctionnalités impressionnantes!"
+      },
+   "HEADER": 
+   	{
+         "PARAGRAPH": "@:NAV.PARAGRAPH"
+      }
+}

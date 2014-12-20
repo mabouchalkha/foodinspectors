@@ -1,4 +1,5 @@
 angular.module('app.common', [
 	'common.models',
-	'common.services'
+	'common.services',
+	'common.directives'
 	]);
