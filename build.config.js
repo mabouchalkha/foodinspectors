@@ -28,6 +28,7 @@ module.exports = {
       'vendor/angular-translate/angular-translate.js',
       'vendor/angular-translate-loader-partial/angular-translate-loader-partial.js',
       'vendor/restangular/dist/restangular.js',
+      'vendor/angular-toastr/dist/angular-toastr.js',
       'vendor/lodash/dist/lodash.js',
       'vendor/jquery/dist/jquery.js',
       'vendor/jquery.slimscroll/jquery.slimscroll.js',

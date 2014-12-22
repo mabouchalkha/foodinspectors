@@ -13,6 +13,8 @@ angular.module('dashboard', [
 			        }
 		      	});
 			}])
-		.controller('DashboardCtrl', ['$scope', '$stateParams', function ($scope, $stateParams) {
+		.controller('DashboardCtrl', ['$scope', '$stateParams', 'NotificationsService', function ($scope, $stateParams, NotificationsService) {
 			var dashboard = this;
+			
+			NotificationsService.info('test', 'test title');
 		}]);
