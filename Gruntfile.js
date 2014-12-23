@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 	    	   */
 		  		app: {
 			      options: {
-			          base: 'src/app'
+			          base: 'src/app/'
 			      },
 			      src: [ '<%= app_files.atpl %>' ],
 			      dest: '<%= build_dir %>/templates-app.js'

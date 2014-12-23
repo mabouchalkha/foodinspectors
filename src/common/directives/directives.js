@@ -1,1 +1,4 @@
-angular.module('common.directives', ['common.directives.ui']);
+angular.module('common.directives', [
+	'common.directives.ui',
+	'common.directives.authentication',
+]);

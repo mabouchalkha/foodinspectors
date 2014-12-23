@@ -1,4 +1,7 @@
 angular.module('authentication.signup', [
+	'ngMessages',
+	'ngAnimate',
+	'ngAria',
 	'ui.router',
 	'common.services.user.userService'
 	])
