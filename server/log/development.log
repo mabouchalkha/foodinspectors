@@ -46171,3 +46171,78 @@ Can't verify CSRF token authenticity
   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-18 12:44:39.351664"], ["updated_at", "2014-12-18 12:44:39.351664"]]
   [1m[35m (2.6ms)[0m  commit transaction
 Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.1ms)
+DEPRECATION WARNING: Devise.token_authentication_key= is deprecated and has no effect. (called from token_authentication_key= at (eval):6)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-24 10:41:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"email"=>"mohamedarwa@gmail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"mohamedarwa@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 200ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-24 10:43:56 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"email"=>"mohamedarwa@gmail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"mohamedarwa@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 37ms (Views: 1.1ms | ActiveRecord: 1.4ms)
+DEPRECATION WARNING: Devise.token_authentication_key= is deprecated and has no effect. (called from token_authentication_key= at (eval):6)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-24 10:44:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"email"=>"mohamedarwa@gmail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"mohamedarwa@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 167ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+DEPRECATION WARNING: Devise.token_authentication_key= is deprecated and has no effect. (called from token_authentication_key= at (eval):6)
+DEPRECATION WARNING: Devise.token_authentication_key= is deprecated and has no effect. (called from token_authentication_key= at (eval):6)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-24 10:47:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"email"=>"maalmorrakochi@gmail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"maalmorrakochi@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 202ms (Views: 2.2ms | ActiveRecord: 1.1ms)
+DEPRECATION WARNING: Devise.token_authentication_key= is deprecated and has no effect. (called from token_authentication_key= at (eval):6)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-24 11:07:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"user"=>{"email"=>"sarrah@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"sarrah@gmail.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'sarrah@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 346ms (Views: 2.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-24 11:07:58 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"user"=>{"email"=>"sarrahasaasasas@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"sarrahasaasasas@gmail.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'sarrahasaasasas@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = 'Z1Sy1yQP5gdjGkz8xstB'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (9.3ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?, ?)  [["authentication_token", "Z1Sy1yQP5gdjGkz8xstB"], ["created_at", "2014-12-24 16:07:58.169448"], ["email", "sarrahasaasasas@gmail.com"], ["encrypted_password", "$2a$10$F3sv/oAlHs4VnAHLRCr67OecLlKCWq9J.bCsJWwJUBYvFmado9lpq"], ["updated_at", "2014-12-24 16:07:58.169448"]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 193ms (Views: 1.6ms | ActiveRecord: 21.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-24 11:13:42 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"sarrahasaasasas@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"sarrahasaasasas@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'sarrahasaasasas@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 152ms (Views: 3.3ms | ActiveRecord: 0.5ms)

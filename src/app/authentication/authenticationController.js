@@ -30,11 +30,11 @@ angular.module('authentication')
 	function submitLogin () {
 		UserService.login(auth.login).then(
 			function(user){
-				$scope.user = user;
+				auth.user = user;
 				$location.path("/");
 			},
 			function(reason){
-				$scope.login.erorrs = reason;
+				auth.login.erorrs = reason;
 			}
 		);
 	};

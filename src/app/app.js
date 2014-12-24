@@ -16,42 +16,42 @@ angular.module('app', [
 	//module npm 
 	'app.modules'
 ])
-.config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
-function($stateProvider, $urlRouterProvider, $httpProvider) {
-	$stateProvider
-	.state('home', {
-		url: '',
-		abstract: true,
-		views: {
-			'header@': {
-				controller: 'HeaderCtrl as header',
-				templateUrl: 'layouts/header/header.tpl.html'
-			},
-			'nav@': {
-				controller: 'NavCtrl as nav',
-				templateUrl: 'layouts/nav/nav.tpl.html'
-			}
-		}
-	})
-	.state('home.index', {
-		url: '/',
-		views: {
-			'content@': {
-				controller: 'DashboardCtrl as dashboard',
-				templateUrl: 'dashboard/dashboard.tpl.html'
-			}
-		}
-	});
+	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
+		function($stateProvider, $urlRouterProvider, $httpProvider) {
+			$stateProvider
+			.state('home', {
+				url: '',
+				abstract: true,
+				views: {
+					'header@': {
+						controller: 'HeaderCtrl as header',
+						templateUrl: 'layouts/header/header.tpl.html'
+					},
+					'nav@': {
+						controller: 'NavCtrl as nav',
+						templateUrl: 'layouts/nav/nav.tpl.html'
+					}
+				}
+			})
+			.state('home.index', {
+				url: '/',
+				views: {
+					'content@': {
+						controller: 'DashboardCtrl as dashboard',
+						templateUrl: 'dashboard/dashboard.tpl.html'
+					}
+				}
+			});
 
-	$urlRouterProvider.otherwise('/');
-				
-	// $locationProvider.html5Mode(true);
-}])
-.run(function ($rootScope, $translate) {
-	$rootScope.$on('$translatePartialLoaderStructureChanged', function () {
-		$translate.refresh();
+			$urlRouterProvider.otherwise('/');
+			
+			$httpProvider.interceptors.push('AuthInterceptor');
+	}])
+	.run(function ($rootScope, $translate) {
+		$rootScope.$on('$translatePartialLoaderStructureChanged', function () {
+			$translate.refresh();
+		});
 	});
-});
 // .controller('AppCtrl', ['debug', function(debug) {
 	//  		debug('say it is so.');
 	//  		this.statement = 'This is the application root.'

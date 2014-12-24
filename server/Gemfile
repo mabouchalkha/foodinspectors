@@ -1,6 +1,16 @@
 source 'https://rubygems.org'
 
+#ruby '2.1.5'
+
 gem 'rails', '4.1.8'
 gem 'sqlite3'
 gem 'devise'
+#gem 'bcrypt'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'active_model_serializers'
+gem 'newrelic_rpm'
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
