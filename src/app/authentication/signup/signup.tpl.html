@@ -3,7 +3,7 @@
 	<div class="signin-header">
 		<div class="container text-center">
 			<section class="logo">
-				<span>{{::header.brand}}</span>
+				<span>{{::auth.brand}}</span>
 			</section>
 		</div>
 	</div>
@@ -23,8 +23,8 @@
 				<span class="line-thru">OR</span>
 
 				<section>
-					<form name="signup.signupForm" class="form-horizontal" ng-submit="signup.submitSignup()" novalidate>
-						<div class="form-group" ng-class="{'has-error':signup.hasErrorClass('email')}">
+					<form name="auth.authForm" class="form-horizontal" ng-submit="auth.submitSignup()" novalidate>
+						<div class="form-group" ng-class="{'has-error':auth.hasErrorClass('email')}">
 							<div class="input-group input-group-lg">
 								<span class="input-group-addon">
 									<span class="glyphicon glyphicon-envelope"></span>
@@ -33,11 +33,11 @@
 								class="form-control"
 								placeholder="Email"
 								name="email"
-								ng-model="signup.registerParams.email"
+								ng-model="auth.signup.email"
 								ng-model-options="{ updateOn : 'default blur' }"
 								required >
 							</div>
-							<div class="text-danger" ng-messages="signup.signupForm.email.$error" ng-if="signup.showMessages('email')">
+							<div class="text-danger" ng-messages="auth.authForm.email.$error" ng-if="auth.showMessages('email')">
 								<div class="message-animation" ng-message="required">
 									<strong>This field is required.</strong>
 								</div>
@@ -49,44 +49,44 @@
 						</div>
 						<div class="form-group">
 							<div class="input-group input-group-lg"
-							ng-class="{'has-error':signup.hasErrorClass('password')}">
+							ng-class="{'has-error':auth.hasErrorClass('password')}">
 							<span class="input-group-addon">
 								<span class="glyphicon glyphicon-lock"></span>
 							</span>
-							<input type="{{signup.getPasswordType()}}"
+							<input type="{{auth.getPasswordType()}}"
 							class="form-control"
 							placeholder="password"
 							name="password"
-							ng-model="signup.registerParams.password"
+							ng-model="auth.signup.password"
 							ng-model-options="{ updateOn : 'default blur' }"
 							validate-password-characters
 							required >
 							<span class="input-group-addon">
-								<input type="checkbox" ng-model="signup.signupForm.showPassword"> Show
+								<input type="checkbox" ng-model="auth.authForm.showPassword"> Show
 							</span>
 						</div>
 					</div>
 									
-					<div class="text-danger" ng-messages="signup.signupForm.password.$error"
-					ng-if="signup.showMessages('password')">
+					<div class="text-danger" ng-messages="auth.authForm.password.$error"
+					ng-if="auth.showMessages('password')">
 					<div class="message-animation" ng-message="required">
 						<strong>This field is required.</strong>
 					</div>
 				</div>
 
-				<div class="password-requirements" ng-if="!signup.signupForm.password.$valid">
+				<div class="password-requirements" ng-if="!auth.authForm.password.$valid">
 					<ul class="float-left">
-						<li ng-class="{'completed':!signup.signupForm.password.$error.lowerCase}">One lowercase character</li>
-						<li ng-class="{'completed':!signup.signupForm.password.$error.upperCase}">One uppercase character</li>
-						<li ng-class="{'completed':!signup.signupForm.password.$error.number}">One number</li>
+						<li ng-class="{'completed':!auth.authForm.password.$error.lowerCase}">One lowercase character</li>
+						<li ng-class="{'completed':!auth.authForm.password.$error.upperCase}">One uppercase character</li>
+						<li ng-class="{'completed':!auth.authForm.password.$error.number}">One number</li>
 					</ul>
 					<ul class="selfclear clearfix">
-						<li ng-class="{'completed':!signup.signupForm.password.$error.specialCharacter}">One special character</li>
-						<li ng-class="{'completed':!signup.signupForm.password.$error.eightCharacters}">Eight characters minimum</li>
+						<li ng-class="{'completed':!auth.authForm.password.$error.specialCharacter}">One special character</li>
+						<li ng-class="{'completed':!auth.authForm.password.$error.eightCharacters}">Eight characters minimum</li>
 					</ul>
 				</div>
 
-				<div class="alert alert-success message-animation" role="alert" ng-if="signup.signupForm.password.$valid">
+				<div class="alert alert-success message-animation" role="alert" ng-if="auth.authForm.password.$valid">
 					Your password is secure and you are good to go!
 				</div>
 
@@ -100,7 +100,7 @@
 		</section>
 
 		<section>
-			<p class="text-center text-muted">Already have an account? <a href="#/pages/signin" >Log in now</a></p>
+			<p class="text-center text-muted">Already have an account? <a ui-sref="auth.login" >Log in now</a></p>
 		</section>
 
 	</div>

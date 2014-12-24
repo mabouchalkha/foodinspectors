@@ -10,6 +10,6 @@ angular.module('common.services.i18n.i18nService', [
             urlTemplate: 'src/common/services/i18n/{part}/{lang}.json'
         });
 
-        // $translateProvider.translations('en', translationsEn);
+		  $translateProvider.addInterpolation('$translateMessageFormatInterpolation');
         $translateProvider.preferredLanguage('en');
     }]);

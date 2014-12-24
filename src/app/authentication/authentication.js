@@ -1,4 +1,33 @@
 angular.module('authentication', [
-	'authentication.login',
-	'authentication.signup'
-	]);
+	'ngMessages',
+	'ngAnimate',
+	'ngAria',
+	'ui.router',
+	'common.services.user.userService'
+])
+.config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
+function($stateProvider, $urlRouterProvider, $httpProvider) {
+	$stateProvider
+	.state('auth', {
+		url: '',
+		abstract: true,
+	})
+	.state('auth.signup', {
+      url: "/signup",
+      views: {
+      		'content@': {
+      			controller: 'AuthenticationController as auth',
+      			templateUrl: 'authentication/signup/signup.tpl.html'
+      		}
+      }
+	})
+	.state('auth.login', {
+      url: "/login",
+      views: {
+      		'content@': {
+      			controller: 'AuthenticationController as auth',
+      			templateUrl: 'authentication/login/login.tpl.html'
+      		}
+      }
+	})
+}]);
