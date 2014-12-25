@@ -3,5 +3,6 @@ angular.module('common.services', [
 	'common.services.user.userService',
 	'common.services.contact.contactService',
 	'common.services.i18n.i18nService',
-	'common.services.notifications'
+	'common.services.notifications',
+	'common.services.loading'
 	]);

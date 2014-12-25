@@ -12,9 +12,11 @@ angular.module('common.interceptors.authInterceptor', ['common.services.authenti
 			return $q(function(resolve, reject) {
 				AuthService.currentUser().then(function(user) {
 					if(user) {
-						req.params = req.params || {};
-						req.params['auth_token'] = req.params['auth_token'] || user.auth_token;
-						req.params['auth_user_id'] = req.params['auth_user_id'] || user.id;
+						req.headers = req.headers || {};
+						req.headers.Authorization = 'Bearer ' + user.auth_token;
+						// req.params = req.params || {};
+// 						req.params['auth_token'] = req.params['auth_token'] || user.auth_token;
+// 						req.params['auth_user_id'] = req.params['auth_user_id'] || user.id;
 						resolve( req );
 					} else {
 						resolve( req );

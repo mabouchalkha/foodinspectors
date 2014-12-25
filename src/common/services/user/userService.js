@@ -6,10 +6,12 @@ angular.module('common.services.user.userService', [
 .factory('UserService', ['$q', '$cookieStore', '$rootScope', '$http', 'AuthService', 'User',
 	function ($q, $cookieStore, $rootScope, $http, AuthService, User) {
 					
+		
 		var userService = {
 			login: login,
 			logout: logout,
-			signup: signup
+			signup: signup,
+			currentUser: AuthService.currentUser
 		};
 	
 		return userService;

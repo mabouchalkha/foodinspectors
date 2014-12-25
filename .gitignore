@@ -10,3 +10,7 @@ build
 vendor
 node_modules
 
+
+server/db/development.sqlite3
+
+server/log/development.log

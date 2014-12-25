@@ -11,6 +11,8 @@ module.exports = {
 		html: [ 'src/index.html' ],
 		// fonts
 		fonts: ['fonts/**'],
+		//images
+		img: ['src/images/**'],
 		//json locale i18n
 		json: ['src/**/*.json']
 	},

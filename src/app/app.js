@@ -16,8 +16,15 @@ angular.module('app', [
 	//module npm 
 	'app.modules'
 ])
-	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
+	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', 
 		function($stateProvider, $urlRouterProvider, $httpProvider) {
+			
+			var getCurrentUser = function (AuthService, $state) {
+				return AuthService.currentUser().then(function (user) {
+				           // if (!user) $state.go('auth.login');
+				       });
+			};
+				 
 			$stateProvider
 			.state('home', {
 				url: '',
@@ -31,6 +38,9 @@ angular.module('app', [
 						controller: 'NavCtrl as nav',
 						templateUrl: 'layouts/nav/nav.tpl.html'
 					}
+				},
+				resolve: {
+					currentUser: getCurrentUser
 				}
 			})
 			.state('home.index', {
@@ -46,6 +56,7 @@ angular.module('app', [
 			$urlRouterProvider.otherwise('/');
 			
 			$httpProvider.interceptors.push('AuthInterceptor');
+			$httpProvider.interceptors.push('LoadingInterceptor');
 	}])
 	.run(function ($rootScope, $translate) {
 		$rootScope.$on('$translatePartialLoaderStructureChanged', function () {

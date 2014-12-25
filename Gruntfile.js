@@ -176,7 +176,17 @@ module.exports = function(grunt) {
 			            	expand: true
 	      				}
 	      		]
-	      	}
+	      	},
+				img: {
+					files: [
+						{
+							src: ['<%= app_files.img %>'],
+	      				dest: '<%= build_dir %>/',
+			            cwd: '.',
+			            expand: true
+						}
+					]
+				}
 			}
   	};
 

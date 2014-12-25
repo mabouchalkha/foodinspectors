@@ -1,5 +1,5 @@
 angular.module('authentication')
-.controller('AuthenticationController', ['$location', 'UserService', function ($location, UserService) {
+.controller('AuthenticationController', ['$state', 'UserService', function ($state, UserService) {
 	var auth = this;
 			
 	auth.signup = { email:'', password:'' };
@@ -19,7 +19,7 @@ angular.module('authentication')
 		UserService.signup(auth.signup).then(
 			function(user) {
 				auth.user = user;
-				$location.path("/");
+				$state.go('home.index');
 			},
 			function(reason){
 				var error = reason;
@@ -31,7 +31,7 @@ angular.module('authentication')
 		UserService.login(auth.login).then(
 			function(user){
 				auth.user = user;
-				$location.path("/");
+				$state.go('home.index');
 			},
 			function(reason){
 				auth.login.erorrs = reason;
