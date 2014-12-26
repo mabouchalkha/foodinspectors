@@ -5,10 +5,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
     build_resource(sign_up_params)
 
     # Try to save them
-    if resource.save 
-      render status: 200,
+    if resource.save!
+      render status: :ok,
       json: {
-        success: true, info: "Registered", data: {
+          success: true, info: "Registered", data: {
           user: resource,
           auth_token: resource.authentication_token
         }
@@ -18,7 +18,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       render status: :unprocessable_entity,
       json: {
         success: false,
-        info: resource.errors, data: {}
+        info: resource.errors.as_json, data: {}
       }
     end 
   end

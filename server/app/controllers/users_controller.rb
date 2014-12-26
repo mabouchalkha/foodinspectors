@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 
   def is_user
     authenticate_user!
-    render status: 200,
+    render status: :ok,
         json: {
           success: !User.find_by_name(params[:name]).blank?
         }

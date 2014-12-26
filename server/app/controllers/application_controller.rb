@@ -40,7 +40,9 @@ class ApplicationController < ActionController::Base
    end
 
    def permission_denied
-      render :file => "public/401.html", :status => :unauthorized, :layout => false
+      render   :json => {error: "Please enter a correct username and password"}, 
+               :status => :unauthorized, 
+               :layout => false
    end
 
    def not_found

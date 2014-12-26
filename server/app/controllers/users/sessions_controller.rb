@@ -8,7 +8,7 @@ class Users::SessionsController < DeviseController
     resource = User.find_for_database_authentication(email: params[:user][:email]) 
     return failure unless resource
     return failure unless resource.valid_password?(params[:user][:password])
-    render status: 200,
+    render status: :ok,
       json: {
         success: true, info: "Logged in", data: {
           user: resource,
@@ -17,25 +17,25 @@ class Users::SessionsController < DeviseController
       }
   end
 
-  def failure 
-    warden.custom_failure! 
-    render status: 200,
-    json: {
-      success: false, info: "Login failed", data: {}
-    }
-  end 
-
   # DELETE /users/sign_out
   def destroy
     return permission_denied unless params[:user][:id].to_s == @current_user.id.to_s
     resource = User.find_for_database_authentication(id: params[:user][:id]) 
     return failure unless resource
     resource.clear_authentication_token
-    render status: 200,
+    render status: :ok,
       json: {
         success: true, info: "Logged out"
       }
   end
+  
+  def failure 
+    warden.custom_failure! 
+    render status: :ok,
+    json: {
+      success: false, info: "Login failed", data: {}
+    }
+  end 
 
 end
 
