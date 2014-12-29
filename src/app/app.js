@@ -23,15 +23,15 @@ angular.module('app', [
 	'app.modules'
 ])
 	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', 
-		function($stateProvider, $urlRouterProvider, $httpProvider) {
+	function($stateProvider, $urlRouterProvider, $httpProvider) {
 			
-			var getCurrentUser = function (AuthService, $state) {
-				return AuthService.currentUser().then(function (user) {
-				           // if (!user) $state.go('auth.login');
-				       });
-			};
+		var getCurrentUser = function (AuthService, $state) {
+			return AuthService.currentUser().then(function (user) {
+				// if (!user) $state.go('auth.login');
+			});
+		};
 				 
-			$stateProvider
+		$stateProvider
 			.state('home', {
 				url: '',
 				abstract: true,
@@ -59,17 +59,24 @@ angular.module('app', [
 				}
 			});
 
-			$urlRouterProvider.otherwise('/');
+		$urlRouterProvider.otherwise('/404');
 			
-			$httpProvider.interceptors.push('AuthInterceptor');
-			$httpProvider.interceptors.push('LoadingInterceptor');
+		$httpProvider.interceptors.push('AuthInterceptor');
+		$httpProvider.interceptors.push('LoadingInterceptor');
 	}])
 	.run(function ($rootScope, $translate) {
 		$rootScope.$on('$translatePartialLoaderStructureChanged', function () {
 			$translate.refresh();
 		});
-	});
-// .controller('AppCtrl', ['debug', function(debug) {
-	//  		debug('say it is so.');
-	//  		this.statement = 'This is the application root.'
-	// }]);
+	})
+	.controller('AppCtrl', ['$state', 'debug', function($state, debug) {
+		// debug('say it is so.');
+		// 	 		this.statement = 'This is the application root.'
+		var app = this;
+		
+		app.isSpecificPage = isSpecificPage;
+			
+		function isSpecificPage() {
+			return _.contains(['404', 'auth.login', 'auth.signup'], $state.current.name);
+		};
+	}]);

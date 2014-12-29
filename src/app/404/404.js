@@ -2,7 +2,7 @@ angular.module('notfound', [])
 .config(['$stateProvider', function($stateProvider) {
 	$stateProvider
 		.state('404', {
-	      url: "/notfound",
+	      url: "/404",
 	      views: {
 	      		'content@': {
 	      			controller: 'NotfoundCtrl as notfound',

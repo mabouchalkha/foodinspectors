@@ -18,18 +18,20 @@
 			<![endif]-->
 			<div id="modal_overlay"> </div>
 			<!--<div ng-controller="LayoutsCtrl">-->
-				<div ng-cloak class="no-print">
-					<section ui-view='header' id="header" class="top-header"></section>
+				<div ng-controller="AppCtrl as app">
+					<div ng-hide="app.isSpecificPage()" ng-cloak class="no-print">
+						<section ui-view='header' id="header" class="top-header"></section>
 
-					<aside ui-view='nav' id="nav-container"></aside>
-				</div>
+						<aside ui-view='nav' id="nav-container"></aside>
+					</div>
 
-				<div class="view-container">
-					<section ui-view='content' id="content" class="animate-fade-up">
+					<div class="view-container">
+						<section ui-view='content' id="content" class="animate-fade-up">
 							
-					</section>
+						</section>
+					</div>
+					<!--</div>-->
 				</div>
-				<!--</div>-->
 		
 		
 				<% scripts.forEach( function ( file ) { %>
