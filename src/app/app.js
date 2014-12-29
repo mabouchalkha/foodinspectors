@@ -10,6 +10,12 @@ angular.module('app', [
 	'authentication',
 	'dashboard',
 	'contact',
+	'settings',
+	'relationships',
+	'inventory',
+	'sales',
+	'purchase',
+	'notfound',
 	'app.common',
 	//all template html 
 	'templates-app',

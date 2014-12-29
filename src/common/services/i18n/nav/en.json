@@ -1,4 +1,8 @@
 {
 	"DASHBOARD" : "Dashboard",
-	"PARAGRAPH": "And it comes with awesome features!"
+	"SETTINGS": "Settings",
+	"RELATIONSHIPS": "Relationships",
+	"INVENTORY": "Inventory",
+	"SALES": "Sales & Orders",
+	"PURCHASE": "Purchase"
 }

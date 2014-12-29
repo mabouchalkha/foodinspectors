@@ -1,11 +1,8 @@
 {
-	"NAV": 	
-		{
-			"DASHBOARD" : "Tableau de bord",
-			"PARAGRAPH": "Et il est livré avec des fonctionnalités impressionnantes!"
-      },
-   "HEADER": 
-   	{
-         "PARAGRAPH": "@:NAV.PARAGRAPH"
-      }
+	"DASHBOARD" : "Tableau de bord",
+	"SETTINGS": "Paramètres",
+	"RELATIONSHIPS": "Contacts",
+	"INVENTORY": "Inventaire",
+	"SALES": "Ventes & Commandes",
+	"PURCHASE": "Achat"
 }

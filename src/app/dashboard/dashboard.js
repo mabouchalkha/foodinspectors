@@ -16,5 +16,5 @@ angular.module('dashboard', [
 		.controller('DashboardCtrl', ['$scope', '$stateParams', 'NotificationsService', function ($scope, $stateParams, NotificationsService) {
 			var dashboard = this;
 			
-			NotificationsService.info('test', 'test title');
+			// NotificationsService.info('test', 'test title');
 		}]);

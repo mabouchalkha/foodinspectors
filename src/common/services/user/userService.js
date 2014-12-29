@@ -44,6 +44,7 @@ angular.module('common.services.user.userService', [
 	
 		function logout() {
 			return $q(function(resolve, reject) {
+				//TODO call logout in devise
 				AuthService.removeCurrentUser();
 				resolve( );
 				reject( );

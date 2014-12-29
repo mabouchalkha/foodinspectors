@@ -1,14 +1,10 @@
 Foodinspectors::Application.routes.draw do
 
-   
-
    namespace :api, defaults: {format: 'json'} do
       namespace :v1 do
 
       end 
    end
-
-   resources :contacts
    
    devise_for :users, 
       :controllers => {
@@ -22,7 +18,10 @@ Foodinspectors::Application.routes.draw do
    end
 
    get 'users', :to => 'users#index'
-
+   
+   scope '(:locale)' do
+      resources :contacts
+   end
 
 
    get "foodinspectors/index"
