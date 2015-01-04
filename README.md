@@ -1,4 +1,12 @@
 foodinspectors
 ==============
 
+<img src="https://magnum-ci.com/status/3785b25b65faa26df85234c2caa0c57a.png"/>
+
 Food Audits &amp; Inspections
+
+Version:        1.0.0 (beta)
+
+author:         Mohamed Amine Bouchalkha mabouchalkha@gmail.com | Dominic Lapointe<dom.dlapointe@gmail.com>
+
+Started date:   01/11/2014
