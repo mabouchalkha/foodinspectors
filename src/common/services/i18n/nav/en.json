@@ -1,0 +1,8 @@
+{
+	"DASHBOARD" : "Dashboard",
+	"SETTINGS": "Settings",
+	"RELATIONSHIPS": "Relationships",
+	"INVENTORY": "Inventory",
+	"SALES": "Sales & Orders",
+	"PURCHASE": "Purchase"
+}

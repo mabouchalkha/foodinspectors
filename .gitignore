@@ -2,6 +2,12 @@
 /tmp
 /db/development.sqlite3
 /.c9
-/.bundle
-
-
+server/.bundle
+server/Gemfile.lock
+server/tmp
+server/log
+build
+vendor
+node_modules
+server/db/development.sqlite3
+server/log/development.log

@@ -1,0 +1,15 @@
+defaults: &defaults
+  client:
+    origin: http://localhost
+  twitter:
+    clientId: ""
+    clientSecret: ""
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+	<title>Food Inspectors</title>
+	<% styles.forEach( function ( file ) { %>
+		<link rel="stylesheet" type="text/css" href="<%= file %>"/>
+		<% }); %>
+	</head>
+	<body id="app" custom-background off-canvas-nav>
+		<!--[if lt IE 9]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+			<![endif]-->
+			<div id="modal_overlay"> </div>
+			<!--<div ng-controller="LayoutsCtrl">-->
+				<div ng-controller="AppCtrl as app">
+					<div ng-hide="app.isSpecificPage()" ng-cloak class="no-print">
+						<section ui-view='header' id="header" class="top-header"></section>
+
+						<aside ui-view='nav' id="nav-container"></aside>
+					</div>
+
+					<div class="view-container">
+						<section ui-view='content' id="content" class="animate-fade-up">
+							
+						</section>
+					</div>
+					<!--</div>-->
+				</div>
+		
+		
+				<% scripts.forEach( function ( file ) { %>
+					<script type="text/javascript" src="<%= file %>"></script>
+					<% }); %>
+					<script src="//localhost:35729/livereload.js"></script>
+				</body>
+				</html>
