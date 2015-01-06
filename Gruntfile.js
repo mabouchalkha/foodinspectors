@@ -62,9 +62,9 @@ module.exports = function(grunt) {
 			},
 			nodemon: {
 	      dev: {
-	      	script: 'server_test/server.js',
+	      	script: 'cdn/server.js',
 	        options: {
-	          watch: ['server_test']
+	          watch: ['cdn']
 	        }
 	      }
     	},
