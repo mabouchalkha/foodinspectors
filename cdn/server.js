@@ -10,6 +10,6 @@ app.use(express.static(config.static_site_root));
 
 // FIRE IT UP
 
-server.listen(process.env.PORT, process.env.IP, function () {
+server.listen(config.port, function () {
   console.log("Express server listening on port %d", config.port);
 });
