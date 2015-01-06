@@ -2,7 +2,7 @@
 /tmp
 /db/development.sqlite3
 /.c9
-/cdn
+cdn
 server/.bundle
 server/Gemfile.lock
 server/tmp
