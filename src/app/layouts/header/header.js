@@ -5,13 +5,14 @@ angular.module('layouts.header', [
 	'common.services.notifications',
 	'common.services.user.userService'
 	])
-	.controller('HeaderCtrl', ['UserService', 'NotificationsService', function (UserService, NotificationsService) {
+	.controller('HeaderCtrl', ['UserService', 'NotificationsService', '$translate', function (UserService, NotificationsService, $translate) {
 		var header = this;
 
 		header.brand = 'Food Inspectors';
 		
 		header.logout = logout;
 		header.changeLanguage = changeLanguage;
+		header.getFlag = getFlag;
 		header.getNotifications = getNotifications;
 
 		
@@ -26,6 +27,21 @@ angular.module('layouts.header', [
 		
 		function changeLanguage (langKey) {
 			$translate.use(langKey);
+			header.language = langKey;
+		};
+		
+		function getFlag() {
+			var _flag = '';
+			switch (header.language) {
+                case 'en':
+						 _flag = 'flags-american';
+						 break;
+                case 'fr':
+						 _flag = 'flags-france' 
+						 break;
+					 }
+					 
+					 return _flag;
 		};
 		
 		function getNotifications () {
