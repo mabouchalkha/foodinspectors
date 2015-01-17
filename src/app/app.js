@@ -22,8 +22,8 @@ angular.module('app', [
 	//module npm 
 	'app.modules'
 ])
-	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', 
-	function($stateProvider, $urlRouterProvider, $httpProvider) {
+	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', '$compileProvider'
+	function($stateProvider, $urlRouterProvider, $httpProvider, $compileProvider) {
 			
 		var getCurrentUser = function (AuthService, $state) {
 			return AuthService.currentUser().then(function (user) {
@@ -61,6 +61,10 @@ angular.module('app', [
 
 		$urlRouterProvider.otherwise('/404');
 			
+		// Disabling debug info for production
+		//$compileProvider.debugInfoEnabled(false);
+		
+		$httpProvider.useApplyAsync(true);
 		$httpProvider.interceptors.push('AuthInterceptor');
 		$httpProvider.interceptors.push('LoadingInterceptor');
 	}])
