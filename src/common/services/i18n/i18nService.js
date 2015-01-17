@@ -6,6 +6,7 @@ angular.module('common.services.i18n.i18nService', [
         $translatePartialLoaderProvider.addPart('dashboard');
         $translatePartialLoaderProvider.addPart('nav');
         $translatePartialLoaderProvider.addPart('header');
+		  
         $translateProvider.useLoader('$translatePartialLoader', {
             urlTemplate: 'src/common/services/i18n/{part}/{lang}.json'
         });

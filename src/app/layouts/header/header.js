@@ -8,29 +8,28 @@ angular.module('layouts.header', [
 	.controller('HeaderCtrl', ['UserService', 'NotificationsService', '$translate', function (UserService, NotificationsService, $translate) {
 		var header = this;
 
-		header.brand = 'Food Inspectors';
+		var _init = function () {
 		
-		header.logout = logout;
-		header.changeLanguage = changeLanguage;
-		header.getFlag = getFlag;
-		header.getNotifications = getNotifications;
-
+			header.brand = 'Food Inspectors';
+			
+			UserService.currentUser().then(function(user){
+				header.user = user;
+			});
+			
+			header.language = 'en';//user.culture.language;		
+		};	
 		
-		UserService.currentUser().then(function(user){
-			header.user = user;
-		});
-		
-		function logout () {
+		header.logout = function logout () {
 			UserService.logout();
 			header.user = null;
 		};
 		
-		function changeLanguage (langKey) {
-			$translate.use(langKey);
+		header.changeLanguage = function changeLanguage (langKey) {
 			header.language = langKey;
+			$translate.use(langKey);
 		};
 		
-		function getFlag() {
+		header.getFlag = function getFlag() {
 			var _flag = '';
 			switch (header.language) {
                 case 'en':
@@ -44,9 +43,11 @@ angular.module('layouts.header', [
 					 return _flag;
 		};
 		
-		function getNotifications () {
+		header.getNotifications = function getNotifications () {
 			return NotificationsService.getNotifications();
 			console.log(NotificationsService.getNotifications().length);
 		};
+		
+		_init();
 		
 	}]);

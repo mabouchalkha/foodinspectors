@@ -14,21 +14,6 @@ module.exports = function(grunt) {
 
   var taskConfig = {
   	pkg: grunt.file.readJSON('package.json'),
-
-		  // connect: {
-		  //     options: {
-		  //       port: 3000,
-		  //       // Change this to '0.0.0.0' to access the server from outside.
-		  //       hostname: 'localhost'
-		  //     },
-		  //     proxies: [
-		  //       {
-		  //         context: '/api',
-		  //         host: 'localhost',
-		  //         port: 3000
-		  //       }
-		  //     ]
-		  // },
   		watch: {
 				options: {
 				  livereload: true,
@@ -181,7 +166,7 @@ module.exports = function(grunt) {
 					files: [
 						{
 							src: ['<%= app_files.img %>'],
-	      				dest: '<%= build_dir %>/',
+	      				dest: '<%= build_dir %>/assets',
 			            cwd: '.',
 			            expand: true
 						}
