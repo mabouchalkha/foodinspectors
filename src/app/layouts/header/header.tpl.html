@@ -11,14 +11,29 @@
 			<li>
 				<a class="toggle-min" toggle-min-nav href="#/"><i class="fa fa-bars"></i></a>
 			</li>
-			<li access-level="2" class="dropdown text-normal nav-profile">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"><img alt="" class="img-circle img30_30" src="images/avatar2.png"><span class="hidden-xs"><span ng-bind="header.user.email"></span></span></img></a>
+			<li class="dropdown text-normal nav-profile">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+					<img alt="" class="img-circle img30_30" src="assets/src/images/avatar2.png"><span class="hidden-xs"><span ng-bind="header.user.email"></span></span>
+				</a>
 				<ul class="dropdown-menu dropdown-dark with-arrow">
 					<li>
 						<a href="#" ng-click="changePassword()"><i class="fa fa-key"></i><span>Change password</span></a>
 					</li>
 					<li>
 						<a href="#" ng-click="header.logout()"><i class="fa fa-sign-out"></i><span>Log Out</span></a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown langs text-normal">
+				<a href="javascript:;" class="dropdown-toggle active-flag" data-toggle="dropdown">
+					<div class="flag {{ header.getFlag() }}"></div>
+				</a>
+				<ul class="dropdown-menu dropdown-dark with-arrow list-langs" role="menu">
+					<li data-ng-show="header.language !== 'en' ">
+						<a href="javascript:;" data-ng-click="header.changeLanguage('en')"><div class="flag flags-american"></div> English</a>
+					</li>
+					<li data-ng-show="header.language !== 'fr' ">
+						<a href="javascript:;" data-ng-click="header.changeLanguage('fr')"><div class="flag flags-france"></div> Francais</a>
 					</li>
 				</ul>
 			</li>

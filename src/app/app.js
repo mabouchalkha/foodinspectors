@@ -22,12 +22,12 @@ angular.module('app', [
 	//module npm 
 	'app.modules'
 ])
-	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', 
-	function($stateProvider, $urlRouterProvider, $httpProvider) {
+	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', '$compileProvider',
+	function($stateProvider, $urlRouterProvider, $httpProvider, $compileProvider) {
 			
 		var getCurrentUser = function (AuthService, $state) {
 			return AuthService.currentUser().then(function (user) {
-				// if (!user) $state.go('auth.login');
+				if (!user) $state.go('auth.login');
 			});
 		};
 				 
@@ -46,7 +46,7 @@ angular.module('app', [
 					}
 				},
 				resolve: {
-					currentUser: getCurrentUser
+					//currentUser: getCurrentUser
 				}
 			})
 			.state('home.index', {
@@ -61,10 +61,18 @@ angular.module('app', [
 
 		$urlRouterProvider.otherwise('/404');
 			
+		// Disabling debug info for production
+		//$compileProvider.debugInfoEnabled(false);
+		
+		$httpProvider.useApplyAsync(true);
 		$httpProvider.interceptors.push('AuthInterceptor');
 		$httpProvider.interceptors.push('LoadingInterceptor');
 	}])
-	.run(function ($rootScope, $translate) {
+	.run(function ($rootScope, $translate, $state, $stateParams) {
+		
+		$rootScope.$state = $state;
+		$rootScope.$stateParams = $stateParams;
+		
 		$rootScope.$on('$translatePartialLoaderStructureChanged', function () {
 			$translate.refresh();
 		});
