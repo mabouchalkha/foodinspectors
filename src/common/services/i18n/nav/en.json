@@ -4,5 +4,6 @@
 	"RELATIONSHIPS": "Relationships",
 	"INVENTORY": "Inventory",
 	"SALES": "Sales & Orders",
-	"PURCHASE": "Purchase"
+	"PURCHASE": "Purchase",
+    "PAIEMENTTERM": "Paiement term"
 }

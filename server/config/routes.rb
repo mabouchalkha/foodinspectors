@@ -19,10 +19,7 @@ Foodinspectors::Application.routes.draw do
 
    get 'users', :to => 'users#index'
    
-   scope '(:locale)' do
-      resources :contacts
-   end
-
+   resources :contacts
 
    get "foodinspectors/index"
    root "foodinspectors#index"

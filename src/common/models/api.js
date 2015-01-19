@@ -4,7 +4,7 @@ angular.module('common.models.api', [
 	    .factory('API', ['Restangular', function(Restangular) {
 	        return Restangular.withConfig(function(RestangularProvider) {
 	            
-	            RestangularProvider.setBaseUrl('http://127.0.0.1:3000/');
+	            RestangularProvider.setBaseUrl('http://bless-tape.codio.io:3000/');
 
               RestangularProvider.addFullRequestInterceptor(function(elem, operation, what) {
                   var retElem = elem;

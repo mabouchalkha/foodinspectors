@@ -9,6 +9,7 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'active_model_serializers'
 gem 'newrelic_rpm'
 gem 'paper_trail'
+gem 'hydra_attribute', github: 'kostyantyn/hydra_attribute', branch: 'rails4.1'
 
 group :production do
   gem 'pg'

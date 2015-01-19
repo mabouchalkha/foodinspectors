@@ -11,6 +11,7 @@ angular.module('app', [
 	'dashboard',
 	'contact',
 	'settings',
+    'paiement_term',
 	'relationships',
 	'inventory',
 	'sales',

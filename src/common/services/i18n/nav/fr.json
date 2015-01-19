@@ -4,5 +4,6 @@
 	"RELATIONSHIPS": "Contacts",
 	"INVENTORY": "Inventaire",
 	"SALES": "Ventes & Commandes",
-	"PURCHASE": "Achat"
+	"PURCHASE": "Achat",
+    "PAIEMENTTERM": "Terme de paiement"
 }
