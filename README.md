@@ -3,6 +3,8 @@ foodinspectors
 
 <img src="https://magnum-ci.com/status/3785b25b65faa26df85234c2caa0c57a.png"/>
 
+[ ![Codeship Status for mabouchalkha/foodinspectors](https://codeship.com/projects/61196730-820a-0132-3530-364b1c53b990/status?branch=master)](https://codeship.com/projects/57734)
+
 Food Audits &amp; Inspections
 
 Version:        1.0.0 (beta)
