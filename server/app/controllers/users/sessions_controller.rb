@@ -1,7 +1,7 @@
 class Users::SessionsController < DeviseController
-  skip_before_filter :verify_authenticity_token
-  before_filter :authenticate_user!, except: [:create]
-  before_filter :authenticate_user_from_token!, :only => [:destroy]
+  skip_before_action :verify_authenticity_token
+  before_action :authenticate_user!, except: [:create]
+  before_action :authenticate_user_from_token!, :only => [:destroy]
   respond_to :json
 
   def create

@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
    protect_from_forgery
    skip_before_action :verify_authenticity_token, if: :json_request?
 
-   after_filter :set_csrf_cookie_for_ng
+   after_action :set_csrf_cookie_for_ng
    
 
    def set_csrf_cookie_for_ng

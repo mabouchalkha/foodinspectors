@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :authenticate_user_from_token!, :only => [:index]
+  before_action :authenticate_user_from_token!, :only => [:index]
 
   # find a list of users that match certain queries
   def index
