@@ -29,6 +29,10 @@ module.exports = function(grunt) {
 					files: [ '<%= app_files.html %>' ],
 					tasks: [ 'index:build' ]
 				},
+				template: {
+          				files: [ '<%= app_files.atpl %>' ],
+					tasks: [ 'html2js' ]
+				},
 				less: {
 					files: 'src/less/**/*.less',
 					tasks: ['less:build']
