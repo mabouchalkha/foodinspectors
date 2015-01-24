@@ -20,8 +20,5 @@ Foodinspectors::Application.routes.draw do
    get 'users', :to => 'users#index'
    
    resources :contacts
-
-   get "foodinspectors/index"
-   root "foodinspectors#index"
-   match '*path' => "foodinspectors#index", :via => [:get, :post]
+   resources :paiement_terms
 end

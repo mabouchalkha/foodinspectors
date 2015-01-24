@@ -10,6 +10,6 @@ app.use(express.static(config.static_site_root));
 
 // FIRE IT UP
 
-server.listen(3444, function () {
+server.listen(3000, function () {
   console.log("Express server listening on port %d", config.port);
 });

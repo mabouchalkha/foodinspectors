@@ -4,7 +4,7 @@ angular.module('common.models.api', [
 	    .factory('API', ['Restangular', function(Restangular) {
 	        return Restangular.withConfig(function(RestangularProvider) {
 	            
-	            RestangularProvider.setBaseUrl('http://bless-tape.codio.io:3000/');
+	            RestangularProvider.setBaseUrl('http://foodinspector-185594.usw1-2.nitrousbox.com:3444/');
 
               RestangularProvider.addFullRequestInterceptor(function(elem, operation, what) {
                   var retElem = elem;
