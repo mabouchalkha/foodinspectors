@@ -5,33 +5,34 @@ angular.module('layouts.header', [
 	'common.services.notifications',
 	'common.services.user.userService'
 	])
-	.controller('HeaderCtrl', ['UserService', 'NotificationsService', '$translate', function (UserService, NotificationsService, $translate) {
-		var header = this;
+	.controller('HeaderCtrl', ['$rootScope', 'UserService', 'NotificationsService', '$translate', '$state', function ($rootScope, UserService, NotificationsService, $translate, $state) {
+		var vm = this;
 
 		var _init = function () {
 		
-			header.brand = 'Food Inspectors';
+			vm.brand = 'Food Inspectors';
 			
 			UserService.currentUser().then(function(user){
-				header.user = user;
+				vm.user = user;
 			});
 			
-			header.language = 'en';//user.culture.language;		
+			vm.language = 'en';//user.culture.language;		
 		};	
 		
-		header.logout = function logout () {
+		vm.logout = function logout () {
 			UserService.logout();
-			header.user = null;
+			vm.user = null;
+			$state.go('auth.login');
 		};
 		
-		header.changeLanguage = function changeLanguage (langKey) {
-			header.language = langKey;
+		vm.changeLanguage = function changeLanguage (langKey) {
+			vm.language = langKey;
 			$translate.use(langKey);
 		};
 		
-		header.getFlag = function getFlag() {
+		vm.getFlag = function getFlag() {
 			var _flag = '';
-			switch (header.language) {
+			switch (vm.language) {
                 case 'en':
 						 _flag = 'flags-american';
 						 break;
@@ -43,10 +44,21 @@ angular.module('layouts.header', [
 					 return _flag;
 		};
 		
-		header.getNotifications = function getNotifications () {
+		vm.getNotifications = function getNotifications () {
 			return NotificationsService.getNotifications();
 			console.log(NotificationsService.getNotifications().length);
 		};
+
+		$rootScope.$on('user:set', function() {
+			UserService.currentUser().then(function(user){
+				vm.user = user;
+			});
+		});
+
+		$rootScope.$on('user:unset', function() {
+			vm.user = null;
+			$state.go('auth.login');
+     	});
 		
 		_init();
 		

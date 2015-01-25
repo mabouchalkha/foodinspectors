@@ -1,43 +1,48 @@
-angular.module('common.services.authentication.authService', [])
-	.factory('AuthService', ['$q', '$cookieStore', '$rootScope', 
-					function ($q, $cookieStore, $rootScope) {
+angular.module('common.services.authentication.authService', [
+	'common.services.permission.permissionService'
+	])
+	.factory('AuthService', ['$q', '$cookieStore', '$rootScope', 'Permission',
+					function ($q, $cookieStore, $rootScope, Permission) {
 
 						var _user = null;
+						var _accessLevels = Permission.accessLevels;
+						var _userRoles = Permission.userRoles;
 	
 						// The public API of the service
 						var service = {
-							setCurrentUser: setCurrentUser,
-							removeCurrentUser: removeCurrentUser,
-							currentUser: currentUser
+							authorize : function(accessLevel, role) {
+				            if(role === undefined) {
+				                role = _user.role;
+				            }
+				            
+            				return accessLevel.bitMask & role.bitMask;
+			            },
+							setCurrentUser: function (user) {
+								_user = user;
+								$cookieStore.put('user', user);
+								$rootScope.$broadcast("user:set", user);
+							},
+							removeCurrentUser: function () {
+								_user = null;
+								$cookieStore.remove('user');
+								$rootScope.$broadcast("user:unset");
+							},
+							currentUser: function () {
+								return $q(function(resolve, reject) {
+									if(_user){
+										resolve( _user );
+									} else if($cookieStore.get('user')) {
+										_user = $cookieStore.get('user');
+										$rootScope.$broadcast("user:set", _user);
+										resolve( _user );
+									} else{
+										resolve( null );
+									}
+								});
+							}
 						};
 
 						return service;
-						
-						function setCurrentUser(user) {
-							_user = user;
-							$cookieStore.put('user', user);
-							$rootScope.$broadcast("user:set", user);
-						};
-
-						function removeCurrentUser() {
-							_user = null;
-							$cookieStore.remove('user');
-							$rootScope.$broadcast("user:unset");
-						};
-
-						function currentUser() {
-							return $q(function(resolve, reject) {
-								if(_user){
-									resolve( _user );
-								} else if($cookieStore.get('user')) {
-									_user = $cookieStore.get('user');
-									$rootScope.$broadcast("user:set", _user);
-									resolve( _user );
-								} else{
-									resolve( null );
-								}
-							});
-						};
 
 					}])
 .factory('AuthInterceptor', ['$q', 'AuthService', function ($q, AuthService) {

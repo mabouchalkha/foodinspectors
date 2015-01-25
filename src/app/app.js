@@ -37,7 +37,7 @@ angular.module('app', [
 				abstract: true,
 				views: {
 					'header@': {
-						controller: 'HeaderCtrl as header',
+						controller: 'HeaderCtrl as vm',
 						templateUrl: 'layouts/header/header.tpl.html'
 					},
 					'nav@': {
