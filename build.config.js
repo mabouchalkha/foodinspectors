@@ -1,6 +1,7 @@
 module.exports = {
 
 	build_dir: 'build',
+	dist_dir: 'dist',
 
 	app_files: {
 		// source, but NO specs
