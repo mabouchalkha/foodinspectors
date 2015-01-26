@@ -115,14 +115,21 @@
 			index: {
 			 	build: {
 			   	dir: '<%= build_dir %>',
-			  	src: [
-			      '<%= vendor_files.js %>',
-			      '<%= build_dir %>/src/**/*.js',
-			      '<%= html2js.app.dest %>',
-			      '<%= build_dir %>/bundle.js',
-			      '<%= build_dir %>/assets/**/*.css'
-					] 
-				}
+				  	src: [
+				      '<%= vendor_files.js %>',
+				      '<%= build_dir %>/src/**/*.js',
+				      '<%= html2js.app.dest %>',
+				      '<%= build_dir %>/bundle.js',
+				      '<%= build_dir %>/assets/**/*.css'
+						] 
+				},
+				dist : {
+			       dir: '<%= dist_dir %>',
+						src: [
+			          '<%= dist_dir %>/**/*.js',
+			          '<%= dist_dir %>/**/*.css'
+						] 
+		    	}
 			},
 			clean: [
 				'<%= build_dir %>'
@@ -226,14 +233,15 @@
 	  
 		grunt.registerTask('default', ['build', 'concurrent', 'configureProxies']);
 
-		grunt.registerTask('build', ['clean', 'copy', 'html2js', 'browserify', 'less:build', 'index']);
+		grunt.registerTask('build', ['clean', 'copy', 'html2js', 'browserify', 'less:build', 'index:build']);
 
+		grunt.registerTask('dist', ['build', 'concat', 'ngAnnotate', 'uglify', 'less:dist', 'index:dist']);
 
 
 		function filterForExtension(extension, files) {
 	  	var regex = new RegExp('\\.' + extension + '$');
-	  	var dirRE = new RegExp('^(' + grunt.config('build_dir') + ')\/', 'g');
-
+	  	var dirRE = new RegExp('^(' + grunt.config('build_dir') + '|' + grunt.config('dist_dir') + ')\/', 'g');
+	  	            
 	  	return files.filter(function (file) {
 	   	return file.match(regex);
 	  	}).map(function (file) {
