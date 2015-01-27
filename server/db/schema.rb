@@ -11,32 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141217202737) do
+ActiveRecord::Schema.define(version: 20150127173139) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "accounts", force: true do |t|
+    t.integer  "owner_id"
+    t.string   "subdomain"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "contacts", force: true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "favorites", force: true do |t|
-    t.integer  "movie_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "favorites", ["movie_id"], name: "index_favorites_on_movie_id"
-  add_index "favorites", ["user_id"], name: "index_favorites_on_user_id"
-
-  create_table "movies", force: true do |t|
-    t.string   "title"
-    t.string   "youtube_id"
-    t.string   "poster_url"
-    t.string   "released"
-    t.string   "rated"
-    t.integer  "running_time"
-    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -55,10 +43,11 @@ ActiveRecord::Schema.define(version: 20141217202737) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "authentication_token"
+    t.string   "name"
   end
 
-  add_index "users", ["authentication_token"], name: "index_users_on_authentication_token", unique: true
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["authentication_token"], name: "index_users_on_authentication_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

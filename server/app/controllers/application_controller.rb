@@ -4,34 +4,31 @@ class ApplicationController < ActionController::Base
    # protect_from_forgery with: :null_session
    protect_from_forgery
    skip_before_action :verify_authenticity_token, if: :json_request?
-
-   after_action :set_csrf_cookie_for_ng
-   
-
-   def set_csrf_cookie_for_ng
-      cookies['XSRF-TOKEN'] = form_authenticity_token if protect_against_forgery?
-   end
-
+   before_action :load_schema, :authenticate_user!
+  
    protected
 
    def json_request?
       request.format.json?
    end
-
-   def verified_request?
-      super || form_authenticity_token == request.headers['X_XSRF_TOKEN']
-   end  
     
-
-
    private
-   def authenticate_user_from_token!
+   def load_schema
+      Apartment::Database.switch('public')
+      return unless request.subdomain.present?
+
+      account = Account.where(subdomain: request.subdomain).first
+      if account
+        Apartment::Database.switch(account.subdomain)
+      else
+        permission_denied
+      end
+    end
+    
+   def authenticate_user_from_token! #Devise override
       user_id    = params[:auth_user_id].presence
       user       = user_id && User.find_by_id(user_id)
 
-      # Notice how we use Devise.secure_compare to compare the token
-      # in the database with the token given in the params, mitigating
-      # timing attacks.
       if user && Devise.secure_compare(user.authentication_token, params[:auth_token])
          @current_user = user
       else
@@ -39,7 +36,7 @@ class ApplicationController < ActionController::Base
       end
    end
 
-   def permission_denied
+   def permission_denied #Devise override
       render   :json => {error: "Please enter a correct username and password"}, 
                :status => :unauthorized, 
                :layout => false
