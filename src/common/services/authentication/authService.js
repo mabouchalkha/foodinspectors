@@ -17,6 +17,16 @@ angular.module('common.services.authentication.authService', [
 				            
             				return accessLevel.bitMask & role.bitMask;
 			            },
+							isLoggedIn: function(user) {
+								if(user === undefined) {
+									currentUser().then(function (currentUser){
+										if (!user) {
+											user = currentUser;
+										}
+									});
+								}
+								return user.role.title === userRoles.user.title || user.role.title === userRoles.admin.title;
+							},
 							setCurrentUser: function (user) {
 								_user = user;
 								$cookieStore.put('user', user);
@@ -45,17 +55,11 @@ angular.module('common.services.authentication.authService', [
 						return service;
 
 					}])
-.factory('AuthInterceptor', ['$q', 'AuthService', function ($q, AuthService) {
+.factory('AuthInterceptor', ['$q', 'AuthService', '$state', function ($q, AuthService, $state) {
 			
 			var authInterceptor = {
-				request: addTokenWithUser,
-				requestError: requestError
-			};
-		
-			return authInterceptor;
-
-			function addTokenWithUser(req) {
-				return $q(function(resolve, reject) {
+				request: function (req) {
+					return $q(function(resolve, reject) {
 								AuthService.currentUser().then(function(user) {
 									if(user) {
 										req.params = req.params || {};
@@ -67,10 +71,22 @@ angular.module('common.services.authentication.authService', [
 									}
 								});
 							});
+				},
+				requestError: function (reqErr) {
+					return reqErr;
+				},
+				responseError: function(response) {
+                if(response.status === 401 || response.status === 403) {
+                    $state.go('auth.login');
+                }
+                return $q.reject(response);
+            }
 			};
+		
+			return authInterceptor;
 
-			function requestError(reqErr) {
-				return reqErr;
-			};
+
+
+
 
 		}]);

@@ -1,24 +1,19 @@
 angular.module('authentication')
-.controller('AuthenticationController', ['$state', 'UserService', function ($state, UserService) {
-	var auth = this;
+.controller('AuthenticationController', ['$state', 'UserService', 'Permission', function ($state, UserService, Permission) {
+	var vm = this;
 			
-	auth.signup = { email:'', password:'' };
-	auth.login  = { email:'', password:'' };
+	var _init = function () {
+
+		vm.signup = { email:'', password:'', role: Permission.userRoles.admin};
+		vm.login  = { email:'', password:'' };
 			
-	auth.brand = 'Food Inspectors';
+		vm.brand = 'Food Inspectors';
+	};
 
-	auth.submitSignup = submitSignup;
-	auth.submitLogin = submitLogin;
-	auth.getPasswordType = getPasswordType;
-	auth.hasErrorClass = hasErrorClass;
-	auth.showMessages = showMessages;
-	auth.clearForm = clearForm;
-   			
-
-	function submitSignup () {
-		UserService.signup(auth.signup).then(
+	vm.submitSignup = function () {
+		UserService.signup(vm.signup).then(
 			function(user) {
-				auth.user = user;
+				vm.user = user;
 				$state.go('home.index');
 			},
 			function(reason){
@@ -26,35 +21,39 @@ angular.module('authentication')
 			}
 		);
 	};
-			
-	function submitLogin () {
-		UserService.login(auth.login).then(
+
+	vm.submitLogin = function () {
+		UserService.login(vm.login).then(
 			function(user){
-				auth.user = user;
+				vm.user = user;
 				$state.go('home.index');
 			},
 			function(reason){
-				auth.login.erorrs = reason;
+				vm.login.erorrs = reason;
 			}
 		);
 	};
-     
-	function getPasswordType () {
-		return auth.authForm.showPassword ? 'text' : 'password';
-	};
-			
-	function showMessages (field) {
-		return auth.authForm[field].$touched || auth.authForm.$submitted
+
+
+	// UX for form
+	vm.getPasswordType = function () {
+		return vm.authForm.showPassword ? 'text' : 'password';
 	};
 
-	function clearForm () {
+	vm.hasErrorClass = function (field) {
+		return vm.authForm[field].$touched && vm.authForm[field].$invalid;
+	};
+
+	vm.showMessages = function (field) {
+		return vm.authForm[field].$touched || vm.authForm.$submitted
+	};
+
+	vm.clearForm = function () {
 		ctrl.newCustomer = { email:'', userName:'', password:'' }
 		ctrl.authForm.$setUntouched();
 		ctrl.authForm.$setPristine();
 	};
 
-	function hasErrorClass (field) {
-		return auth.authForm[field].$touched && auth.authForm[field].$invalid;
-	};
+	_init();
            
 }]);
