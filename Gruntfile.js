@@ -63,7 +63,7 @@
 	    	},
 			concurrent: {
 				dev: {
-				   tasks: ['nodemon:dev', 'configureProxies:server','watch'],
+				   tasks: ['nodemon:dev','watch'],
 				   options: {
 				      logConcurrentOutput: true
 					} 
@@ -138,40 +138,40 @@
 		   	appjs: {
 					files: [ 
 						{
-			        src: [ '<%= app_files.js %>' ],
-			        dest: '<%= build_dir %>/',
-			        cwd: '.',
-			        expand: true
+							src: [ '<%= app_files.js %>' ],
+							dest: '<%= build_dir %>/',
+							cwd: '.',
+							expand: true
 						} 
 					]
 				},
 				commonjs: {
 					files: [ 
 						{
-			        src: [ '<%= common_files.js %>' ],
-			        dest: '<%= build_dir %>/',
-			        cwd: '.',
-			        expand: true
+							src: [ '<%= common_files.js %>' ],
+							dest: '<%= build_dir %>/',
+							cwd: '.',
+							expand: true
 						} 
 					]
 				},
 				vendorjs: {
 		        	files: [
 			         	{
-			            src: [ '<%= vendor_files.js %>' ],
-			            dest: '<%= build_dir %>/',
-			            cwd: '.',
-			            expand: true
+				            src: [ '<%= vendor_files.js %>' ],
+				            dest: '<%= build_dir %>/',
+				            cwd: '.',
+				            expand: true
 			         	}
 		        	]
       		},
 	      	fonts: {
 		        	files: [
 			         	{
-			            src: [ '<%= app_files.fonts %>' ],
-			            dest: '<%= build_dir %>/',
-			            cwd: '.',
-			            expand: true
+				            src: [ '<%= app_files.fonts %>' ],
+				            dest: '<%= build_dir %>/assets',
+				            cwd: '.',
+				            expand: true
 			         	}
 		        	]
 	      	},
@@ -187,12 +187,32 @@
 	      	},
 				img: {
 					files: [
-						{
-							src: ['<%= app_files.img %>'],
-	      				dest: '<%= build_dir %>/assets',
-			            cwd: '.',
-			            expand: true
-						}
+							{
+								src: ['<%= app_files.img %>'],
+		      				dest: '<%= build_dir %>/assets',
+				            cwd: '.',
+				            expand: true
+							}
+					]
+				},
+				dist: {
+					files: [
+							{
+								src: ['<%= app_files.img %>', '<%= app_files.fonts %>', '<%= app_files.json %>' ],
+		      				dest: '<%= dist_dir %>/assets',
+				            cwd: '.',
+				            expand: true
+							}
+					]
+				},
+				distI18n: {
+					files: [
+							{
+								src: [ '<%= app_files.json %>' ],
+		      				dest: '<%= dist_dir %>/',
+				            cwd: '.',
+				            expand: true
+							}
 					]
 				}
 			},
@@ -231,11 +251,11 @@
 	  grunt.initConfig(grunt.util._.extend(taskConfig, userConfig));
 
 	  
-		grunt.registerTask('default', ['build', 'concurrent', 'configureProxies']);
+		grunt.registerTask('default', ['build', 'concurrent']);
 
 		grunt.registerTask('build', ['clean', 'copy', 'html2js', 'browserify', 'less:build', 'index:build']);
 
-		grunt.registerTask('dist', ['build', 'concat', 'ngAnnotate', 'uglify', 'less:dist', 'index:dist']);
+		grunt.registerTask('dist', ['build', 'concat', 'ngAnnotate', 'uglify', 'less:dist', 'index:dist', 'copy:dist']);
 
 
 		function filterForExtension(extension, files) {
