@@ -5,27 +5,29 @@ angular.module('common.services.authentication.authService', [
 					function ($q, $cookieStore, $rootScope, Permission) {
 
 						var _user = null;
-						var _accessLevels = Permission.accessLevels;
-						var _userRoles = Permission.userRoles;
+
+						var _accessLevels = Permission.accessLevels();
+						var _userRoles = Permission.userRoles();
 	
 						// The public API of the service
-						var service = {
+						var authService = {
 							authorize : function(accessLevel, role) {
 				            if(role === undefined) {
-				                role = _user.role;
+				               _user ? role = _user.role : role =_userRoles.public;
 				            }
 				            
             				return accessLevel.bitMask & role.bitMask;
 			            },
-							isLoggedIn: function(user) {
-								if(user === undefined) {
-									currentUser().then(function (currentUser){
-										if (!user) {
-											user = currentUser;
-										}
-									});
-								}
-								return user.role.title === userRoles.user.title || user.role.title === userRoles.admin.title;
+							isLoggedIn: function() {
+								_user ? true : false;
+								// if(_user === undefined) {
+								// 	authService.currentUser().then(function (currentUser){
+								// 		if (!_user) {
+								// 			_user = currentUser;
+								// 		}
+								// 	});
+								// }
+								// return _user.role.title === _userRoles.user.title || _user.role.title === _userRoles.admin.title;
 							},
 							setCurrentUser: function (user) {
 								_user = user;
@@ -52,7 +54,7 @@ angular.module('common.services.authentication.authService', [
 							}
 						};
 
-						return service;
+						return authService;
 
 					}])
 .factory('AuthInterceptor', ['$q', 'AuthService', '$state', function ($q, AuthService, $state) {

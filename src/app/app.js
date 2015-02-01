@@ -22,8 +22,8 @@ angular.module('app', [
 	//module npm 
 	'app.modules',
 ])
-	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', '$compileProvider', '$provide',
-	function($stateProvider, $urlRouterProvider, $httpProvider, $compileProvider, $provide) {
+	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', '$compileProvider', 'PermissionProvider',
+	function($stateProvider, $urlRouterProvider, $httpProvider, $compileProvider, PermissionProvider) {
 
 		var getCurrentUser = function (AuthService, $state) {
 			return AuthService.currentUser().then(function (user) {
@@ -31,7 +31,7 @@ angular.module('app', [
 			});
 		};
 		
-		//var access = Permission.accessLevels;
+		var access = PermissionProvider.$get().accessLevels();
 
 		$stateProvider
 			.state('home', {
@@ -50,8 +50,8 @@ angular.module('app', [
 				resolve: {
 					//currentUser: getCurrentUser
 				},
-	            data: {
-						//access: access.public
+	         data: {
+	            access: access.public
             }
 			})
 			.state('home.index', {
@@ -109,26 +109,26 @@ angular.module('app', [
 			$translate.refresh();
 		});
 
-		// $rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
+		$rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
         
-  //       if(!('data' in toState) || !('access' in toState.data)){
-  //           $rootScope.error = "Access undefined for this state";
-  //           event.preventDefault();
-  //       }
-  //       else if (!AuthService.authorize(toState.data.access)) {
-  //           $rootScope.error = "Seems like you tried accessing a route you don't have access to...";
-  //           event.preventDefault();
+        if(!('data' in toState) || !('access' in toState.data)){
+            $rootScope.error = "Access undefined for this state";
+            event.preventDefault();
+        }
+        else if (!AuthService.authorize(toState.data.access)) {
+            $rootScope.error = "Seems like you tried accessing a route you don't have access to...";
+            event.preventDefault();
 
-  //           if(fromState.url === '^') {
-  //               if(AuthService.isLoggedIn()) {
-  //                   $state.go('home.index');
-  //               } else {
-  //                   $rootScope.error = null;
-  //                   $state.go('auth.login');
-  //               }
-  //           }
-  //       }
-  //   	});
+            if(fromState.url === '^') {
+                if(AuthService.isLoggedIn()) {
+                    $state.go('home.index');
+                } else {
+                    $rootScope.error = null;
+                    $state.go('auth.login');
+                }
+            }
+        }
+    	});
 	})
 	.controller('AppCtrl', ['$state', 'debug', function($state, debug) {
 		// debug('say it is so.');
