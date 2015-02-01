@@ -1,10 +1,10 @@
 angular.module('common.models.api', [
 	'restangular'
 	])
-	    .factory('API', ['Restangular', function(Restangular) {
+	    .factory('API', ['Restangular', 'API_CONF', function(Restangular, API_CONF) {
 	        return Restangular.withConfig(function(RestangularProvider) {
 	            
-	           RestangularProvider.setBaseUrl('http://127.0.0.1:3000/');
+	           RestangularProvider.setBaseUrl(API_CONF.apiUrl);
 
               RestangularProvider.addFullRequestInterceptor(function(elem, operation, what) {
                   var retElem = elem;

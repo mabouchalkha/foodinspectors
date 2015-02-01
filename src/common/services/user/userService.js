@@ -3,15 +3,15 @@ angular.module('common.services.user.userService', [
 	'common.services.authentication.authService',
 	'common.models.user'
 ])
-.factory('UserService', ['$q', '$cookieStore', '$rootScope', '$http', 'AuthService', 'User',
-	function ($q, $cookieStore, $rootScope, $http, AuthService, User) {			
+.factory('UserService', ['$q', '$cookieStore', '$rootScope', '$http', 'AuthService', 'User', 'API_CONF',
+	function ($q, $cookieStore, $rootScope, $http, AuthService, User, API_CONF) {			
 		
 		var userService = {
 			login: function (userParams) {
 				var d = $q.defer();
 
 				$http({
-					url: 'http://127.0.0.1:3000/users/sign_in',
+					url: API_CONF.apiUrl + 'users/sign_in',
 					method: 'POST',
 					data: {
 						user: userParams
@@ -44,7 +44,7 @@ angular.module('common.services.user.userService', [
 				var d = $q.defer();
 
 				$http({
-					url: 'http://127.0.0.1:3000/users',
+					url: API_CONF.apiUrl + 'users',
 					method: 'POST',
 					data: {
 						user: userParams

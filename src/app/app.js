@@ -22,6 +22,10 @@ angular.module('app', [
 	//module npm 
 	'app.modules',
 ])
+	.constant('API_CONF', {
+		//apiUrl: 'production'
+		apiUrl: 'http://127.0.0.1:3000/'
+	})
 	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', '$compileProvider', 'PermissionProvider',
 	function($stateProvider, $urlRouterProvider, $httpProvider, $compileProvider, PermissionProvider) {
 
