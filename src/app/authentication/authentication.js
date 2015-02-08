@@ -21,7 +21,7 @@ angular.module('authentication', [
 	      url: "/signup",
 	      views: {
 	      		'content@': {
-	      			controller: 'AuthenticationController as auth',
+	      			controller: 'AuthenticationController as vm',
 	      			templateUrl: 'authentication/signup/signup.tpl.html'
 	      		}
 	      }
@@ -30,7 +30,7 @@ angular.module('authentication', [
 	      url: "/login",
 	      views: {
 	      		'content@': {
-	      			controller: 'AuthenticationController as auth',
+	      			controller: 'AuthenticationController as vm',
 	      			templateUrl: 'authentication/login/login.tpl.html'
 	      		}
 	      }

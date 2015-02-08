@@ -19,28 +19,6 @@ ActiveRecord::Schema.define(version: 20141217202737) do
     t.datetime "updated_at"
   end
 
-  create_table "favorites", force: true do |t|
-    t.integer  "movie_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "favorites", ["movie_id"], name: "index_favorites_on_movie_id"
-  add_index "favorites", ["user_id"], name: "index_favorites_on_user_id"
-
-  create_table "movies", force: true do |t|
-    t.string   "title"
-    t.string   "youtube_id"
-    t.string   "poster_url"
-    t.string   "released"
-    t.string   "rated"
-    t.integer  "running_time"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false

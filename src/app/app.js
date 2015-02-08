@@ -24,7 +24,8 @@ angular.module('app', [
 ])
 	.constant('API_CONF', {
 		//apiUrl: 'production'
-		apiUrl: 'http://127.0.0.1:3000/'
+		apiUrl: 'http://127.0.0.1:3000/',
+		debugInfoEnabled: false
 	})
 	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', '$compileProvider', 'PermissionProvider',
 	function($stateProvider, $urlRouterProvider, $httpProvider, $compileProvider, PermissionProvider) {
@@ -99,7 +100,17 @@ angular.module('app', [
 			
 		// Disabling debug info for production
 		//$compileProvider.debugInfoEnabled(false);
+
+		defaultHeaders = {
+			"Content-Type": "application/json",
+			"Accept-Language": "en",
+		};
 		
+		$httpProvider.defaults.headers["delete"] = defaultHeaders;
+		$httpProvider.defaults.headers.patch = defaultHeaders;
+		$httpProvider.defaults.headers.post = defaultHeaders;
+		$httpProvider.defaults.headers.put = defaultHeaders;
+
 		$httpProvider.useApplyAsync(true);
 		$httpProvider.interceptors.push('AuthInterceptor');
 		$httpProvider.interceptors.push('LoadingInterceptor');

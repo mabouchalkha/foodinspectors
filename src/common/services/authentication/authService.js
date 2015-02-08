@@ -57,16 +57,18 @@ angular.module('common.services.authentication.authService', [
 						return authService;
 
 					}])
-.factory('AuthInterceptor', ['$q', 'AuthService', '$state', function ($q, AuthService, $state) {
+	.factory('AuthInterceptor', ['$q', 'AuthService', function ($q, AuthService) {
 			
 			var authInterceptor = {
 				request: function (req) {
 					return $q(function(resolve, reject) {
 								AuthService.currentUser().then(function(user) {
 									if(user) {
-										req.params = req.params || {};
-										req.params['auth_token'] = req.params['auth_token'] || user.auth_token;
-										req.params['auth_user_id'] = req.params['auth_user_id'] || user.id;
+										req.headers = req.headers || {};
+										req.headers.Authorization = 'Bearer ' + user.auth_token;
+										// req.params = req.params || {};
+										// req.params['auth_token'] = req.params['auth_token'] || user.auth_token;
+										// req.params['auth_user_id'] = req.params['auth_user_id'] || user.id;
 										resolve( req );
 									} else {
 										resolve( req );
@@ -78,17 +80,12 @@ angular.module('common.services.authentication.authService', [
 					return reqErr;
 				},
 				responseError: function(response) {
-                if(response.status === 401 || response.status === 403) {
-                    $state.go('auth.login');
-                }
-                return $q.reject(response);
+                // if(response.status === 401 || response.status === 403) {
+                //     $state.go('auth.login');
+                // }
+                // return $q.reject(response);
             }
 			};
 		
 			return authInterceptor;
-
-
-
-
-
 		}]);
