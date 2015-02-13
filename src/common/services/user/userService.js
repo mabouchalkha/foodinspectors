@@ -20,7 +20,7 @@ angular.module('common.services.user.userService', [
 			var d = $q.defer();
 
 			$http({
-				url: 'http://foodinspector-185594.usw1-2.nitrousbox.com:3000/users/sign_in',
+				url: 'http://foodinspector-185594.usw1-2.nitrousbox.com:3444/users/sign_in',
 				method: 'POST',
 				data: {
 					user: userParams
@@ -55,7 +55,7 @@ angular.module('common.services.user.userService', [
 			var d = $q.defer();
 
 			$http({
-				url: 'http://foodinspector-185594.usw1-2.nitrousbox.com:3000/accounts',
+				url: 'http://foodinspector-185594.usw1-2.nitrousbox.com:3444/accounts',
 				method: 'POST',
 				data: {
 					user: userParams

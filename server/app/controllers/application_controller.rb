@@ -20,8 +20,6 @@ class ApplicationController < ActionController::Base
       account = Account.where(subdomain: request.subdomain).first
       if account
         Apartment::Database.switch(account.subdomain)
-      else
-        permission_denied
       end
     end
     

@@ -1,11 +1,12 @@
 class SubdomainPresent
   def self.matches?(request)
-    request.subdomain.present?
+    request.subdomain.present?  
   end
 end
 
 class SubdomainBlank
   def self.matches?(request)
+    puts 'TESTTETETETE : ' + request.subdomain
     request.subdomain.blank?
   end
 end
@@ -26,7 +27,7 @@ Foodinspectors::Application.routes.draw do
       
     constraints(SubdomainBlank) do
       resources :accounts, only: [:new, :create]
-      root "foodinspectors#index"
+      #root "foodinspectors#index"
     end
   
    devise_scope :user do
@@ -42,6 +43,6 @@ Foodinspectors::Application.routes.draw do
 
 
    get "foodinspectors/index"
-   root "foodinspectors#index"
+   #root "foodinspectors#index"
    match '*path' => "foodinspectors#index", :via => [:get, :post]
 end
