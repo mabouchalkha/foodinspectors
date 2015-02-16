@@ -5,17 +5,23 @@ angular.module('authentication', [
 	'ui.router',
 	'common.services.user.userService'
 ])
-.config(['$stateProvider', function($stateProvider) {
+.config(['$stateProvider', 'PermissionProvider', function($stateProvider, PermissionProvider) {
+	
+	var access = PermissionProvider.$get().accessLevels();
+
 	$stateProvider
 		.state('auth', {
 			url: '',
 			abstract: true,
+			data: {
+            access: access.anon
+         }
 		})
 		.state('auth.signup', {
 	      url: "/signup",
 	      views: {
 	      		'content@': {
-	      			controller: 'AuthenticationController as auth',
+	      			controller: 'AuthenticationController as vm',
 	      			templateUrl: 'authentication/signup/signup.tpl.html'
 	      		}
 	      }
@@ -24,7 +30,7 @@ angular.module('authentication', [
 	      url: "/login",
 	      views: {
 	      		'content@': {
-	      			controller: 'AuthenticationController as auth',
+	      			controller: 'AuthenticationController as vm',
 	      			templateUrl: 'authentication/login/login.tpl.html'
 	      		}
 	      }

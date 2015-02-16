@@ -1,6 +1,7 @@
 module.exports = {
 
 	build_dir: 'build',
+	dist_dir: 'dist',
 
 	app_files: {
 		// source, but NO specs
@@ -30,8 +31,8 @@ module.exports = {
 			'vendor/angular-animate/angular-animate.js',
 			'vendor/angular-aria/angular-aria.js',
 			'vendor/angular-cookies/angular-cookies.js',
+			'vendor/a0-angular-storage/dist/angular-storage.js',
 			'vendor/angular-ui-router/release/angular-ui-router.js',
-			'vendor/require/build/require.js',
 			'vendor/messageformat/messageformat.js',
 			'vendor/messageformat/locale/en.js',
 			'vendor/messageformat/locale/fr.js',
