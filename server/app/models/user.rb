@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
    :recoverable, :rememberable, :trackable,
    :validatable
 
-   #has_paper_trail
+   has_paper_trail
    
    before_save :ensure_authentication_token
  
