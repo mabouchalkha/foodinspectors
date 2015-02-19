@@ -4,7 +4,7 @@ angular.module('authentication')
 			
 	var _init = function () {
 
-		vm.signup = { email:'', password:'', role: Permission.userRoles.admin};
+		vm.signup = { name:'', subdomain:'', owner_attributes:{email:'', password:''}/*, role: Permission.userRoles.admin*/};
 		vm.login  = { email:'', password:'' };
 			
 		vm.brand = 'Food Inspectors';

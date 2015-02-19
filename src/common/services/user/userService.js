@@ -44,10 +44,10 @@ angular.module('common.services.user.userService', [
 				var d = $q.defer();
 
 				$http({
-					url: API_CONF.apiUrl + 'users',
+					url: API_CONF.apiUrl + 'accounts',
 					method: 'POST',
 					data: {
-						user: userParams
+						account: userParams
 					}
 				}).success(function(response) {
 					var user = response.data.user;
