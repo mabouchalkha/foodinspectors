@@ -24,10 +24,8 @@
     "protractor": "^1.4.0"
   },
   "dependencies": {
+    "express": "^4.11.2",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13"
-  },
-  "scripts": {
-    "postinstall": "echo postinstall time; ./node_modules/grunt-cli/bin/grunt heroku"
   }
 }
