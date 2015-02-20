@@ -255,7 +255,7 @@
 
 		grunt.registerTask('build', ['clean', 'copy', 'html2js', 'browserify', 'less:build', 'index:build']);
 
-		grunt.registerTask('dist', ['build', 'concat', 'ngAnnotate', 'uglify', 'less:dist', 'index:dist', 'copy:dist']);
+		grunt.registerTask('heroku', ['build', 'concat', 'ngAnnotate', 'uglify', 'less:dist', 'index:dist', 'copy:dist']);
 
 
 		function filterForExtension(extension, files) {

@@ -13,6 +13,7 @@ angular.module('authentication')
 	vm.submitSignup = function () {
 		UserService.signup(vm.signup).then(
 			function(user) {
+				console.log(user);
 				vm.user = user;
 				$state.go('home.index');
 			},

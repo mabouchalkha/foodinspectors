@@ -23,8 +23,8 @@ angular.module('app', [
 	'app.modules',
 ])
 	.constant('API_CONF', {
-		//apiUrl: 'production'
-		apiUrl: 'http://127.0.0.1:3000/',
+		apiUrl: 'https://fiapi.herokuapp.com/',
+		//apiUrl: 'http://127.0.0.1:3000/',
 		debugInfoEnabled: false
 	})
 	.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', '$compileProvider', 'PermissionProvider',
