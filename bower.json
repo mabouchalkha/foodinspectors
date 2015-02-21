@@ -33,7 +33,7 @@
     "angular-translate-loader-partial": "~2.5.2",
     "angular-toastr": "~0.5.2",
     "angular-translate-interpolation-messageformat": "~2.5.2",
-    "messageformat": "~0.2.1",
+    "messageformat": "=0.2.1",
     "angular-moment": "~0.9.0",
     "a0-angular-storage": "~0.0.9"
   },
